@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sail Communications | Argentine SIM Cards</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+
+<!------ HEADER ----->
+        <header>
+            <section id="main-nav-bar">
+                <div>
+                    <img src="../img/sail.png" alt="logo-sail"/>
+                </div>
+                <div class="navegador-derecha">
+                    <h2>We connect People.</h2>
+                    <nav>
+                        <ul>              
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="#menu">Products</a>
+                                <ul>
+                                    <li><a href="./tourists.html">Tourists</a></li>
+                                    <li><a href="./seamen.html">Seamen</a></li>
+                                    <li><a href="./agents.html">Agents</a></li>   
+                                    <li><a href="./resellers.html">Resellers</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="contact-nav" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="navbar navbar-dark bg-dark sticky-top" id="burguer-menu-container">
+                <div class="container-fluid">
+                    <img class="logo-burguer-nav" src="../img/sail.png" alt="logo-sail"/>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div  class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                            Menu
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="popup-menu">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" id="menu-dropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="./tourists.html">SIM Cards for Tourists</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./seamen.html">SIM Cards for Seamen</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./agents.html">Agency Partnership</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./resellers.html">Resellers Partnership</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#  contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </header>
+<!----- HEADER END ----->   
+
+<!---------------- MAIN --------------------------------->
+        <main class="main-resellers">
+            <img src="../img/resellers.png" alt="resellers"/>
+            <div>
+                <h2>Resellers</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reprehenderit, asperiores rem nesciunt aspernatur mollitia! Necessitatibus vero dolorum a iste, consequuntur nostrum, sequi eveniet autem hic eaque quibusdam? Necessitatibus odio et vel non ea quaerat, reiciendis ut, debitis sapiente enim unde animi veniam eum! Quos molestias a dolorum, in ex exercitationem quis pariatur commodi at, ab aspernatur quia nobis velit, necessitatibus est praesentium? Exercitationem doloribus veritatis, non dolore ratione dolorem at alias, distinctio accusantium voluptate dolorum, aperiam et nesciunt facilis harum sapiente recusandae illum sunt totam autem suscipit eaque voluptatibus perspiciatis! Perspiciatis numquam vel beatae repellendus esse explicabo odit quibusdam?</p>     
+            </div>
+<!------------------ FIN MAIN --------------------------------->
+
+<!----- WHATSAPP ----->
+            <div class="whatsapp">
+                <a href="https://wa.me/5491123675058?text=Hi%20Sailcoms%20team!%0AI%20need%20information%0AThanks!" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"/></a>
+            </div>
+<!----- WHATSAPP END ----->
+
+        </main>
+
+<!----- FOOTER ----->
+        <footer id="contact">     
+            <section class="contact-us">
+                <h2>Contact Us</h2>
+                <div> 
+                    <form action="submeter-formulario.php" method="post">       
+                        <div>
+                            <label for="form-name"></label>
+                            <input type="text" name="insert-name" id="form-name" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <label for="email" ></label>
+                            <input type="email" name="insert-mail" id="email" placeholder="E-mail adress" autocomplete="on">
+                        </div>
+                        <div>
+                            <label for="phone"></label>
+                            <input type="tel" name="insert-phone" id="phone" placeholder="Country Code + Phone #" autocomplete="on">
+                        </div> 
+                        <div>
+                            <label for="message"></label>                     
+                            <textarea name="insert-message" class="message-form" id="message" cols=39 rows=7 placeholder="Leave us your message"></textarea> 
+                        </div>                    
+                        <button type="submit" name="send-form" id="send">Send</button>
+                    </form>
+                </div>
+            </section>
+            <div class="copyright">
+                <p>Designed and Developed by Delfino</p>
+            </div>
+        </footer>
+<!----- FOOTER END ----->
+
+<!----- SCRIPTS ----->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
+<!----- SCRIPTS END ----->
+    </body>
+</html>
