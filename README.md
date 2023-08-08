@@ -3,8 +3,6 @@
 
 - 🔭 We´re currently present in **Argentina**
 
-- 🌱 I’m currently learning **Web development**
-
 - 👯 We´re about to open in **Brasil**
 
 <h3 align="left">Connect with me:</h3>
