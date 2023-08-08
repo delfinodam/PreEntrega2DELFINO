@@ -524,101 +524,142 @@ footer div p{
     margin-top: 20px;
 }
 
-/*!----- FIN FOOTER -----*/
+/*!----- FOOTER END -----*/
+
+/*!----- PAGE ABOUT US -----*/
+
+.about-us{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.about-us section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
+}
+
+.about-us section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.about-us section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
+}
+
+.about-us section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE ABOUT US END -----*/
 
 /*!----- PAGE TOURISTS -----*/
 
-.main-seamen{
+.main-tourists{
     display: flex;
-    height: 70vh;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
 }
 
-.main-seamen div{
-    background-color: rgb(78, 78, 78);
+.main-tourists section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center ;
     align-items: center;
 }
 
-.main-seamen div h2{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--color-principal);
-    background-color: var(--color-terciario);
-
-}
-.main-seamen div p{
-    margin: 20px;
-    text-align: justify;
-    color: var(--color-secundario);
+.main-tourists section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
 }
 
-.main-seamen div a{
-    text-decoration: none;
-    font-size: 40px;
-    text-align: center;
-    background-color: var(--color-principal);
+.main-tourists section h3{
     color: var(--color-terciario);
-    border-radius: 10px;
-    padding: 10px;  
-    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-tourists section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
 }
 
-.main-seamen div a:hover{
-    background-color: --color-secundario(255, 255, 255);
-    color: black;
-    font-weight: bold;
+.main-tourists section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
 }
 
-/*!----- FIN PAGE TOURISTS -----*/
+/*!----- PAGE TOURISTS END -----*/
 
 /*!----- PAGE SEAMEN -----*/
 
-.main-tourists{
+.main-seamen{
     display: flex;
-    height: 70vh;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
 }
 
-.main-tourists div{
-    background-color: rgb(78, 78, 78);
+.main-seamen section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center ;
     align-items: center;
 }
 
-.main-tourists div h2{
-    font-size: 40px;
-    font-weight: bold;
-    color: black;
-    background-color: var(--color-terciario);
-
-}
-.main-tourists div p{
-    margin: 20px;
-    text-align: justify;
-    color: var(--color-secundario);
+.main-seamen section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
 }
 
-.main-tourists div a{
-    text-decoration: none;
-    font-size: 40px;
-    text-align: center;
-    background-color: var(--color-principal);
+.main-seamen section h3{
     color: var(--color-terciario);
-    border-radius: 10px;
-    padding: 10px;  
-    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-seamen section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
 }
 
-.main-tourists div a:hover{
+.main-seamen section a{
+    color: var(--color-secundario);
+    text-decoration: none;
     background-color: var(--color-secundario);
     color: var(--color-principal);
-    font-weight: bold;
+    padding: 10px;
 }
 
-/*!----- FIN PAGE SEAMEN -----*/
+/*!----- PAGE SEAMEN END -----*/
 
 /*!----- PAGE AGENTS -----*/
 
@@ -666,37 +707,52 @@ margin: 15px;
     padding: 10px;
 }
 
-/*!----- FIN PAGE AGENTS -----*/
+/*!----- PAGE AGENTS END -----*/
 
 /*!----- PAGE RESELLERS -----*/
 
 .main-resellers{
     display: flex;
-    height: 70vh;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
 }
 
-.main-resellers div{
-    background-color: rgb(78, 78, 78);
+.main-resellers section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center ;
     align-items: center;
 }
 
-.main-resellers div h2{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--color-principal);
-    background-color: var(--color-terciario);
-
+.main-resellers section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
 }
-.main-resellers div p{
-    margin: 20px;
-    text-align: justify;
+
+.main-resellers section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-resellers section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
+}
+
+.main-resellers section a{
     color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
 }
 
-/*!----- FIN PAGE RESELLERS -----*/
+/*!----- PAGE RESELLERS END -----*/
 
 /*!----- MEDIA QUERIES -----*/
 
@@ -864,6 +920,54 @@ main .hero a{
     font-size: 38px;    
 }
 
+.main-tourists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-tourists img{
+    width: 100%;
+}
+
+.main-tourists section {
+    font-size: 14px;
+}
+
+.main-tourists section h2{
+    margin-top: 20px;
+}
+
+.main-tourists section a{
+    margin-bottom: 20px;
+}
+
+.main-seamen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-seamen img{
+    width: 100%;
+}
+
+.main-seamen section {
+    font-size: 14px;
+}
+
+.main-seamen section h2{
+    margin-top: 20px;
+}
+
+.main-seamen section a{
+    margin-bottom: 20px;
+}
+
 .main-agents{
     display: flex;
     flex-direction: column;
@@ -888,6 +992,29 @@ main .hero a{
     margin-bottom: 20px;
 }
 
+.main-resellers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-resellers img{
+    width: 100%;
+}
+
+.main-resellers section {
+    font-size: 14px;
+}
+
+.main-resellers section h2{
+    margin-top: 20px;
+}
+
+.main-resellers section a{
+    margin-bottom: 20px;
+}
 }
 
 @media screen and (max-width:900px){
