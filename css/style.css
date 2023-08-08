@@ -624,28 +624,50 @@ footer div p{
 
 .main-agents{
     display: flex;
-    height: 70vh;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
 }
 
-.main-agents div{
-    background-color: rgb(78, 78, 78);
+.main-agents img{
+    ;
+
+}
+.main-agents section{
     display: flex;
     flex-direction: column;
     justify-content: center ;
     align-items: center;
 }
 
-.main-agents div h2{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--color-principal);
-    background-color: var(--color-terciario);
-
+.main-agents section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
 }
-.main-agents div p{
-    margin: 20px;
-    text-align: justify;
+
+.main-agents section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-agents section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
+}
+
+.main-agents section ul li{
     color: var(--color-secundario);
+}
+.main-agents section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
 }
 
 /*!----- FIN PAGE AGENTS -----*/
