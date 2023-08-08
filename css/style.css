@@ -27,18 +27,6 @@ html{
 
 /*!----- HEADER -----*/
 
-header div {
-    display: flex;
-    align-items: center;
-    width: 50%;
-}
-
-header div img {
-    width: 30%;
-    height: 60%;
-    margin-left: 20px;
-}
-
 header {
     display: flex;
     flex-direction: row;
@@ -50,9 +38,21 @@ header {
     top: 0;
     width: 100%;
     z-index: 99
-}   
+}  
 
-header .navegador-derecha{
+header section div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+header section div img {
+    width: 30%;
+    height: 60%;
+    margin-left: 20px;
+}
+
+header section .navegador-derecha{
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ header .navegador-derecha{
     align-items: flex-end;
 }
 
-header div h2{
+header section .navegador-derecha h2{
     color: var(--color-terciario);
     font-size: 40px;
     margin: 20px;
@@ -83,19 +83,19 @@ header div h2{
     list-style: none;  
 }
 
+.navegador-derecha nav ul li {
+    float: left;
+    font-size: 20px;  
+    margin-right: 20px;
+    position: relative;
+}
+
 .navegador-derecha nav ul li a {
     text-decoration: none;
     background-color: var(--color-principal);
     color: var(--color-secundario);
     padding: 10px 15px;
     display: block;
-}
-
-.navegador-derecha nav ul li {
-    float: left;
-    font-size: 20px;  
-    margin-right: 20px;
-    position: relative;
 }
 
 .navegador-derecha nav ul li a:hover {
@@ -628,10 +628,6 @@ footer div p{
     background-color: rgb(31, 30, 30);
 }
 
-.main-agents img{
-    ;
-
-}
 .main-agents section{
     display: flex;
     flex-direction: column;
@@ -701,22 +697,6 @@ margin: 15px;
 }
 
 /*!----- FIN PAGE RESELLERS -----*/
-
-
-
-/*!----- ANIMATIONS -----*/
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-        transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-        transform: translateY(0);
-	}
-}
-
 
 /*!----- MEDIA QUERIES -----*/
 
