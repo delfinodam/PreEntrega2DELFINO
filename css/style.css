@@ -735,6 +735,15 @@ margin: 15px;
 }
 }
 
+@media screen and (max-width:1450px){
+    .main-agents section {
+        font-size: 15px;
+    }
+
+    .main-agents img{
+        width: 45%;
+    }
+}
 
 @media screen and (max-width:1400px){
 header div img {
@@ -754,11 +763,17 @@ main .hero h2{
 header div h2{
     font-size: 35px;
 }
+
+.main-agents section {
+    font-size: 13px;
+}
+
+.main-agents section h2{
+    margin: 0;
+}
 }
 
 @media screen and (max-width:1200px){
-
-
 main .value div p{
     font-size: 23px;
 }
@@ -774,8 +789,13 @@ main .value div h2 {
 }
 }
 
-@media screen and (max-width:950px){
+@media screen and (max-width:1020px){
+    .main-agents section {
+        font-size: 12px;
+    }
+}
 
+@media screen and (max-width:950px){
 header div {
     display: flex;
     align-items: flex-start;
@@ -864,6 +884,30 @@ main .hero a{
     font-size: 38px;    
 }
 
+.main-agents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-agents img{
+    width: 100%;
+}
+
+.main-agents section {
+    font-size: 14px;
+}
+
+.main-agents section h2{
+    margin-top: 20px;
+}
+
+.main-agents section a{
+    margin-bottom: 20px;
+}
+
 }
 
 @media screen and (max-width:900px){
@@ -949,6 +993,11 @@ main .hero a{
 .accordion-button{
     font-size: 18px !important;
 }
+
+.menu div div a img{
+    -webkit-filter: grayscale(0%);
+}
+
 }
 
 @media screen and (max-width:500px){
@@ -960,4 +1009,9 @@ main .hero a{
 .accordion-button{
     font-size: 15px !important;
 }
+
+.main-agents section h3{
+    font-size: 19px;
+}
+
 }
