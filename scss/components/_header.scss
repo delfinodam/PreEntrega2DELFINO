@@ -1,0 +1,97 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    height: 18vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    #main-nav-bar{
+        width: 100%;
+        display: flex;
+        div{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            img{
+                width: 30%;
+                height: 60%;
+                margin-left: 20px;
+            }
+        }
+        .navegador-derecha{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            h2{
+                color: $color-terciario;
+                font-size: 40px;
+                margin: 20px;
+            }
+            nav{
+                ul{
+                    list-style: none;
+                    li{
+                        float: left;
+                        font-size: 20px;  
+                        margin-right: 20px;
+                        position: relative;
+                        &:hover > ul{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        a{
+                            text-decoration: none;
+                            background-color: $color-primario;
+                            color: $color-secundario;
+                            padding: 10px 15px;
+                            display: block;
+                            &:hover{
+                                text-decoration: none;
+                                background-color: $color-terciario;
+                                color: $color-primario;
+                                font-weight: bold;
+                            }
+                        }
+                        ul{
+                            display: none;
+                            position: absolute;
+                            left: 0;
+                            top: 100%;
+                            margin: 0; 
+                            padding: 0; 
+                            li{
+                                &:hover > ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                    #contact-nav{
+                        background-color: $color-terciario;
+                        padding: 10px 15px; 
+                        color: $color-primario;
+                        font-weight: bold;
+                        text-wrap: nowrap;
+                        margin-right: 5px;
+                        &:hover{
+                            background-color:$color-secundario;
+                            padding: 10px 15px; 
+                            color: $color-primario;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #burguer-menu-container{
+        display: none;
+    }
+}

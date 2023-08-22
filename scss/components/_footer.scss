@@ -1,0 +1,62 @@
+footer{
+    background:linear-gradient(black, #ffe666);
+    section{
+        height: 100%;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:$color-secundario;
+        font-size: 20px;
+        border-top: solid $color-secundario 6px;
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 60px;
+            text-align: center;
+        }
+        div{
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                div{
+                    label{
+                    }
+                    input{
+                        width: 100%;
+                        font-size: 20px;
+                    }
+                    textarea{
+                        width: 100%;
+                        font-size: 20px;
+                    }
+                }
+                button{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    background-color: $color-primario;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    .copyright{
+        width:100% ;
+        align-items: center;
+        justify-content: center;
+        p{
+            background-color: $color-primario;
+            color: $color-secundario;
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}

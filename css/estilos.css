@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "sailcoms";
+  src: url(../scss/font/leelawdb.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "sailcoms";
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+html {
+  background-color: black !important; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 18vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+  header #main-nav-bar {
+    width: 100%;
+    display: flex; }
+    header #main-nav-bar div {
+      display: flex;
+      align-items: center;
+      width: 50%; }
+      header #main-nav-bar div img {
+        width: 30%;
+        height: 60%;
+        margin-left: 20px; }
+    header #main-nav-bar .navegador-derecha {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end; }
+      header #main-nav-bar .navegador-derecha h2 {
+        color: #FFE15D;
+        font-size: 40px;
+        margin: 20px; }
+      header #main-nav-bar .navegador-derecha nav ul {
+        list-style: none; }
+        header #main-nav-bar .navegador-derecha nav ul li {
+          float: left;
+          font-size: 20px;
+          margin-right: 20px;
+          position: relative; }
+          header #main-nav-bar .navegador-derecha nav ul li:hover > ul {
+            display: flex;
+            flex-direction: column; }
+          header #main-nav-bar .navegador-derecha nav ul li a {
+            text-decoration: none;
+            background-color: black;
+            color: snow;
+            padding: 10px 15px;
+            display: block; }
+            header #main-nav-bar .navegador-derecha nav ul li a:hover {
+              text-decoration: none;
+              background-color: #FFE15D;
+              color: black;
+              font-weight: bold; }
+          header #main-nav-bar .navegador-derecha nav ul li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            margin: 0;
+            padding: 0; }
+            header #main-nav-bar .navegador-derecha nav ul li ul li:hover > ul {
+              display: flex;
+              flex-direction: column; }
+        header #main-nav-bar .navegador-derecha nav ul #contact-nav {
+          background-color: #FFE15D;
+          padding: 10px 15px;
+          color: black;
+          font-weight: bold;
+          text-wrap: nowrap;
+          margin-right: 5px; }
+          header #main-nav-bar .navegador-derecha nav ul #contact-nav:hover {
+            background-color: snow;
+            padding: 10px 15px;
+            color: black;
+            font-weight: bold; }
+  header #burguer-menu-container {
+    display: none; }
+
+/*!----- HERO -----*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 83vh;
+  background-image: url(../img/fondohero2.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  color: snow; }
+  .hero h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: hwb(0 98% 0%/0.727);
+    color: black; }
+  .hero a {
+    text-decoration: none;
+    font-size: 40px;
+    background-color: black;
+    color: #FFE15D;
+    border-radius: 10px;
+    padding: 10px; }
+    .hero a:hover {
+      background-color: #FFE15D;
+      color: black;
+      font-weight: bold; }
+
+/*!----- HERO END -----*/
+/*!----- SECTIONS -----*/
+.menu {
+  background-color: black; }
+  .menu .menu-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: snow;
+    padding: 20px; }
+    .menu .menu-h2 h2 {
+      border: snow 3px solid;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      color: snow;
+      text-align: center;
+      width: fit-content; }
+  .menu #sections {
+    display: flex;
+    background-color: black; }
+    .menu #sections div {
+      width: 25%;
+      height: 50vh;
+      position: relative;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .menu #sections div a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%); }
+        .menu #sections div a img:hover {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%); }
+      .menu #sections div h3 {
+        position: absolute;
+        bottom: 0;
+        font-size: 30px;
+        background-color: rgba(255, 250, 250, 0.682);
+        color: black;
+        padding: 10px;
+        width: 100%;
+        text-align: center; }
+
+/*!----- SECTIONS END -----*/
+/*!----- VALUES -----*/
+.values {
+  display: flex;
+  justify-content: center;
+  color: snow;
+  padding: 20px;
+  background-color: black; }
+  .values h2 {
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black; }
+
+.value {
+  background-image: url(../img/fondo-value-editado.png);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 170px;
+  text-align: center;
+  background-color: black; }
+  .value::before {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black; }
+  .value div {
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    justify-items: center;
+    border: black solid 2px;
+    background-color: #fffffdae;
+    opacity: .7; }
+    .value div:hover {
+      opacity: 0.9;
+      background-color: snow; }
+    .value div h2 {
+      font-size: 40px;
+      font-weight: bolder;
+      color: black;
+      width: 25%;
+      text-align: left;
+      border: black solid 3px;
+      background-color: #ffe666cc;
+      width: fit-content;
+      padding: 10px; }
+    .value div p {
+      font-size: 25px;
+      color: black;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-weight: bold; }
+  .value .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 20px; }
+  .value .delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 20px; }
+  .value .reliable {
+    grid-column: span 2;
+    padding: 20px; }
+  .value .assistance {
+    grid-column: span 2;
+    padding: 20px; }
+  .value .quality {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-column: span 4; }
+
+/*!----- VALUES END -----*/
+/*!----- FAQ -----*/
+.faq .faq-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px; }
+  .faq .faq-title-container .faq-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    color: snow;
+    text-align: center; }
+
+.faq .menu-faq .accordion-item {
+  background-color: black;
+  color: #FFE15D; }
+  .faq .menu-faq .accordion-item h2 .accordion-button {
+    font-size: 22px !important;
+    background-color: snow;
+    color: black; }
+
+/*!----- FAQ END -----*/
+/*!----- COVERAGE MAP -----*/
+.coverage-map {
+  background-color: black;
+  color: snow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px; }
+  .coverage-map h2 {
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black;
+    color: snow;
+    text-align: center; }
+  .coverage-map p {
+    color: #FFE15D;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px; }
+  .coverage-map a {
+    background-color: #FFE15D;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center; }
+
+/*!----- COVERAGE MAP END -----*/
+/*!----- WHATSAPP -----*/
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 40px; }
+  .whatsapp a img {
+    width: 8vh; }
+    .whatsapp a img:hover {
+      width: 10vh; }
+
+footer {
+  background: linear-gradient(black, #ffe666); }
+  footer section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    font-size: 20px;
+    border-top: solid snow 6px; }
+    footer section h2 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 60px;
+      text-align: center; }
+    footer section div form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch; }
+      footer section div form div input {
+        width: 100%;
+        font-size: 20px; }
+      footer section div form div textarea {
+        width: 100%;
+        font-size: 20px; }
+      footer section div form button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        background-color: black;
+        color: snow; }
+  footer .copyright {
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+    footer .copyright p {
+      background-color: black;
+      color: snow;
+      font-size: 15px;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; }
