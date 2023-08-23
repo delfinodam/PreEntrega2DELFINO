@@ -1,10 +1,8 @@
 /*!----- HERO -----*/
 
 .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;   
+    @extend %flex;
+    flex-direction: column;  
     width: 100%;
     height: 83vh;
     background-image: url(../img/fondohero2.jpg);
@@ -42,9 +40,7 @@
 .menu{
     background-color: $color-primario;
     .menu-h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         background-color: $color-primario;
         color: $color-secundario;
         padding: 20px;
@@ -130,12 +126,10 @@
     }
     div{
         margin: 3px;
-        display: flex;
+        @extend %flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         border-radius: 50px;
-        justify-items: center;
         border: rgb(0, 0, 0) solid 2px;
         background-color: #fffffdae;
         opacity: .7;
@@ -163,10 +157,8 @@
         }
     }
     .experience{
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         grid-column: span 2;
         grid-row: span 2;
         gap: 20px;
@@ -188,9 +180,7 @@
         padding: 20px;
     }
     .quality{
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        @extend %flex;
         grid-column: span 4;
     }
 }
@@ -201,15 +191,11 @@
 
 .faq{
     .faq-title-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         background-color: $color-primario;
         padding: 20px;
         .faq-title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
             border: snow 3px solid;
             padding: 20px;
             font-size: 30px;
@@ -241,10 +227,8 @@
 .coverage-map{
     background-color: $color-primario;
     color: $color-secundario;
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     padding: 20px;
     h2{
@@ -290,5 +274,214 @@
     }
 }
 
+/*!----- FOOTER END -----*/
 
+/*!----- ABOUT -----*/
 
+.about-us{
+    @extend %flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    section{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+        @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
+        }
+        h3{
+            color: $color-terciario;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        p{
+            color: $color-secundario;
+            text-align: center;
+            margin: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+/*!----- ABOUT END -----*/
+
+/*!----- TOURISTS -----*/
+
+.main-tourists{
+    @extend %mainpages;
+    img{}
+    section{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+            @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
+        }
+        p{
+            color: $color-secundario;
+            text-align: center;
+            margin: 20px; 
+            font-size: 18px;   
+        }
+        ul {
+            list-style: none;
+            li {
+                color: $color-secundario;
+                font-size: 18px;
+                .bullet {
+                    color: $color-terciario;
+                }
+            }
+        }
+        .chance{
+            color:$color-terciario;
+            margin-bottom: 15px;
+        }
+        a{
+            text-decoration: none;
+            background-color: map-get($button, bg-color);
+            color: map-get($button, text-color);
+            padding: 10px;
+            font-size: map-get($button, font-size);
+            margin-top: 20px;
+        }
+    }
+}
+
+/*!----- TOURISTS END -----*/
+
+/*!----- SEAMEN -----*/
+
+.main-seamen{
+    @extend %mainpages;
+    img{}
+    section{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+            @include h2pages($color-terciario, center, 40px, 40px, underline, 45px)
+        }
+        p{
+            color: $color-secundario;
+            text-align: center;
+            margin: 20px; 
+            font-size: 20px;   
+        }
+        ul {
+            list-style: none;
+            li {
+                color: $color-secundario;
+                font-size: 20px;
+                .bullet {
+                    color: $color-terciario;
+                }
+            }
+        }
+        .action{
+            color:$color-terciario;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            background-color: map-get($button, bg-color);
+            color: map-get($button, text-color);
+            padding: 10px;
+            font-size: map-get($button, font-size);
+            margin-top: 20px;
+        }
+    }
+}
+
+/*!----- SEAMEN END -----*/
+
+/*!----- AGENTS -----*/
+
+.main-agents{
+    @extend %mainpages;
+    img{}
+    section{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+            @include h2pages($color-terciario, center, 10px, 0px, underline, 45px)
+        }
+        h3{
+            color: $color-terciario;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $color-secundario;
+            text-align: center;
+            margin: 15px;
+        }
+        ul{
+            list-style: none;
+            li{
+                color: $color-secundario;
+                span{
+                    color: $color-terciario
+                }
+            }
+        }
+        .partner{
+            color: $color-terciario;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            background-color: map-get($button, bg-color);
+            color: map-get($button, text-color);
+            padding: 10px;
+            font-size: map-get($button, font-size);
+            margin-top: 20px;
+        }
+
+    }
+}
+
+/*!----- AGENTS END -----*/
+
+/*!----- RESELLERS -----*/
+
+.main-resellers{
+    @extend %mainpages;
+    section{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+            @include h2pages($color-terciario, center, 20px, 0px, underline, 45px)
+        }
+        p{
+            color: $color-secundario;
+            text-align: center;
+            margin: 15px;
+            font-size: 20px;
+        }
+        ul{
+            list-style: none;
+            li{
+                color: $color-secundario;
+                font-size: 20px;
+                span{
+                    color: $color-terciario;
+                }
+            }
+        }
+        .join{
+            color:$color-terciario;
+        }
+        a{
+            text-decoration: none;
+            background-color: map-get($button, bg-color);
+            color: map-get($button, text-color);
+            padding: 10px;
+            font-size: map-get($button, font-size);
+            margin-top: 20px;
+        }
+    }
+}

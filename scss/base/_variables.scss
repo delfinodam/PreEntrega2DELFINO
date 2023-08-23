@@ -1,3 +1,30 @@
 $color-primario: black;
 $color-secundario: snow;
 $color-terciario: #FFE15D;
+
+$button:(
+    bg-color:snow,
+    text-color: black,
+    font-size: 18px,
+);
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%mainpages{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+@mixin h2pages($color, $text-align, $margin-top, $margin-bottom, $text-decoration, $font-size){
+    color: $color;
+    text-align: $text-align;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    text-decoration: $text-decoration;
+    font-size: $font-size;
+}

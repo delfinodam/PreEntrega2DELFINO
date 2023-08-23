@@ -1,3 +1,13 @@
+.hero, .menu .menu-h2, .value div, .value .experience, .value .quality, .faq .faq-title-container, .faq .faq-title-container .faq-title, .coverage-map, .about-us, .about-us section, .main-tourists section, .main-seamen section, .main-agents section, .main-resellers section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-tourists, .main-seamen, .main-agents, .main-resellers {
+  display: flex;
+  height: 80vh;
+  background-color: #1f1e1e; }
+
 @font-face {
   font-family: "sailcoms";
   src: url(../scss/font/leelawdb.ttf); }
@@ -92,10 +102,7 @@ header {
 
 /*!----- HERO -----*/
 .hero {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 83vh;
   background-image: url(../img/fondohero2.jpg);
@@ -127,9 +134,6 @@ header {
 .menu {
   background-color: black; }
   .menu .menu-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     color: snow;
     padding: 20px; }
@@ -200,12 +204,9 @@ header {
     background-color: black; }
   .value div {
     margin: 3px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     border-radius: 50px;
-    justify-items: center;
     border: black solid 2px;
     background-color: #fffffdae;
     opacity: .7; }
@@ -229,10 +230,7 @@ header {
       margin-left: 20px;
       font-weight: bold; }
   .value .experience {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     grid-column: span 2;
     grid-row: span 2;
     gap: 20px; }
@@ -250,23 +248,14 @@ header {
     grid-column: span 2;
     padding: 20px; }
   .value .quality {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     grid-column: span 4; }
 
 /*!----- VALUES END -----*/
 /*!----- FAQ -----*/
 .faq .faq-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   padding: 20px; }
   .faq .faq-title-container .faq-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: snow 3px solid;
     padding: 20px;
     font-size: 30px;
@@ -288,10 +277,7 @@ header {
 .coverage-map {
   background-color: black;
   color: snow;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
   padding: 20px; }
   .coverage-map h2 {
@@ -325,6 +311,173 @@ header {
     width: 8vh; }
     .whatsapp a img:hover {
       width: 10vh; }
+
+/*!----- FOOTER END -----*/
+/*!----- ABOUT -----*/
+.about-us {
+  height: 80vh;
+  background-color: #1f1e1e;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+  .about-us section {
+    flex-direction: column; }
+    .about-us section h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 45px; }
+    .about-us section h3 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 30px; }
+    .about-us section p {
+      color: snow;
+      text-align: center;
+      margin: 15px;
+      font-size: 20px; }
+
+/*!----- ABOUT END -----*/
+/*!----- TOURISTS -----*/
+.main-tourists section {
+  flex-direction: column; }
+  .main-tourists section h2 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-size: 45px; }
+  .main-tourists section p {
+    color: snow;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px; }
+  .main-tourists section ul {
+    list-style: none; }
+    .main-tourists section ul li {
+      color: snow;
+      font-size: 18px; }
+      .main-tourists section ul li .bullet {
+        color: #FFE15D; }
+  .main-tourists section .chance {
+    color: #FFE15D;
+    margin-bottom: 15px; }
+  .main-tourists section a {
+    text-decoration: none;
+    background-color: snow;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px; }
+
+/*!----- TOURISTS END -----*/
+/*!----- SEAMEN -----*/
+.main-seamen section {
+  flex-direction: column; }
+  .main-seamen section h2 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-size: 45px; }
+  .main-seamen section p {
+    color: snow;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px; }
+  .main-seamen section ul {
+    list-style: none; }
+    .main-seamen section ul li {
+      color: snow;
+      font-size: 20px; }
+      .main-seamen section ul li .bullet {
+        color: #FFE15D; }
+  .main-seamen section .action {
+    color: #FFE15D;
+    margin-bottom: 30px; }
+  .main-seamen section a {
+    text-decoration: none;
+    background-color: snow;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px; }
+
+/*!----- SEAMEN END -----*/
+/*!----- AGENTS -----*/
+.main-agents section {
+  flex-direction: column; }
+  .main-agents section h2 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    font-size: 45px; }
+  .main-agents section h3 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .main-agents section p {
+    color: snow;
+    text-align: center;
+    margin: 15px; }
+  .main-agents section ul {
+    list-style: none; }
+    .main-agents section ul li {
+      color: snow; }
+      .main-agents section ul li span {
+        color: #FFE15D; }
+  .main-agents section .partner {
+    color: #FFE15D;
+    margin: 10px; }
+  .main-agents section a {
+    text-decoration: none;
+    background-color: snow;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px; }
+
+/*!----- AGENTS END -----*/
+/*!----- RESELLERS -----*/
+.main-resellers section {
+  flex-direction: column; }
+  .main-resellers section h2 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    font-size: 45px; }
+  .main-resellers section p {
+    color: snow;
+    text-align: center;
+    margin: 15px;
+    font-size: 20px; }
+  .main-resellers section ul {
+    list-style: none; }
+    .main-resellers section ul li {
+      color: snow;
+      font-size: 20px; }
+      .main-resellers section ul li span {
+        color: #FFE15D; }
+  .main-resellers section .join {
+    color: #FFE15D; }
+  .main-resellers section a {
+    text-decoration: none;
+    background-color: snow;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px; }
 
 footer {
   background: linear-gradient(black, #ffe666); }
@@ -373,3 +526,261 @@ footer {
       width: 100%;
       text-align: center;
       margin-top: 20px; }
+
+@media screen and (max-width: 1500px) {
+  main .menu #sections {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; }
+    main .menu #sections div {
+      width: 100%;
+      height: auto; } }
+
+@media screen and (max-width: 1450px) {
+  .main-agents section {
+    font-size: 15px; }
+  .main-agents img {
+    width: 45%; } }
+
+@media screen and (max-width: 1400px) {
+  main .hero h2 {
+    margin: 20px; } }
+
+.main-agents section {
+  font-size: 13px; }
+  .main-agents section h2 {
+    margin: 0; }
+
+@media screen and (max-width: 1200px) {
+  header section div {
+    width: 250px;
+    height: 150px; }
+  header section .navegador-derecha nav {
+    margin-bottom: 10px; } }
+
+main .value div p {
+  font-size: 23px; }
+
+@media screen and (max-width: 1120px) {
+  main .value div p {
+    font-size: 20px; }
+  main .value div h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1000px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0; }
+    .about-us section h2 {
+      font-size: 18px;
+      margin: 10px; }
+    .about-us section h3 {
+      font-size: 18px;
+      margin: 10px; }
+    .about-us section p {
+      font-size: 16px;
+      margin: 10px; } }
+
+@media screen and (max-width: 950px) {
+  header #main-nav-bar {
+    display: none; }
+  header #burguer-menu-container {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    padding: 0; }
+    header #burguer-menu-container .container-fluid {
+      background-color: black !important;
+      padding: 0;
+      height: 100%; }
+      header #burguer-menu-container .container-fluid img {
+        margin-left: 20px; }
+      header #burguer-menu-container .container-fluid .logo-burguer-nav {
+        height: 8vh;
+        width: 23vh; }
+      header #burguer-menu-container .container-fluid .navbar-toggler {
+        display: block;
+        margin-right: 20px; }
+      header #burguer-menu-container .container-fluid #offcanvasDarkNavbar {
+        background-color: black !important;
+        width: 50%;
+        height: 100vh;
+        opacity: 0.8; }
+        header #burguer-menu-container .container-fluid #offcanvasDarkNavbar .offcanvas-body ul li {
+          opacity: 1; }
+      header #burguer-menu-container .container-fluid #popup-menu {
+        width: 40vh; }
+        header #burguer-menu-container .container-fluid #popup-menu ul li #menu-dropdown {
+          width: 70%; }
+  main .value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .value div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      width: 100%; }
+      main .value div p {
+        font-size: 18px; }
+      main .value div h2 {
+        font-size: 25px; }
+  .menu-h2 h2 {
+    font-size: 38px; }
+  main .hero h2 {
+    font-size: 38px; }
+  main .hero a {
+    font-size: 38px; }
+  .main-tourists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .main-tourists img {
+      width: 100%; }
+    .main-tourists section {
+      font-size: 14px; }
+      .main-tourists section h2 {
+        margin-top: 20px; }
+      .main-tourists section a {
+        margin-bottom: 20px; }
+  .main-seamen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .main-seamen img {
+      width: 100%; }
+    .main-seamen section {
+      font-size: 14px; }
+      .main-seamen section h2 {
+        margin-top: 20px; }
+      .main-seamen section a {
+        margin-bottom: 20px; }
+  .main-agents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .main-agents img {
+      width: 100%; }
+    .main-agents section {
+      font-size: 14px; }
+      .main-agents section h2 {
+        margin-top: 20px; }
+      .main-agents section a {
+        margin-bottom: 20px; }
+  .main-resellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+    .main-resellers .main-resellers img {
+      width: 100%; }
+    .main-resellers section {
+      font-size: 14px; }
+      .main-resellers section h2 {
+        margin-top: 20px; }
+      .main-resellers section a {
+        margin-bottom: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .menu-h2 h2 {
+    font-size: 30px; }
+  main .hero h2 {
+    font-size: 30px; }
+  main .hero a {
+    font-size: 30px; }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0; }
+    .about-us section h2 {
+      font-size: 16px; }
+    .about-us section h3 {
+      font-size: 16px; }
+    .about-us section p {
+      font-size: 14px; } }
+
+@media screen and (max-width: 850) {
+  .menu-h2 h2 {
+    font-size: 28px; }
+  main .hero h2 {
+    font-size: 28px; }
+  main .hero a {
+    font-size: 28px; } }
+
+.about-us section h2 {
+  font-size: 20px; }
+
+.about-us section h3 {
+  font-size: 20px; }
+
+.about-us section p {
+  font-size: 18px; }
+
+@media screen and (max-width: 800) {
+  .menu-h2 h2 {
+    font-size: 25px; }
+  main .hero h2 {
+    font-size: 25px; }
+  main .hero a {
+    font-size: 25px; } }
+
+@media screen and (max-width: 750px) {
+  .accordion-button {
+    font-size: 18px !important; }
+  main .hero h2 {
+    font-size: 35px; }
+  main .hero a {
+    font-size: 35px; }
+  main .menu .menu-h2 h2 {
+    font-size: 35px; }
+  main .menu #sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    main .menu #sections div {
+      width: 100%;
+      height: auto; }
+      main .menu #sections div a img {
+        -webkit-filter: grayscale(0%); } }
+
+@media screen and (max-width: 550px) {
+  .about-us section h2 {
+    font-size: 18px; }
+  .about-us section h3 {
+    font-size: 18px; }
+  .about-us section p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 500px) {
+  header div img {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px; }
+  .accordion-button {
+    font-size: 15px !important; }
+  .main-agents section h3 {
+    font-size: 19px; } }
+
+@media screen and (max-width: 550px) {
+  .about-us section h2 {
+    font-size: 16px; }
+  .about-us section h3 {
+    font-size: 16px; }
+  .about-us section p {
+    font-size: 13px; } }
