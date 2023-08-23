@@ -311,11 +311,13 @@ main {
     position: fixed;
     bottom: 50px;
     right: 40px; }
-    main .whatsapp a img {
-      width: 8vh;
-      transition: 0.5s; }
-      main .whatsapp a img:hover {
-        width: 10vh; }
+    main .whatsapp a {
+      background: transparent; }
+      main .whatsapp a img {
+        width: 8vh;
+        transition: 0.5s; }
+        main .whatsapp a img:hover {
+          width: 10vh; }
 
 /*!----- INDEX END -----*/
 /*!----- ABOUT -----*/
@@ -380,6 +382,9 @@ main {
     font-size: 18px;
     margin-top: 20px; }
 
+.main-tourists .whatsapp a {
+  background-color: transparent; }
+
 /*!----- TOURISTS END -----*/
 /*!----- SEAMEN -----*/
 .main-seamen section {
@@ -413,6 +418,9 @@ main {
     padding: 10px;
     font-size: 18px;
     margin-top: 20px; }
+
+.main-seamen .whatsapp a {
+  background-color: transparent; }
 
 /*!----- SEAMEN END -----*/
 /*!----- AGENTS -----*/
@@ -454,6 +462,9 @@ main {
     font-size: 18px;
     margin-top: 20px; }
 
+.main-agents .whatsapp a {
+  background-color: transparent; }
+
 /*!----- AGENTS END -----*/
 /*!----- RESELLERS -----*/
 .main-resellers section {
@@ -487,6 +498,9 @@ main {
     padding: 10px;
     font-size: 18px;
     margin-top: 20px; }
+
+.main-resellers .whatsapp a {
+  background-color: transparent; }
 
 footer {
   background: linear-gradient(black, #ffe666); }

@@ -270,6 +270,7 @@ main{
         bottom: 50px;
         right: 40px;
         a{
+            background: transparent;
             img{
                 width: 8vh;
                 transition: 0.5s;
@@ -355,6 +356,11 @@ main{
             margin-top: 20px;
         }
     }
+    .whatsapp{
+        a{
+            background-color: transparent;
+        }
+    }
 }
 
 /*!----- TOURISTS END -----*/
@@ -397,6 +403,11 @@ main{
             padding: 10px;
             font-size: map-get($button, font-size);
             margin-top: 20px;
+        }
+    }
+    .whatsapp{
+        a{
+            background-color: transparent;
         }
     }
 }
@@ -449,7 +460,11 @@ main{
             font-size: map-get($button, font-size);
             margin-top: 20px;
         }
-
+    }
+    .whatsapp{
+        a{
+            background-color: transparent;
+        }
     }
 }
 
@@ -493,6 +508,11 @@ main{
             padding: 10px;
             font-size: map-get($button, font-size);
             margin-top: 20px;
+        }
+    }
+    .whatsapp{
+        a{
+            background-color: transparent;
         }
     }
 }
