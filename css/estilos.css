@@ -1,4 +1,4 @@
-.hero, .menu .menu-h2, .value div, .value .experience, .value .quality, .faq .faq-title-container, .faq .faq-title-container .faq-title, .coverage-map, .about-us, .about-us section, .main-tourists section, .main-seamen section, .main-agents section, .main-resellers section {
+main .hero, main .menu .menu-h2, main .value div, main .value .experience, main .value .quality, main .faq .faq-title-container, main .faq .faq-title-container .faq-title, main .coverage-map, .about-us, .about-us section, .main-tourists section, .main-seamen section, .main-agents section, .main-resellers section {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -60,7 +60,8 @@ header {
           float: left;
           font-size: 20px;
           margin-right: 20px;
-          position: relative; }
+          position: relative;
+          transition: 1s; }
           header #main-nav-bar .navegador-derecha nav ul li:hover > ul {
             display: flex;
             flex-direction: column; }
@@ -69,7 +70,8 @@ header {
             background-color: black;
             color: snow;
             padding: 10px 15px;
-            display: block; }
+            display: block;
+            transition: 1s; }
             header #main-nav-bar .navegador-derecha nav ul li a:hover {
               text-decoration: none;
               background-color: #FFE15D;
@@ -82,16 +84,19 @@ header {
             top: 100%;
             margin: 0;
             padding: 0; }
-            header #main-nav-bar .navegador-derecha nav ul li ul li:hover > ul {
-              display: flex;
-              flex-direction: column; }
+            header #main-nav-bar .navegador-derecha nav ul li ul li {
+              transition: 1s; }
+              header #main-nav-bar .navegador-derecha nav ul li ul li:hover > ul {
+                display: flex;
+                flex-direction: column; }
         header #main-nav-bar .navegador-derecha nav ul #contact-nav {
           background-color: #FFE15D;
           padding: 10px 15px;
           color: black;
           font-weight: bold;
           text-wrap: nowrap;
-          margin-right: 5px; }
+          margin-right: 5px;
+          transition: 1s; }
           header #main-nav-bar .navegador-derecha nav ul #contact-nav:hover {
             background-color: snow;
             padding: 10px 15px;
@@ -101,218 +106,218 @@ header {
     display: none; }
 
 /*!----- HERO -----*/
-.hero {
-  flex-direction: column;
-  width: 100%;
-  height: 83vh;
-  background-image: url(../img/fondohero2.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
-  color: snow; }
-  .hero h2 {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    background-color: hwb(0 98% 0%/0.727);
-    color: black; }
-  .hero a {
-    text-decoration: none;
-    font-size: 40px;
-    background-color: black;
-    color: #FFE15D;
-    border-radius: 10px;
-    padding: 10px; }
-    .hero a:hover {
-      background-color: #FFE15D;
-      color: black;
-      font-weight: bold; }
-
-/*!----- HERO END -----*/
-/*!----- SECTIONS -----*/
-.menu {
-  background-color: black; }
-  .menu .menu-h2 {
-    background-color: black;
+main {
+  /*!----- HERO END -----*/
+  /*!----- SECTIONS -----*/
+  /*!----- SECTIONS END -----*/
+  /*!----- VALUES -----*/
+  /*!----- VALUES END -----*/
+  /*!----- FAQ -----*/
+  /*!----- FAQ END -----*/
+  /*!----- COVERAGE MAP -----*/
+  /*!----- COVERAGE MAP END -----*/
+  /*!----- WHATSAPP -----*/ }
+  main h1 {
+    displaY: none; }
+  main .hero {
+    flex-direction: column;
+    width: 100%;
+    height: 83vh;
+    background-image: url(../img/fondohero2.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    color: snow; }
+    main .hero h2 {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      background-color: hwb(0 98% 0%/0.727);
+      color: black; }
+    main .hero a {
+      text-decoration: none;
+      font-size: 40px;
+      background-color: black;
+      color: #FFE15D;
+      border-radius: 10px;
+      padding: 10px;
+      transition: 2s; }
+      main .hero a:hover {
+        background-color: #FFE15D;
+        color: black;
+        font-weight: bold; }
+  main .menu {
+    background-color: black; }
+    main .menu .menu-h2 {
+      background-color: black;
+      color: snow;
+      padding: 20px; }
+      main .menu .menu-h2 h2 {
+        border: snow 3px solid;
+        padding: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        color: snow;
+        text-align: center;
+        width: fit-content; }
+    main .menu #sections {
+      display: flex;
+      background-color: black; }
+      main .menu #sections div {
+        width: 25%;
+        height: 50vh;
+        position: relative;
+        margin-left: 5px;
+        margin-right: 5px; }
+        main .menu #sections div a img {
+          object-fit: fill;
+          width: 100%;
+          height: 100%;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          transition: 1s; }
+          main .menu #sections div a img:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%); }
+        main .menu #sections div h3 {
+          position: absolute;
+          bottom: 0;
+          font-size: 30px;
+          background-color: rgba(255, 250, 250, 0.682);
+          color: black;
+          padding: 10px;
+          width: 100%;
+          text-align: center; }
+  main .values {
+    display: flex;
+    justify-content: center;
     color: snow;
-    padding: 20px; }
-    .menu .menu-h2 h2 {
+    padding: 20px;
+    background-color: black; }
+    main .values h2 {
       border: snow 3px solid;
       padding: 20px;
       font-size: 30px;
       font-weight: bold;
-      color: snow;
-      text-align: center;
-      width: fit-content; }
-  .menu #sections {
-    display: flex;
-    background-color: black; }
-    .menu #sections div {
-      width: 25%;
-      height: 50vh;
-      position: relative;
-      margin-left: 5px;
-      margin-right: 5px; }
-      .menu #sections div a img {
-        object-fit: fill;
-        width: 100%;
-        height: 100%;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%); }
-        .menu #sections div a img:hover {
-          filter: grayscale(0%);
-          -webkit-filter: grayscale(0%); }
-      .menu #sections div h3 {
-        position: absolute;
-        bottom: 0;
-        font-size: 30px;
-        background-color: rgba(255, 250, 250, 0.682);
-        color: black;
-        padding: 10px;
-        width: 100%;
-        text-align: center; }
-
-/*!----- SECTIONS END -----*/
-/*!----- VALUES -----*/
-.values {
-  display: flex;
-  justify-content: center;
-  color: snow;
-  padding: 20px;
-  background-color: black; }
-  .values h2 {
-    border: snow 3px solid;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: black; }
-
-.value {
-  background-image: url(../img/fondo-value-editado.png);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 170px;
-  text-align: center;
-  background-color: black; }
-  .value::before {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: black; }
-  .value div {
-    margin: 3px;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 50px;
-    border: black solid 2px;
-    background-color: #fffffdae;
-    opacity: .7; }
-    .value div:hover {
-      opacity: 0.9;
-      background-color: snow; }
-    .value div h2 {
-      font-size: 40px;
-      font-weight: bolder;
-      color: black;
-      width: 25%;
-      text-align: left;
-      border: black solid 3px;
-      background-color: #ffe666cc;
-      width: fit-content;
-      padding: 10px; }
-    .value div p {
-      font-size: 25px;
-      color: black;
-      margin-right: 20px;
-      margin-left: 20px;
-      font-weight: bold; }
-  .value .experience {
-    flex-direction: column;
-    grid-column: span 2;
-    grid-row: span 2;
-    gap: 20px; }
-  .value .delivery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-column: span 2;
-    grid-row: span 2;
-    gap: 20px; }
-  .value .reliable {
-    grid-column: span 2;
-    padding: 20px; }
-  .value .assistance {
-    grid-column: span 2;
-    padding: 20px; }
-  .value .quality {
-    grid-column: span 4; }
-
-/*!----- VALUES END -----*/
-/*!----- FAQ -----*/
-.faq .faq-title-container {
-  background-color: black;
-  padding: 20px; }
-  .faq .faq-title-container .faq-title {
-    border: snow 3px solid;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: black;
-    color: snow;
-    text-align: center; }
-
-.faq .menu-faq .accordion-item {
-  background-color: black;
-  color: #FFE15D; }
-  .faq .menu-faq .accordion-item h2 .accordion-button {
-    font-size: 22px !important;
-    background-color: snow;
-    color: black; }
-
-/*!----- FAQ END -----*/
-/*!----- COVERAGE MAP -----*/
-.coverage-map {
-  background-color: black;
-  color: snow;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px; }
-  .coverage-map h2 {
-    border: snow 3px solid;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: black;
-    color: snow;
-    text-align: center; }
-  .coverage-map p {
-    color: #FFE15D;
-    font-size: 25px;
+      background-color: black; }
+  main .value {
+    background-image: url(../img/fondo-value-editado.png);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 170px;
     text-align: center;
-    padding: 10px; }
-  .coverage-map a {
-    background-color: #FFE15D;
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 10px;
-    text-align: center; }
+    background-color: black; }
+    main .value::before {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-color: black; }
+    main .value div {
+      margin: 3px;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 50px;
+      border: black solid 2px;
+      background-color: #fffffdae;
+      opacity: .7;
+      transition: 1s; }
+      main .value div:hover {
+        opacity: 0.9;
+        background-color: snow; }
+      main .value div h2 {
+        font-size: 40px;
+        font-weight: bolder;
+        color: black;
+        width: 25%;
+        text-align: left;
+        border: black solid 3px;
+        background-color: #ffe666cc;
+        width: fit-content;
+        padding: 10px; }
+      main .value div p {
+        font-size: 25px;
+        color: black;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-weight: bold; }
+    main .value .experience {
+      flex-direction: column;
+      grid-column: span 2;
+      grid-row: span 2;
+      gap: 20px; }
+    main .value .delivery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: span 2;
+      grid-row: span 2;
+      gap: 20px; }
+    main .value .reliable {
+      grid-column: span 2;
+      padding: 20px; }
+    main .value .assistance {
+      grid-column: span 2;
+      padding: 20px; }
+    main .value .quality {
+      grid-column: span 4; }
+  main .faq .faq-title-container {
+    background-color: black;
+    padding: 20px; }
+    main .faq .faq-title-container .faq-title {
+      border: snow 3px solid;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: black;
+      color: snow;
+      text-align: center; }
+  main .faq .menu-faq .accordion-item {
+    background-color: black;
+    color: #FFE15D; }
+    main .faq .menu-faq .accordion-item h2 .accordion-button {
+      font-size: 22px !important;
+      background-color: snow;
+      color: black; }
+  main .coverage-map {
+    background-color: black;
+    color: snow;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; }
+    main .coverage-map h2 {
+      border: snow 3px solid;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: black;
+      color: snow;
+      text-align: center; }
+    main .coverage-map p {
+      color: #FFE15D;
+      font-size: 25px;
+      text-align: center;
+      padding: 10px; }
+    main .coverage-map a {
+      background-color: #FFE15D;
+      color: black;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+      text-align: center; }
+  main .whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 40px; }
+    main .whatsapp a img {
+      width: 8vh;
+      transition: 0.5s; }
+      main .whatsapp a img:hover {
+        width: 10vh; }
 
-/*!----- COVERAGE MAP END -----*/
-/*!----- WHATSAPP -----*/
-.whatsapp {
-  position: fixed;
-  bottom: 50px;
-  right: 40px; }
-  .whatsapp a img {
-    width: 8vh; }
-    .whatsapp a img:hover {
-      width: 10vh; }
-
-/*!----- FOOTER END -----*/
+/*!----- INDEX END -----*/
 /*!----- ABOUT -----*/
 .about-us {
   height: 80vh;
@@ -356,12 +361,12 @@ header {
     color: snow;
     text-align: center;
     margin: 20px;
-    font-size: 18px; }
+    font-size: 17px; }
   .main-tourists section ul {
     list-style: none; }
     .main-tourists section ul li {
       color: snow;
-      font-size: 18px; }
+      font-size: 17px; }
       .main-tourists section ul li .bullet {
         color: #FFE15D; }
   .main-tourists section .chance {
@@ -424,15 +429,18 @@ header {
     color: #FFE15D;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 25px; }
   .main-agents section p {
     color: snow;
     text-align: center;
-    margin: 15px; }
+    margin: 15px;
+    font-size: 16px; }
   .main-agents section ul {
     list-style: none; }
     .main-agents section ul li {
-      color: snow; }
+      color: snow;
+      font-size: 16px; }
       .main-agents section ul li span {
         color: #FFE15D; }
   .main-agents section .partner {
@@ -453,7 +461,7 @@ header {
   .main-resellers section h2 {
     color: #FFE15D;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
     text-decoration: underline;
     font-size: 45px; }
@@ -461,16 +469,17 @@ header {
     color: snow;
     text-align: center;
     margin: 15px;
-    font-size: 20px; }
+    font-size: 16px; }
   .main-resellers section ul {
     list-style: none; }
     .main-resellers section ul li {
       color: snow;
-      font-size: 20px; }
+      font-size: 16px; }
       .main-resellers section ul li span {
         color: #FFE15D; }
-  .main-resellers section .join {
-    color: #FFE15D; }
+  .main-resellers section .partner {
+    color: #FFE15D;
+    margin: 10px; }
   .main-resellers section a {
     text-decoration: none;
     background-color: snow;
@@ -537,36 +546,163 @@ footer {
       width: 100%;
       height: auto; } }
 
+@media screen and (max-width: 1460px) {
+  .main-seamen section h2 {
+    font-size: 38px; }
+  .main-seamen section p {
+    font-size: 18px; }
+  .main-seamen section ul li {
+    font-size: 18px; } }
+
 @media screen and (max-width: 1450px) {
-  .main-agents section {
+  .main-tourists section h2 {
+    font-size: 30px; }
+  .main-tourists section p {
     font-size: 15px; }
-  .main-agents img {
-    width: 45%; } }
+  .main-tourists section ul li {
+    font-size: 15px; }
+  .main-tourists img {
+    width: 45%; }
+  .main-agents section h2 {
+    font-size: 30px; }
+  .main-agents section h3 {
+    font-size: 25px; }
+  .main-agents section p {
+    font-size: 15px; }
+  .main-agents section ul li {
+    font-size: 15px; } }
 
 @media screen and (max-width: 1400px) {
   main .hero h2 {
     margin: 20px; } }
 
 .main-agents section {
-  font-size: 13px; }
+  font-size: 14px; }
   .main-agents section h2 {
     margin: 0; }
+
+@media screen and (max-width: 1350px) {
+  .main-tourists section h2 {
+    font-size: 28px; }
+  .main-tourists section p {
+    font-size: 15px; }
+  .main-tourists section ul li {
+    font-size: 15px; }
+  .main-agents section h2 {
+    font-size: 28px; }
+  .main-agents section h3 {
+    font-size: 20px; }
+  .main-agents section p {
+    font-size: 14px; }
+  .main-agents section ul li {
+    font-size: 14px; } }
+
+@media screen and (max-width: 1300px) {
+  .main-seamen section h2 {
+    font-size: 35px; }
+  .main-seamen section p {
+    font-size: 16px; }
+  .main-seamen section ul li {
+    font-size: 16px; }
+  .main-agents section h2 {
+    font-size: 25px; }
+  .main-agents section h3 {
+    font-size: 18px; }
+  .main-agents section p {
+    font-size: 13px; }
+  .main-agents section ul li {
+    font-size: 13px; }
+  .main-resellers section h2 {
+    font-size: 38px; }
+  .main-resellers section p {
+    font-size: 15px; }
+  .main-resellers section ul li {
+    font-size: 15px; } }
+
+@media screen and (max-width: 1220px) {
+  .main-agents section h2 {
+    font-size: 20px; }
+  .main-agents section h3 {
+    font-size: 16px; }
+  .main-agents section p {
+    font-size: 12px; }
+  .main-agents section ul li {
+    font-size: 12px; }
+  .main-resellers section h2 {
+    font-size: 35px; }
+  .main-resellers section p {
+    font-size: 14px; }
+  .main-resellers section ul li {
+    font-size: 14px; } }
 
 @media screen and (max-width: 1200px) {
   header section div {
     width: 250px;
     height: 150px; }
   header section .navegador-derecha nav {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .main-seamen section h2 {
+    font-size: 30px; }
+  .main-seamen section p {
+    font-size: 15px; }
+  .main-seamen section ul li {
+    font-size: 15px; }
+  main .value div p {
+    font-size: 23px; } }
 
-main .value div p {
-  font-size: 23px; }
+@media screen and (max-width: 1150px) {
+  .main-tourists section h2 {
+    font-size: 25px; }
+  .main-tourists section p {
+    font-size: 14px; }
+  .main-tourists section ul li {
+    font-size: 14px; }
+  .main-seamen section h2 {
+    font-size: 28px; }
+  .main-seamen section p {
+    font-size: 14px; }
+  .main-seamen section ul li {
+    font-size: 14px; } }
 
 @media screen and (max-width: 1120px) {
   main .value div p {
     font-size: 20px; }
   main .value div h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .main-seamen section h2 {
+    font-size: 25px; }
+  .main-seamen section p {
+    font-size: 13px; }
+  .main-seamen section ul li {
+    font-size: 13px; }
+  .main-resellers section h2 {
+    font-size: 30px; }
+  .main-resellers section p {
+    font-size: 13px; }
+  .main-resellers section ul li {
+    font-size: 13px; } }
+
+@media screen and (max-width: 1050px) {
+  .main-seamen section h2 {
+    font-size: 25px; }
+  .main-seamen section p {
+    font-size: 12px; }
+  .main-seamen section ul li {
+    font-size: 12px; }
+  .main-agents section h2 {
+    font-size: 18px; }
+  .main-agents section h3 {
+    font-size: 15px; }
+  .main-agents section p {
+    font-size: 11px; }
+  .main-agents section ul li {
+    font-size: 11px; }
+  .main-resellers section h2 {
+    font-size: 28px; }
+  .main-resellers section p {
+    font-size: 12px; }
+  .main-resellers section ul li {
+    font-size: 12px; } }
 
 @media screen and (max-width: 1000px) {
   .about-us {
@@ -582,7 +718,29 @@ main .value div p {
       margin: 10px; }
     .about-us section p {
       font-size: 16px;
-      margin: 10px; } }
+      margin: 10px; }
+  .main-seamen section h2 {
+    font-size: 25px; }
+  .main-seamen section p {
+    font-size: 11px; }
+  .main-seamen section ul li {
+    font-size: 11px; }
+  .main-agents section h2 {
+    font-size: 18px; }
+  .main-agents section h3 {
+    font-size: 15px; }
+  .main-agents section p {
+    font-size: 10px; }
+  .main-agents section ul li {
+    font-size: 10px; }
+  .main-resellers section h2 {
+    font-size: 20px; }
+  .main-resellers section p {
+    font-size: 11px; }
+  .main-resellers section a {
+    font-size: 15px; }
+  .main-resellers section ul li {
+    font-size: 11px; } }
 
 @media screen and (max-width: 950px) {
   header #main-nav-bar {
@@ -645,12 +803,16 @@ main .value div p {
     height: auto; }
     .main-tourists img {
       width: 100%; }
-    .main-tourists section {
-      font-size: 14px; }
-      .main-tourists section h2 {
-        margin-top: 20px; }
-      .main-tourists section a {
-        margin-bottom: 20px; }
+    .main-tourists section h2 {
+      margin-top: 38px;
+      font-size: 38px; }
+    .main-tourists section a {
+      margin-bottom: 38px; }
+    .main-tourists section ul li {
+      font-size: 15px; }
+    .main-tourists section p {
+      font-size: 14px;
+      font-size: 15px; }
   .main-seamen {
     display: flex;
     flex-direction: column;
@@ -659,12 +821,15 @@ main .value div p {
     height: auto; }
     .main-seamen img {
       width: 100%; }
-    .main-seamen section {
-      font-size: 14px; }
-      .main-seamen section h2 {
-        margin-top: 20px; }
-      .main-seamen section a {
-        margin-bottom: 20px; }
+    .main-seamen section h2 {
+      margin-top: 20px;
+      font-size: 38px; }
+    .main-seamen section p {
+      font-size: 15px; }
+    .main-seamen section ul li {
+      font-size: 15px; }
+    .main-seamen section a {
+      margin-bottom: 20px; }
   .main-agents {
     display: flex;
     flex-direction: column;
@@ -685,14 +850,27 @@ main .value div p {
     justify-content: center;
     align-items: center;
     height: auto; }
-    .main-resellers .main-resellers img {
+    .main-resellers img {
       width: 100%; }
     .main-resellers section {
       font-size: 14px; }
       .main-resellers section h2 {
-        margin-top: 20px; }
+        margin-top: 20px;
+        font-size: 30px; }
       .main-resellers section a {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+      .main-resellers section p {
+        font-size: 16px; }
+      .main-resellers section ul li {
+        font-size: 16px; }
+  .main-agents section h2 {
+    font-size: 28px; }
+  .main-agents section h3 {
+    font-size: 20px; }
+  .main-agents section p {
+    font-size: 15px; }
+  .main-agents section ul li {
+    font-size: 15px; } }
 
 @media screen and (max-width: 900px) {
   .menu-h2 h2 {
@@ -768,14 +946,12 @@ main .value div p {
     font-size: 16px; } }
 
 @media screen and (max-width: 500px) {
-  header div img {
-    width: 100%;
-    height: 100%;
-    margin-left: 10px; }
+  header #burguer-menu-container .container-fluid #offcanvasDarkNavbar {
+    width: 70%; }
   .accordion-button {
     font-size: 15px !important; }
   .main-agents section h3 {
-    font-size: 19px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 550px) {
   .about-us section h2 {
@@ -783,4 +959,4 @@ main .value div p {
   .about-us section h3 {
     font-size: 16px; }
   .about-us section p {
-    font-size: 13px; } }
+    font-size: 14px; } }

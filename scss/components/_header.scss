@@ -41,6 +41,7 @@ header{
                         font-size: 20px;  
                         margin-right: 20px;
                         position: relative;
+                        transition: 1s;
                         &:hover > ul{
                             display: flex;
                             flex-direction: column;
@@ -51,6 +52,7 @@ header{
                             color: $color-secundario;
                             padding: 10px 15px;
                             display: block;
+                            transition: 1s;
                             &:hover{
                                 text-decoration: none;
                                 background-color: $color-terciario;
@@ -66,6 +68,7 @@ header{
                             margin: 0; 
                             padding: 0; 
                             li{
+                                transition: 1s;
                                 &:hover > ul{
                                     display: flex;
                                     flex-direction: column;
@@ -80,6 +83,7 @@ header{
                         font-weight: bold;
                         text-wrap: nowrap;
                         margin-right: 5px;
+                        transition: 1s;
                         &:hover{
                             background-color:$color-secundario;
                             padding: 10px 15px; 

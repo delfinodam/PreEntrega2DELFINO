@@ -15,13 +15,59 @@
     }
 } 
 
-@media screen and (max-width:1450px){
-    .main-agents{
+@media screen and (max-width:1460px){
+    .main-seamen{
         section {
-            font-size: 15px;
+            h2{
+                font-size: nth($sizes, 10 );
+            }
+            p{
+                font-size: nth($sizes, 4 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 4 );
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1450px){
+    .main-tourists{
+        section {
+            h2{
+                font-size: nth($sizes, 8 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
+            }
         }
         img{
             width: 45%;
+        }
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 8 );
+            }
+            h3{
+                font-size: nth($sizes, 6 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
+            }
         }
     }
 }
@@ -38,14 +84,136 @@
 
     .main-agents{
         section{
-            font-size: 13px;
+            font-size: nth($sizes , 1 );
             h2{
                 margin: 0;
             }
         }
     } 
 
-    
+@media screen and (max-width:1350px){
+    .main-tourists{
+        section {
+            h2{
+                font-size: nth($sizes, 7 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
+            }
+        }
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 7 );
+            }
+            h3{
+                font-size: nth($sizes, 5 );
+            }
+            p{
+                font-size: nth($sizes, 1 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 1 );
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1300px){
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 9 );
+            }
+            p{
+                font-size: nth($sizes, 3 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 3 );
+                }
+            }
+        }
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 6 );
+            }
+            h3{
+                font-size: nth($sizes, 4 );
+            }
+            p{
+                font-size: 13px;
+            }
+            ul{
+                li{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .main-resellers{
+        section {
+            h2{
+                font-size: nth($sizes, 10 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1220px){
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 5 );
+            }
+            h3{
+                font-size: nth($sizes, 3 );
+            }
+            p{
+                font-size: 12px;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .main-resellers{
+        section {
+            h2{
+                font-size: nth($sizes, 9 );
+            }
+            p{
+                font-size: nth($sizes, 1 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 1 );
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1200px){
     header{
         section{
@@ -58,50 +226,228 @@
                     margin-bottom: 10px;
                 }
             }
+        }
+    }
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 8 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
             }
         }
-}
-
+    }
     main .value div p{
         font-size: 23px;
     }
+}
+
+@media screen and (max-width:1150px){
+    .main-tourists{
+        section {
+            h2{
+                font-size: nth($sizes, 6 );
+            }
+            p{
+                font-size: nth($sizes, 1 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 1 );
+                }
+            }
+        }
+    }
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 7 );
+            }
+            p{
+                font-size: nth($sizes, 1 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 1 );
+                }
+            }
+        }
+    }
+}
     
 @media screen and (max-width:1120px){
     main{
         .value{
             div{
                 p{
-                    font-size: 20px;
+                    font-size: nth($sizes , 5 );
                 }
                 h2{
-                    font-size: 30px;
+                    font-size: nth($sizes , 8 );
+                }
+            }
+        }
+    }
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 6 );
+            }
+            p{
+                font-size: 13px;
+            }
+            ul{
+                li{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .main-resellers{
+        section {
+            h2{
+                font-size: nth($sizes, 8 );
+            }
+            p{
+                font-size: 13px;
+            }
+            ul{
+                li{
+                    font-size: 13px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width:1000px){
-.about-us{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:0;
-    section{
-        h2{
-            font-size: 18px;
-            margin: 10px;  
+@media screen and (max-width:1050px){
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 6 );
+            }
+            p{
+                font-size: 12px;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
         }
-        h3{
-            font-size: 18px;  
-            margin:10px;
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 4 );
+            }
+            h3{
+                font-size: nth($sizes, 2 );
+            }
+            p{
+                font-size: 11px;
+            }
+            ul{
+                li{
+                    font-size: 11px;
+                }
+            }
         }
-        p{
-            font-size: 16px;  
-            margin: 10px;
+    }
+    .main-resellers{
+        section {
+            h2{
+                font-size: nth($sizes, 7 );
+            }
+            p{
+                font-size: 12px;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
+@media screen and (max-width:1000px){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0;
+        section{
+            h2{
+                font-size: nth($sizes , 4 );
+                margin: 10px;  
+            }
+            h3{
+                font-size: nth($sizes , 4 );  
+                margin:10px;
+            }
+            p{
+                font-size: nth($sizes , 3 );  
+                margin: 10px;
+            }
+        }
+    }
+    .main-seamen{
+        section {
+            h2{
+                font-size: nth($sizes, 6 );
+            }
+            p{
+                font-size: 11px;
+            }
+            ul{
+                li{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 4 );
+            }
+            h3{
+                font-size: nth($sizes, 2 );
+            }
+            p{
+                font-size: 10px;
+            }
+            ul{
+                li{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .main-resellers{
+        section {
+            h2{
+                font-size: nth($sizes, 5 );
+            }
+            p{
+                font-size: 11px;
+            }
+            a{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:950px){
@@ -171,10 +517,10 @@
                 padding: 20px;
                 width: 100%;
                 p{
-                    font-size: 18px;
+                    font-size: nth($sizes , 4 );
                 }
                 h2 {
-                    font-size: 25px;
+                    font-size: nth($sizes , 6 );
                 }
             } 
         } 
@@ -182,17 +528,17 @@
 
     .menu-h2{
         h2{
-            font-size: 38px;
+            font-size: nth($sizes , 10 );
         }
     }
 
     main{
         .hero{
             h2{
-                font-size: 38px;
+                font-size: nth($sizes , 10 );
             }
             a{
-                font-size: 38px;    
+                font-size: nth($sizes , 10 );    
             }
         } 
     } 
@@ -207,12 +553,21 @@
                 width: 100%;
             }
             section {
-                font-size: 14px;
                 h2{
-                    margin-top: 20px;
+                    margin-top: 38px;
+                    font-size: nth($sizes, 10);
                 }
                 a{
-                    margin-bottom: 20px;
+                    margin-bottom: 38px;
+                }
+                ul{
+                    li{
+                        font-size: nth($sizes, 2);
+                    }
+                }
+                p{
+                    font-size: nth($sizes , 1 );
+                    font-size: nth($sizes, 2);
                 }
             }
         }
@@ -227,9 +582,17 @@
             width: 100%;
         }
         section {
-            font-size: 14px;
             h2{
                 margin-top: 20px;
+                font-size: nth($sizes, 10);
+            }
+            p{
+                font-size: nth($sizes, 2);
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2);
+                }
             }
             a{
                 margin-bottom: 20px;
@@ -247,7 +610,7 @@
             width: 100%;
         }
         section {
-            font-size: 14px;
+            font-size: nth($sizes , 1 );
             h2{
                 margin-top: 20px;
             }
@@ -263,36 +626,62 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        .main-resellers img{
+        img{
             width: 100%;
         }
         section{
-            font-size: 14px;
+            font-size: nth($sizes , 1 );
             h2{
                 margin-top: 20px;
+                font-size: nth($sizes, 8);
             }
             a{
                 margin-bottom: 20px;
             }
+            p{
+                font-size: nth($sizes, 3);
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 3);
+                }
+            }
         }
-            
+    }
+    .main-agents{
+        section {
+            h2{
+                font-size: nth($sizes, 7 );
+            }
+            h3{
+                font-size: nth($sizes, 5 );
+            }
+            p{
+                font-size: nth($sizes, 2 );
+            }
+            ul{
+                li{
+                    font-size: nth($sizes, 2 );
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width:900px){
     .menu-h2{
         h2{
-            font-size: 30px;
+            font-size: nth($sizes , 8 );
         }
     } 
 
 main {
     .hero{
         h2{
-            font-size: 30px;
+            font-size: nth($sizes , 8 );
         }
         a{
-            font-size: 30px;    
+            font-size: nth($sizes , 8 );    
         }
     } 
 }
@@ -303,13 +692,13 @@ main {
     margin:0;
     section{
         h2{
-            font-size: 16px;
+            font-size: nth($sizes , 3 );
         }
         h3{
-            font-size: 16px;  
+            font-size: nth($sizes , 3 );  
         }
         p{
-            font-size: 14px;  
+            font-size: nth($sizes , 1 );  
         }
     }
 }
@@ -318,16 +707,16 @@ main {
 @media screen and (max-width:850){
 .menu-h2{
     h2{
-        font-size: 28px;
+        font-size: nth($sizes , 7 );
     }
 } 
 main{
     .hero{
         h2{
-            font-size: 28px;
+            font-size: nth($sizes , 7 );
         }
         a{
-            font-size: 28px;    
+            font-size: nth($sizes , 7 );    
         }
     } 
 } 
@@ -335,13 +724,13 @@ main{
 .about-us{
     section{
         h2{
-            font-size: 20px;  
+            font-size: nth($sizes , 5 );  
         }
         h3{
-            font-size: 20px;  
+            font-size: nth($sizes , 5 );  
         }
         p{
-            font-size: 18px;  
+            font-size: nth($sizes , 4 );  
         }
     }
 }
@@ -350,16 +739,16 @@ main{
 @media screen and (max-width:800){
 .menu-h2{
         h2{
-            font-size: 25px;
+            font-size: nth($sizes , 6 );
         }
 } 
 main{
     .hero{
         h2{
-            font-size: 25px;
+            font-size: nth($sizes , 6 );
         }
         a{
-            font-size: 25px;    
+            font-size: nth($sizes , 6 );    
         }
     } 
 } 
@@ -367,21 +756,21 @@ main{
     
 @media screen and (max-width:750px){
     .accordion-button{
-        font-size: 18px !important;
+        font-size: nth($sizes , 4 ) !important;
     }
     main{
         .hero{
             h2{
-                font-size: 35px;
+                font-size: nth($sizes , 9 );
             }
             a{
-                font-size: 35px;    
+                font-size: nth($sizes , 9 );    
             }
         } 
         .menu{
             .menu-h2{
                 h2{
-                    font-size: 35px;
+                    font-size: nth($sizes , 9 );
                 }
             }
             #sections{
@@ -407,53 +796,53 @@ main{
     .about-us{
         section{
             h2{
-                font-size: 18px;  
+                font-size: nth($sizes , 4 );  
             }
             h3{
-                font-size: 18px;  
+                font-size: nth($sizes , 4 );  
             }
             p{
-                font-size: 16px;  
+                font-size: nth($sizes , 3 );  
             }
         }
     }
 }
 
-@media screen and (max-width:500px){
-header{
-    div{
-        img {
-            width: 100%;
-            height: 100%;
-            margin-left: 10px;
-        }
-    } 
-} 
-
-.accordion-button{
-    font-size: 15px !important;
-}
-    
-.main-agents{
-    section{
-        h3{
-            font-size: 19px;
+@media screen and (max-width:500px){ 
+    header{
+        #burguer-menu-container{
+            .container-fluid{
+                #offcanvasDarkNavbar{
+                    width: 70%;
+                }
+            }
         }
     }
-} 
+
+    .accordion-button{
+        font-size: nth($sizes , 2 ) !important;
+    }
+        
+    .main-agents{
+        section{
+            h3{
+                font-size: nth($sizes , 5 );
+            }
+        }
+    } 
 }
 
 @media screen and (max-width:550px){
     .about-us{
         section{
             h2{
-                font-size: 16px;  
+                font-size: nth($sizes , 3 );  
             }
             h3{
-                font-size: 16px;  
+                font-size: nth($sizes , 3 );  
             }
             p{
-                font-size: 13px;  
+                font-size: nth($sizes , 1 );  
             }
         }
     }
