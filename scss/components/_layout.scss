@@ -4,11 +4,11 @@ main{
     }
     .hero{
         @extend %flex;
-        flex-direction: column;  
+        flex-direction: column;
         width: 100%;
         height: 83vh;
         background-image: url(../img/fondohero2.jpg);
-        background-size: cover; 
+        background-size: cover;
         background-position:top center;
         background-attachment: fixed;
         color:$color-secundario;
@@ -41,11 +41,13 @@ main{
 /*!----- SECTIONS -----*/
 
     .menu{
-        background-color: $color-primario;
         .menu-h2{
             @extend %flex;
-            background-color: $color-primario;
-            color: $color-secundario;
+            background: $color-primario;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            // color: $color-secundario;
             padding: 20px;
             h2{
                 border: snow 3px solid;
@@ -295,10 +297,12 @@ main{
     section{
         @extend %flex;
         flex-direction: column;
-        h2{
-        @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
+        h4{
+        color: $color-terciario;
+        text-decoration: underline;
+        font-size: 40px;
         }
-        h3{
+        h5{
             color: $color-terciario;
             text-align: center;
             margin-top: 20px;
@@ -319,93 +323,376 @@ main{
 /*!----- TOURISTS -----*/
 
 .main-tourists{
-    @extend %mainpages;
-    img{}
-    section{
-        @extend %flex;
-        flex-direction: column;
-        h2{
-            @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
-        }
-        p{
-            color: $color-secundario;
-            text-align: center;
-            margin: 20px; 
-            font-size: 17px;   
-        }
-        ul {
-            list-style: none;
-            li {
+    .hero-tourists{
+        display: flex;
+        height: 60vh;
+        background-color: rgb(31, 30, 30);;
+        img{}
+        div{
+            @extend %flex;
+            flex-direction: column;
+            h2{
+                @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
+            }
+            p{
                 color: $color-secundario;
+                text-align: center;
+                margin: 20px;
                 font-size: 17px;
-                .bullet {
-                    color: $color-terciario;
+            }
+            ul {
+                list-style: none;
+                li {
+                    color: $color-secundario;
+                    font-size: 17px;
+                    .bullet {
+                        color: $color-terciario;
+                    }
                 }
             }
+            .chance{
+                color:$color-terciario;
+                margin-bottom: 15px;
+            }
         }
-        .chance{
-            color:$color-terciario;
-            margin-bottom: 15px;
+    }
+    .cards-h2{
+        border-bottom: 3px $color-secundario solid;
+        border-top: 3px $color-secundario solid;
+        display: flex;
+        justify-content: center;
+        color: $color-secundario;
+        padding: 20px;
+        background-color: $color-primario;
+        height: 10vh;
+        h2{
+            border: $color-terciario 2px solid;
+            padding: 20px;
+            font-size: 25px;
+            align-self: center;
+            font-weight: bold;
+            background-color: $color-primario;
+            margin: 0;
         }
-        a{
-            text-decoration: none;
-            background-color: map-get($button, bg-color);
-            color: map-get($button, text-color);
-            padding: 10px;
-            font-size: map-get($button, font-size);
-            margin-top: 20px;
+    }
+    .cards{
+        height: 60vh;
+        background-color: $color-primario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .four, .ten, .twenty-five, .fourty{
+            background-color: $color-terciario;
+            opacity: 0.9;
+            @extend %flex;
+            flex-direction: column;
+            width: 240px;
+            margin: 20px;
+            .card-title{
+                @extend %flex;
+                width: 100%;
+                h3{
+                    display: flex;
+                    align-items: center;
+                    background-color: $color-terciario;
+                    font-size: 30px;
+                    margin: 0px;
+                    height: 60px;
+                }
+            }
+            .duration{
+                @extend %flex;
+                height: 80%;
+                width: 100%;
+                background-color: $color-secundario;
+                border-top: $color-primario solid 2px;
+                border-bottom: $color-primario solid 2px;
+                padding: 10px;
+                img{
+                    width: 15%;
+                    margin-left: 10px;
+                }
+                p{
+                    font-size: 17px;
+                    width: 100%;
+                    margin: 0px 0px 0px 10px;
+                }
+            }
+            .includes{
+                background-color: $color-secundario;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                justify-content:center;
+                width: 100%;
+                height: 10%;
+                border-bottom: $color-primario solid 2px;
+                padding-left: 10px;
+                .includes-header{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    img{
+                        width: 15%;
+                        margin-left: 10px;
+                        align-self:flex-start;
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-size: 17px;
+                        
+                    }
+                }
+                .includes-list{
+                    width: 100%;
+                    ul{
+                        width: 90%;
+                        list-style: none;
+                        padding: 0;
+                        p{
+                            width: 110%;
+                            font-size:14px;
+                            text-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            align-self: center;
+                        }
+                        li{
+                            width: 100%;
+                            font-size: 14px;
+                            img{
+                                width: 40px;
+                                margin-right: 20px;
+                                margin-left: 5px;
+                            }
+                            ul{
+                                display: flex;
+                                flex-direction: row;
+                                padding: 0;
+                                margin-top: 10px;
+                                li{
+                                    width: 100%;
+                                    color: $color-primario;
+                                    img{
+                                        width: 32px;
+                                        margin: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cost{
+                width: 100%;
+                height: 40px;
+                h5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    height: 100%;
+                    font-size: 25px;
+                }
+            }
+            transition: 1s;
+            &:hover{
+                border-radius: 40px;
+            }
         }
     }
     .whatsapp{
+        height: auto;
         a{
             background-color: transparent;
         }
     }
 }
-
 /*!----- TOURISTS END -----*/
 
 /*!----- SEAMEN -----*/
 
 .main-seamen{
-    @extend %mainpages;
-    img{}
-    section{
-        @extend %flex;
-        flex-direction: column;
-        h2{
-            @include h2pages($color-terciario, center, 40px, 40px, underline, 45px)
-        }
-        p{
-            color: $color-secundario;
-            text-align: center;
-            margin: 20px; 
-            font-size: 20px;   
-        }
-        ul {
-            list-style: none;
-            li {
+    .hero-seamen{
+        display: flex;
+        height: 60vh;
+        background-color: rgb(31, 30, 30);;
+        img{}
+        div{
+            @extend %flex;
+            flex-direction: column;
+            h2{
+                @include h2pages($color-terciario, center, 30px, 30px, underline, 45px)
+            }
+            p{
                 color: $color-secundario;
-                font-size: 20px;
-                .bullet {
-                    color: $color-terciario;
+                text-align: center;
+                margin: 20px;
+                font-size: 17px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    color: $color-secundario;
+                    font-size: 17px;
+                    .bullet {
+                        color: $color-terciario;
+                    }
                 }
             }
+            .action{
+                color:$color-terciario;
+                margin-bottom: 15px;
+            }
         }
-        .action{
-            color:$color-terciario;
-            margin-bottom: 30px;
+    }
+    .cards-h2{
+        border-bottom: 3px $color-secundario solid;
+        border-top: 3px $color-secundario solid;
+        display: flex;
+        justify-content: center;
+        color: $color-secundario;
+        padding: 20px;
+        background-color: $color-primario;
+        height: 10vh;
+        h2{
+            border: $color-terciario 2px solid;
+            padding: 20px;
+            font-size: 25px;
+            align-self: center;
+            font-weight: bold;
+            background-color: $color-primario;
+            margin: 0;
         }
-        a{
-            text-decoration: none;
-            background-color: map-get($button, bg-color);
-            color: map-get($button, text-color);
-            padding: 10px;
-            font-size: map-get($button, font-size);
-            margin-top: 20px;
+    }
+    .cards{
+        height: 60vh;
+        background-color: $color-primario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .four, .ten, .twenty-five, .fourty{
+            background-color: $color-terciario;
+            opacity: 0.9;
+            @extend %flex;
+            flex-direction: column;
+            width: 25vh;
+            margin: 20px;
+            .card-title{
+                @extend %flex;
+                width: 100%;
+                h3{
+                    display: flex;
+                    align-items: center;
+                    background-color: $color-terciario;
+                    font-size: 30px;
+                    margin: 0px;
+                    height: 60px;
+                }
+            }
+            .duration{
+                @extend %flex;
+                height: 80%;
+                width: 100%;
+                background-color: $color-secundario;
+                border-top: $color-primario solid 2px;
+                border-bottom: $color-primario solid 2px;
+                padding: 10px;
+                img{
+                    width: 15%;
+                    margin-left: 10px;
+                }
+                p{
+                    font-size: 17px;
+                    width: 100%;
+                    margin: 0px 0px 0px 10px;
+                }
+            }
+            .includes{
+                background-color: $color-secundario;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                justify-content:center;
+                width: 100%;
+                height: 10%;
+                border-bottom: $color-primario solid 2px;
+                padding-left: 10px;
+                .includes-header{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    img{
+                        width: 15%;
+                        margin-left: 10px;
+                        align-self:flex-start;
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-size: 17px;
+                        
+                    }
+                }
+                .includes-list{
+                    width: 100%;
+                    ul{
+                        width: 90%;
+                        list-style: none;
+                        padding: 0;
+                        p{
+                            width: 110%;
+                            font-size:14px;
+                            text-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            align-self: center;
+                        }
+                        li{
+                            width: 100%;
+                            font-size: 14px;
+                            img{
+                                width: 40px;
+                                margin-right: 20px;
+                                margin-left: 5px;
+                            }
+                            ul{
+                                display: flex;
+                                flex-direction: row;
+                                padding: 0;
+                                margin-top: 10px;
+                                li{
+                                    width: 100%;
+                                    color: $color-primario;
+                                    img{
+                                        width: 32px;
+                                        margin: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cost{
+                width: 100%;
+                height: 40px;
+                h5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    height: 100%;
+                    font-size: 25px;
+                }
+            }
+            transition: 1s;
+            &:hover{
+                border-radius: 40px;
+            }
         }
     }
     .whatsapp{
+        height: auto;
         a{
             background-color: transparent;
         }
@@ -481,6 +768,13 @@ main{
         h2{
             @include h2pages($color-terciario, center, 10px, 0px, underline, 45px)
         }
+        h3{
+            color: $color-terciario;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: nth($sizes , 6 )
+        }
         p{
             color: $color-secundario;
             text-align: center;
@@ -497,7 +791,7 @@ main{
                 }
             }
         }
-        .partner{
+        .join{
             color: $color-terciario;
             margin: 10px;
         }

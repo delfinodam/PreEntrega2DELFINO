@@ -32,6 +32,19 @@ header{
                 color: $color-terciario;
                 font-size: 40px;
                 margin: 20px;
+                animation: connect 10s ease-in 0s infinite normal forwards;
+                @keyframes connect {
+                    0%,
+                    50%,
+                    100% {
+                        opacity: 1;
+                    }
+                
+                    25%,
+                    75% {
+                        opacity: 0;
+                    }
+                }
             }
             nav{
                 ul{
@@ -40,8 +53,7 @@ header{
                         float: left;
                         font-size: 20px;  
                         margin-right: 20px;
-                        position: relative;
-                        transition: 1s;
+                        position: relative; 
                         &:hover > ul{
                             display: flex;
                             flex-direction: column;
@@ -52,7 +64,7 @@ header{
                             color: $color-secundario;
                             padding: 10px 15px;
                             display: block;
-                            transition: 1s;
+                            transition: 0.5s;
                             &:hover{
                                 text-decoration: none;
                                 background-color: $color-terciario;
@@ -67,8 +79,17 @@ header{
                             top: 100%;
                             margin: 0; 
                             padding: 0; 
+                            animation: myAnim 1s ease 0s 1 normal forwards;
+                            @keyframes myAnim {
+                                0% {
+                                    opacity: 0;
+                                }
+                            
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
                             li{
-                                transition: 1s;
                                 &:hover > ul{
                                     display: flex;
                                     flex-direction: column;
@@ -83,7 +104,6 @@ header{
                         font-weight: bold;
                         text-wrap: nowrap;
                         margin-right: 5px;
-                        transition: 1s;
                         &:hover{
                             background-color:$color-secundario;
                             padding: 10px 15px; 

@@ -1,9 +1,9 @@
-main .hero, main .menu .menu-h2, main .value div, main .value .experience, main .value .quality, main .faq .faq-title-container, main .faq .faq-title-container .faq-title, main .coverage-map, .about-us, .about-us section, .main-tourists section, .main-seamen section, .main-agents section, .main-resellers section {
+main .hero, main .menu .menu-h2, main .value div, main .value .experience, main .value .quality, main .faq .faq-title-container, main .faq .faq-title-container .faq-title, main .coverage-map, .about-us, .about-us section, .main-tourists .hero-tourists div, .main-tourists .cards .four, .main-tourists .cards .ten, .main-tourists .cards .twenty-five, .main-tourists .cards .fourty, .main-tourists .cards .four .card-title, .main-tourists .cards .ten .card-title, .main-tourists .cards .twenty-five .card-title, .main-tourists .cards .fourty .card-title, .main-tourists .cards .four .duration, .main-tourists .cards .ten .duration, .main-tourists .cards .twenty-five .duration, .main-tourists .cards .fourty .duration, .main-seamen .hero-seamen div, .main-seamen .cards .four, .main-seamen .cards .ten, .main-seamen .cards .twenty-five, .main-seamen .cards .fourty, .main-seamen .cards .four .card-title, .main-seamen .cards .ten .card-title, .main-seamen .cards .twenty-five .card-title, .main-seamen .cards .fourty .card-title, .main-seamen .cards .four .duration, .main-seamen .cards .ten .duration, .main-seamen .cards .twenty-five .duration, .main-seamen .cards .fourty .duration, .main-agents section, .main-resellers section {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.main-tourists, .main-seamen, .main-agents, .main-resellers {
+.main-agents, .main-resellers {
   display: flex;
   height: 80vh;
   background-color: #1f1e1e; }
@@ -53,15 +53,24 @@ header {
       header #main-nav-bar .navegador-derecha h2 {
         color: #FFE15D;
         font-size: 40px;
-        margin: 20px; }
+        margin: 20px;
+        animation: connect 10s ease-in 0s infinite normal forwards; }
+
+@keyframes connect {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
       header #main-nav-bar .navegador-derecha nav ul {
         list-style: none; }
         header #main-nav-bar .navegador-derecha nav ul li {
           float: left;
           font-size: 20px;
           margin-right: 20px;
-          position: relative;
-          transition: 1s; }
+          position: relative; }
           header #main-nav-bar .navegador-derecha nav ul li:hover > ul {
             display: flex;
             flex-direction: column; }
@@ -71,7 +80,7 @@ header {
             color: snow;
             padding: 10px 15px;
             display: block;
-            transition: 1s; }
+            transition: 0.5s; }
             header #main-nav-bar .navegador-derecha nav ul li a:hover {
               text-decoration: none;
               background-color: #FFE15D;
@@ -83,20 +92,24 @@ header {
             left: 0;
             top: 100%;
             margin: 0;
-            padding: 0; }
-            header #main-nav-bar .navegador-derecha nav ul li ul li {
-              transition: 1s; }
-              header #main-nav-bar .navegador-derecha nav ul li ul li:hover > ul {
-                display: flex;
-                flex-direction: column; }
+            padding: 0;
+            animation: myAnim 1s ease 0s 1 normal forwards; }
+
+@keyframes myAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+            header #main-nav-bar .navegador-derecha nav ul li ul li:hover > ul {
+              display: flex;
+              flex-direction: column; }
         header #main-nav-bar .navegador-derecha nav ul #contact-nav {
           background-color: #FFE15D;
           padding: 10px 15px;
           color: black;
           font-weight: bold;
           text-wrap: nowrap;
-          margin-right: 5px;
-          transition: 1s; }
+          margin-right: 5px; }
           header #main-nav-bar .navegador-derecha nav ul #contact-nav:hover {
             background-color: snow;
             padding: 10px 15px;
@@ -147,48 +160,48 @@ main {
         background-color: #FFE15D;
         color: black;
         font-weight: bold; }
-  main .menu {
-    background-color: black; }
-    main .menu .menu-h2 {
-      background-color: black;
+  main .menu .menu-h2 {
+    background: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; }
+    main .menu .menu-h2 h2 {
+      border: snow 3px solid;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
       color: snow;
-      padding: 20px; }
-      main .menu .menu-h2 h2 {
-        border: snow 3px solid;
-        padding: 20px;
+      text-align: center;
+      width: fit-content; }
+  main .menu #sections {
+    display: flex;
+    background-color: black; }
+    main .menu #sections div {
+      width: 25%;
+      height: 50vh;
+      position: relative;
+      margin-left: 5px;
+      margin-right: 5px; }
+      main .menu #sections div a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: 1s; }
+        main .menu #sections div a img:hover {
+          filter: grayscale(0%);
+          -webkit-filter: grayscale(0%); }
+      main .menu #sections div h3 {
+        position: absolute;
+        bottom: 0;
         font-size: 30px;
-        font-weight: bold;
-        color: snow;
-        text-align: center;
-        width: fit-content; }
-    main .menu #sections {
-      display: flex;
-      background-color: black; }
-      main .menu #sections div {
-        width: 25%;
-        height: 50vh;
-        position: relative;
-        margin-left: 5px;
-        margin-right: 5px; }
-        main .menu #sections div a img {
-          object-fit: fill;
-          width: 100%;
-          height: 100%;
-          filter: grayscale(100%);
-          -webkit-filter: grayscale(100%);
-          transition: 1s; }
-          main .menu #sections div a img:hover {
-            filter: grayscale(0%);
-            -webkit-filter: grayscale(0%); }
-        main .menu #sections div h3 {
-          position: absolute;
-          bottom: 0;
-          font-size: 30px;
-          background-color: rgba(255, 250, 250, 0.682);
-          color: black;
-          padding: 10px;
-          width: 100%;
-          text-align: center; }
+        background-color: rgba(255, 250, 250, 0.682);
+        color: black;
+        padding: 10px;
+        width: 100%;
+        text-align: center; }
   main .values {
     display: flex;
     justify-content: center;
@@ -329,14 +342,11 @@ main {
   padding: 0; }
   .about-us section {
     flex-direction: column; }
-    .about-us section h2 {
+    .about-us section h4 {
       color: #FFE15D;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
       text-decoration: underline;
-      font-size: 45px; }
-    .about-us section h3 {
+      font-size: 40px; }
+    .about-us section h5 {
       color: #FFE15D;
       text-align: center;
       margin-top: 20px;
@@ -350,77 +360,313 @@ main {
 
 /*!----- ABOUT END -----*/
 /*!----- TOURISTS -----*/
-.main-tourists section {
-  flex-direction: column; }
-  .main-tourists section h2 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-decoration: underline;
-    font-size: 45px; }
-  .main-tourists section p {
-    color: snow;
-    text-align: center;
-    margin: 20px;
-    font-size: 17px; }
-  .main-tourists section ul {
-    list-style: none; }
-    .main-tourists section ul li {
+.main-tourists .hero-tourists {
+  display: flex;
+  height: 60vh;
+  background-color: #1f1e1e; }
+  .main-tourists .hero-tourists div {
+    flex-direction: column; }
+    .main-tourists .hero-tourists div h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 45px; }
+    .main-tourists .hero-tourists div p {
       color: snow;
+      text-align: center;
+      margin: 20px;
       font-size: 17px; }
-      .main-tourists section ul li .bullet {
-        color: #FFE15D; }
-  .main-tourists section .chance {
-    color: #FFE15D;
-    margin-bottom: 15px; }
-  .main-tourists section a {
-    text-decoration: none;
-    background-color: snow;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px; }
+    .main-tourists .hero-tourists div ul {
+      list-style: none; }
+      .main-tourists .hero-tourists div ul li {
+        color: snow;
+        font-size: 17px; }
+        .main-tourists .hero-tourists div ul li .bullet {
+          color: #FFE15D; }
+    .main-tourists .hero-tourists div .chance {
+      color: #FFE15D;
+      margin-bottom: 15px; }
 
-.main-tourists .whatsapp a {
-  background-color: transparent; }
+.main-tourists .cards-h2 {
+  border-bottom: 3px snow solid;
+  border-top: 3px snow solid;
+  display: flex;
+  justify-content: center;
+  color: snow;
+  padding: 20px;
+  background-color: black;
+  height: 10vh; }
+  .main-tourists .cards-h2 h2 {
+    border: #FFE15D 2px solid;
+    padding: 20px;
+    font-size: 25px;
+    align-self: center;
+    font-weight: bold;
+    background-color: black;
+    margin: 0; }
+
+.main-tourists .cards {
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-tourists .cards .four, .main-tourists .cards .ten, .main-tourists .cards .twenty-five, .main-tourists .cards .fourty {
+    background-color: #FFE15D;
+    opacity: 0.9;
+    flex-direction: column;
+    width: 240px;
+    margin: 20px;
+    transition: 1s; }
+    .main-tourists .cards .four .card-title, .main-tourists .cards .ten .card-title, .main-tourists .cards .twenty-five .card-title, .main-tourists .cards .fourty .card-title {
+      width: 100%; }
+      .main-tourists .cards .four .card-title h3, .main-tourists .cards .ten .card-title h3, .main-tourists .cards .twenty-five .card-title h3, .main-tourists .cards .fourty .card-title h3 {
+        display: flex;
+        align-items: center;
+        background-color: #FFE15D;
+        font-size: 30px;
+        margin: 0px;
+        height: 60px; }
+    .main-tourists .cards .four .duration, .main-tourists .cards .ten .duration, .main-tourists .cards .twenty-five .duration, .main-tourists .cards .fourty .duration {
+      height: 80%;
+      width: 100%;
+      background-color: snow;
+      border-top: black solid 2px;
+      border-bottom: black solid 2px;
+      padding: 10px; }
+      .main-tourists .cards .four .duration img, .main-tourists .cards .ten .duration img, .main-tourists .cards .twenty-five .duration img, .main-tourists .cards .fourty .duration img {
+        width: 15%;
+        margin-left: 10px; }
+      .main-tourists .cards .four .duration p, .main-tourists .cards .ten .duration p, .main-tourists .cards .twenty-five .duration p, .main-tourists .cards .fourty .duration p {
+        font-size: 17px;
+        width: 100%;
+        margin: 0px 0px 0px 10px; }
+    .main-tourists .cards .four .includes, .main-tourists .cards .ten .includes, .main-tourists .cards .twenty-five .includes, .main-tourists .cards .fourty .includes {
+      background-color: snow;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      justify-content: center;
+      width: 100%;
+      height: 10%;
+      border-bottom: black solid 2px;
+      padding-left: 10px; }
+      .main-tourists .cards .four .includes .includes-header, .main-tourists .cards .ten .includes .includes-header, .main-tourists .cards .twenty-five .includes .includes-header, .main-tourists .cards .fourty .includes .includes-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        .main-tourists .cards .four .includes .includes-header img, .main-tourists .cards .ten .includes .includes-header img, .main-tourists .cards .twenty-five .includes .includes-header img, .main-tourists .cards .fourty .includes .includes-header img {
+          width: 15%;
+          margin-left: 10px;
+          align-self: flex-start; }
+        .main-tourists .cards .four .includes .includes-header h4, .main-tourists .cards .ten .includes .includes-header h4, .main-tourists .cards .twenty-five .includes .includes-header h4, .main-tourists .cards .fourty .includes .includes-header h4 {
+          margin-top: 10px;
+          font-size: 17px; }
+      .main-tourists .cards .four .includes .includes-list, .main-tourists .cards .ten .includes .includes-list, .main-tourists .cards .twenty-five .includes .includes-list, .main-tourists .cards .fourty .includes .includes-list {
+        width: 100%; }
+        .main-tourists .cards .four .includes .includes-list ul, .main-tourists .cards .ten .includes .includes-list ul, .main-tourists .cards .twenty-five .includes .includes-list ul, .main-tourists .cards .fourty .includes .includes-list ul {
+          width: 90%;
+          list-style: none;
+          padding: 0; }
+          .main-tourists .cards .four .includes .includes-list ul p, .main-tourists .cards .ten .includes .includes-list ul p, .main-tourists .cards .twenty-five .includes .includes-list ul p, .main-tourists .cards .fourty .includes .includes-list ul p {
+            width: 110%;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-self: center; }
+          .main-tourists .cards .four .includes .includes-list ul li, .main-tourists .cards .ten .includes .includes-list ul li, .main-tourists .cards .twenty-five .includes .includes-list ul li, .main-tourists .cards .fourty .includes .includes-list ul li {
+            width: 100%;
+            font-size: 14px; }
+            .main-tourists .cards .four .includes .includes-list ul li img, .main-tourists .cards .ten .includes .includes-list ul li img, .main-tourists .cards .twenty-five .includes .includes-list ul li img, .main-tourists .cards .fourty .includes .includes-list ul li img {
+              width: 40px;
+              margin-right: 20px;
+              margin-left: 5px; }
+            .main-tourists .cards .four .includes .includes-list ul li ul, .main-tourists .cards .ten .includes .includes-list ul li ul, .main-tourists .cards .twenty-five .includes .includes-list ul li ul, .main-tourists .cards .fourty .includes .includes-list ul li ul {
+              display: flex;
+              flex-direction: row;
+              padding: 0;
+              margin-top: 10px; }
+              .main-tourists .cards .four .includes .includes-list ul li ul li, .main-tourists .cards .ten .includes .includes-list ul li ul li, .main-tourists .cards .twenty-five .includes .includes-list ul li ul li, .main-tourists .cards .fourty .includes .includes-list ul li ul li {
+                width: 100%;
+                color: black; }
+                .main-tourists .cards .four .includes .includes-list ul li ul li img, .main-tourists .cards .ten .includes .includes-list ul li ul li img, .main-tourists .cards .twenty-five .includes .includes-list ul li ul li img, .main-tourists .cards .fourty .includes .includes-list ul li ul li img {
+                  width: 32px;
+                  margin: 5px; }
+    .main-tourists .cards .four .cost, .main-tourists .cards .ten .cost, .main-tourists .cards .twenty-five .cost, .main-tourists .cards .fourty .cost {
+      width: 100%;
+      height: 40px; }
+      .main-tourists .cards .four .cost h5, .main-tourists .cards .ten .cost h5, .main-tourists .cards .twenty-five .cost h5, .main-tourists .cards .fourty .cost h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+        font-size: 25px; }
+    .main-tourists .cards .four:hover, .main-tourists .cards .ten:hover, .main-tourists .cards .twenty-five:hover, .main-tourists .cards .fourty:hover {
+      border-radius: 40px; }
+
+.main-tourists .whatsapp {
+  height: auto; }
+  .main-tourists .whatsapp a {
+    background-color: transparent; }
 
 /*!----- TOURISTS END -----*/
 /*!----- SEAMEN -----*/
-.main-seamen section {
-  flex-direction: column; }
-  .main-seamen section h2 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-decoration: underline;
-    font-size: 45px; }
-  .main-seamen section p {
-    color: snow;
-    text-align: center;
-    margin: 20px;
-    font-size: 20px; }
-  .main-seamen section ul {
-    list-style: none; }
-    .main-seamen section ul li {
+.main-seamen .hero-seamen {
+  display: flex;
+  height: 60vh;
+  background-color: #1f1e1e; }
+  .main-seamen .hero-seamen div {
+    flex-direction: column; }
+    .main-seamen .hero-seamen div h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-size: 45px; }
+    .main-seamen .hero-seamen div p {
       color: snow;
-      font-size: 20px; }
-      .main-seamen section ul li .bullet {
-        color: #FFE15D; }
-  .main-seamen section .action {
-    color: #FFE15D;
-    margin-bottom: 30px; }
-  .main-seamen section a {
-    text-decoration: none;
-    background-color: snow;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px; }
+      text-align: center;
+      margin: 20px;
+      font-size: 17px; }
+    .main-seamen .hero-seamen div ul {
+      list-style: none; }
+      .main-seamen .hero-seamen div ul li {
+        color: snow;
+        font-size: 17px; }
+        .main-seamen .hero-seamen div ul li .bullet {
+          color: #FFE15D; }
+    .main-seamen .hero-seamen div .action {
+      color: #FFE15D;
+      margin-bottom: 15px; }
 
-.main-seamen .whatsapp a {
-  background-color: transparent; }
+.main-seamen .cards-h2 {
+  border-bottom: 3px snow solid;
+  border-top: 3px snow solid;
+  display: flex;
+  justify-content: center;
+  color: snow;
+  padding: 20px;
+  background-color: black;
+  height: 10vh; }
+  .main-seamen .cards-h2 h2 {
+    border: #FFE15D 2px solid;
+    padding: 20px;
+    font-size: 25px;
+    align-self: center;
+    font-weight: bold;
+    background-color: black;
+    margin: 0; }
+
+.main-seamen .cards {
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-seamen .cards .four, .main-seamen .cards .ten, .main-seamen .cards .twenty-five, .main-seamen .cards .fourty {
+    background-color: #FFE15D;
+    opacity: 0.9;
+    flex-direction: column;
+    width: 25vh;
+    margin: 20px;
+    transition: 1s; }
+    .main-seamen .cards .four .card-title, .main-seamen .cards .ten .card-title, .main-seamen .cards .twenty-five .card-title, .main-seamen .cards .fourty .card-title {
+      width: 100%; }
+      .main-seamen .cards .four .card-title h3, .main-seamen .cards .ten .card-title h3, .main-seamen .cards .twenty-five .card-title h3, .main-seamen .cards .fourty .card-title h3 {
+        display: flex;
+        align-items: center;
+        background-color: #FFE15D;
+        font-size: 30px;
+        margin: 0px;
+        height: 60px; }
+    .main-seamen .cards .four .duration, .main-seamen .cards .ten .duration, .main-seamen .cards .twenty-five .duration, .main-seamen .cards .fourty .duration {
+      height: 80%;
+      width: 100%;
+      background-color: snow;
+      border-top: black solid 2px;
+      border-bottom: black solid 2px;
+      padding: 10px; }
+      .main-seamen .cards .four .duration img, .main-seamen .cards .ten .duration img, .main-seamen .cards .twenty-five .duration img, .main-seamen .cards .fourty .duration img {
+        width: 15%;
+        margin-left: 10px; }
+      .main-seamen .cards .four .duration p, .main-seamen .cards .ten .duration p, .main-seamen .cards .twenty-five .duration p, .main-seamen .cards .fourty .duration p {
+        font-size: 17px;
+        width: 100%;
+        margin: 0px 0px 0px 10px; }
+    .main-seamen .cards .four .includes, .main-seamen .cards .ten .includes, .main-seamen .cards .twenty-five .includes, .main-seamen .cards .fourty .includes {
+      background-color: snow;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      justify-content: center;
+      width: 100%;
+      height: 10%;
+      border-bottom: black solid 2px;
+      padding-left: 10px; }
+      .main-seamen .cards .four .includes .includes-header, .main-seamen .cards .ten .includes .includes-header, .main-seamen .cards .twenty-five .includes .includes-header, .main-seamen .cards .fourty .includes .includes-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        .main-seamen .cards .four .includes .includes-header img, .main-seamen .cards .ten .includes .includes-header img, .main-seamen .cards .twenty-five .includes .includes-header img, .main-seamen .cards .fourty .includes .includes-header img {
+          width: 15%;
+          margin-left: 10px;
+          align-self: flex-start; }
+        .main-seamen .cards .four .includes .includes-header h4, .main-seamen .cards .ten .includes .includes-header h4, .main-seamen .cards .twenty-five .includes .includes-header h4, .main-seamen .cards .fourty .includes .includes-header h4 {
+          margin-top: 10px;
+          font-size: 17px; }
+      .main-seamen .cards .four .includes .includes-list, .main-seamen .cards .ten .includes .includes-list, .main-seamen .cards .twenty-five .includes .includes-list, .main-seamen .cards .fourty .includes .includes-list {
+        width: 100%; }
+        .main-seamen .cards .four .includes .includes-list ul, .main-seamen .cards .ten .includes .includes-list ul, .main-seamen .cards .twenty-five .includes .includes-list ul, .main-seamen .cards .fourty .includes .includes-list ul {
+          width: 90%;
+          list-style: none;
+          padding: 0; }
+          .main-seamen .cards .four .includes .includes-list ul p, .main-seamen .cards .ten .includes .includes-list ul p, .main-seamen .cards .twenty-five .includes .includes-list ul p, .main-seamen .cards .fourty .includes .includes-list ul p {
+            width: 110%;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-self: center; }
+          .main-seamen .cards .four .includes .includes-list ul li, .main-seamen .cards .ten .includes .includes-list ul li, .main-seamen .cards .twenty-five .includes .includes-list ul li, .main-seamen .cards .fourty .includes .includes-list ul li {
+            width: 100%;
+            font-size: 14px; }
+            .main-seamen .cards .four .includes .includes-list ul li img, .main-seamen .cards .ten .includes .includes-list ul li img, .main-seamen .cards .twenty-five .includes .includes-list ul li img, .main-seamen .cards .fourty .includes .includes-list ul li img {
+              width: 40px;
+              margin-right: 20px;
+              margin-left: 5px; }
+            .main-seamen .cards .four .includes .includes-list ul li ul, .main-seamen .cards .ten .includes .includes-list ul li ul, .main-seamen .cards .twenty-five .includes .includes-list ul li ul, .main-seamen .cards .fourty .includes .includes-list ul li ul {
+              display: flex;
+              flex-direction: row;
+              padding: 0;
+              margin-top: 10px; }
+              .main-seamen .cards .four .includes .includes-list ul li ul li, .main-seamen .cards .ten .includes .includes-list ul li ul li, .main-seamen .cards .twenty-five .includes .includes-list ul li ul li, .main-seamen .cards .fourty .includes .includes-list ul li ul li {
+                width: 100%;
+                color: black; }
+                .main-seamen .cards .four .includes .includes-list ul li ul li img, .main-seamen .cards .ten .includes .includes-list ul li ul li img, .main-seamen .cards .twenty-five .includes .includes-list ul li ul li img, .main-seamen .cards .fourty .includes .includes-list ul li ul li img {
+                  width: 32px;
+                  margin: 5px; }
+    .main-seamen .cards .four .cost, .main-seamen .cards .ten .cost, .main-seamen .cards .twenty-five .cost, .main-seamen .cards .fourty .cost {
+      width: 100%;
+      height: 40px; }
+      .main-seamen .cards .four .cost h5, .main-seamen .cards .ten .cost h5, .main-seamen .cards .twenty-five .cost h5, .main-seamen .cards .fourty .cost h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+        font-size: 25px; }
+    .main-seamen .cards .four:hover, .main-seamen .cards .ten:hover, .main-seamen .cards .twenty-five:hover, .main-seamen .cards .fourty:hover {
+      border-radius: 40px; }
+
+.main-seamen .whatsapp {
+  height: auto; }
+  .main-seamen .whatsapp a {
+    background-color: transparent; }
 
 /*!----- SEAMEN END -----*/
 /*!----- AGENTS -----*/
@@ -476,6 +722,12 @@ main {
     margin-bottom: 0px;
     text-decoration: underline;
     font-size: 45px; }
+  .main-resellers section h3 {
+    color: #FFE15D;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px; }
   .main-resellers section p {
     color: snow;
     text-align: center;
@@ -488,7 +740,7 @@ main {
       font-size: 16px; }
       .main-resellers section ul li span {
         color: #FFE15D; }
-  .main-resellers section .partner {
+  .main-resellers section .join {
     color: #FFE15D;
     margin: 10px; }
   .main-resellers section a {
@@ -550,6 +802,14 @@ footer {
       text-align: center;
       margin-top: 20px; }
 
+@media screen and (max-width: 1550px) {
+  .main-tourists .hero-tourists div h2 {
+    font-size: 40px; }
+  .main-tourists .hero-tourists div p {
+    font-size: 16px; }
+  .main-tourists .hero-tourists div ul li {
+    font-size: 16px; } }
+
 @media screen and (max-width: 1500px) {
   main .menu #sections {
     display: grid;
@@ -596,11 +856,11 @@ footer {
     margin: 0; }
 
 @media screen and (max-width: 1350px) {
-  .main-tourists section h2 {
+  .main-tourists .hero-tourists div h2 {
     font-size: 28px; }
-  .main-tourists section p {
+  .main-tourists .hero-tourists div p {
     font-size: 15px; }
-  .main-tourists section ul li {
+  .main-tourists .hero-tourists div ul li {
     font-size: 15px; }
   .main-agents section h2 {
     font-size: 28px; }
@@ -664,12 +924,12 @@ footer {
   main .value div p {
     font-size: 23px; } }
 
-@media screen and (max-width: 1150px) {
-  .main-tourists section h2 {
+@media screen and (max-width: 1175px) {
+  .main-tourists .hero-tourists div h2 {
     font-size: 25px; }
-  .main-tourists section p {
+  .main-tourists .hero-tourists div p {
     font-size: 14px; }
-  .main-tourists section ul li {
+  .main-tourists .hero-tourists div ul li {
     font-size: 14px; }
   .main-seamen section h2 {
     font-size: 28px; }
@@ -694,15 +954,21 @@ footer {
   .main-resellers section p {
     font-size: 13px; }
   .main-resellers section ul li {
+    font-size: 13px; }
+  .main-tourists .hero-tourists div h2 {
+    font-size: 20px; }
+  .main-tourists .hero-tourists div p {
+    font-size: 13px; }
+  .main-tourists .hero-tourists div ul li {
     font-size: 13px; } }
 
-@media screen and (max-width: 1050px) {
-  .main-seamen section h2 {
-    font-size: 25px; }
-  .main-seamen section p {
-    font-size: 12px; }
-  .main-seamen section ul li {
-    font-size: 12px; }
+@media screen and (max-width: 1060px) {
+  .main-seamen .hero-seamen div h2 {
+    font-size: 38px; }
+  .main-seamen .hero-seamen div p {
+    font-size: 15px; }
+  .main-seamen .hero-seamen div ul li {
+    font-size: 15px; }
   .main-agents section h2 {
     font-size: 18px; }
   .main-agents section h3 {
@@ -733,12 +999,6 @@ footer {
     .about-us section p {
       font-size: 16px;
       margin: 10px; }
-  .main-seamen section h2 {
-    font-size: 25px; }
-  .main-seamen section p {
-    font-size: 11px; }
-  .main-seamen section ul li {
-    font-size: 11px; }
   .main-agents section h2 {
     font-size: 18px; }
   .main-agents section h3 {
@@ -809,41 +1069,53 @@ footer {
     font-size: 38px; }
   main .hero a {
     font-size: 38px; }
-  .main-tourists {
+  .main-tourists img {
+    width: 100%; }
+  .main-tourists .hero-tourists {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto; }
-    .main-tourists img {
-      width: 100%; }
-    .main-tourists section h2 {
+    .main-tourists .hero-tourists div h2 {
       margin-top: 38px;
       font-size: 38px; }
-    .main-tourists section a {
+    .main-tourists .hero-tourists div a {
       margin-bottom: 38px; }
-    .main-tourists section ul li {
+    .main-tourists .hero-tourists div ul li {
       font-size: 15px; }
-    .main-tourists section p {
+    .main-tourists .hero-tourists div p {
       font-size: 14px;
       font-size: 15px; }
-  .main-seamen {
+  .main-tourists .cards {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .main-seamen img {
+    width: 100%; }
+  .main-seamen .hero-seamen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto; }
-    .main-seamen img {
-      width: 100%; }
-    .main-seamen section h2 {
+    .main-seamen .hero-seamen h2 {
       margin-top: 20px;
-      font-size: 38px; }
-    .main-seamen section p {
-      font-size: 15px; }
-    .main-seamen section ul li {
-      font-size: 15px; }
-    .main-seamen section a {
+      font-size: 35px; }
+    .main-seamen .hero-seamen p {
+      font-size: 14px; }
+    .main-seamen .hero-seamen ul li {
+      font-size: 14px; }
+    .main-seamen .hero-seamen a {
       margin-bottom: 20px; }
+  .main-seamen .cards {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .main-agents {
     display: flex;
     flex-direction: column;

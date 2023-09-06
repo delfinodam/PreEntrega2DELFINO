@@ -1,0 +1,1124 @@
+/*!----- TYPOGRAPHY -----*/
+
+@font-face {
+    font-family: "sailcoms";
+    src: url(../scss/font/leelawdb.ttf)
+}
+/*!----- GENERAL -----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "sailcoms" !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    background-color: var(--color-principal) !important;
+}
+
+:root{
+    --color-principal: black;
+    --color-secundario:snow;
+    --color-terciario: #FFE15D;
+}
+
+/*!----- GENERAL END -----*/
+
+/*!----- HEADER -----*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    height: 18vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99
+}  
+
+header section div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+header section div img {
+    width: 30%;
+    height: 60%;
+    margin-left: 20px;
+}
+
+header section .navegador-derecha{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header section .navegador-derecha h2{
+    color: var(--color-terciario);
+    font-size: 40px;
+    margin: 20px;
+}
+
+/*!----- HEADER END -----*/
+
+/*!----- NAV -----*/
+
+#burguer-menu-container{
+    display: none;
+}
+
+#main-nav-bar{
+    width: 100%;
+    display: flex;
+}
+
+.navegador-derecha nav ul {
+    list-style: none;  
+}
+
+.navegador-derecha nav ul li {
+    float: left;
+    font-size: 20px;  
+    margin-right: 20px;
+    position: relative;
+}
+
+.navegador-derecha nav ul li a {
+    text-decoration: none;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 10px 15px;
+    display: block;
+}
+
+.navegador-derecha nav ul li a:hover {
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.navegador-derecha nav ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0; 
+    padding: 0; 
+}
+
+.navegador-derecha nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-nav{
+    background-color: var(--color-terciario);
+    padding: 10px 15px; 
+    color: var(--color-principal);
+    font-weight: bold;
+    text-wrap: nowrap;
+    margin-right: 5px;
+}
+
+#contact-nav:hover{
+    background-color: var(--color-secundario);
+    padding: 10px 15px; 
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+/*!----- NAV END -----*/
+
+/*!----- HERO -----*/
+
+main .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;   
+    width: 100%;
+    height: 83vh;
+    background-image: url(../img/fondohero2.jpg);
+    background-size: cover; 
+    background-position:top center;
+    background-attachment: fixed;
+    color:var(--color-secundario);
+}
+
+main .hero h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: hwb(0 98% 0% / 0.727);
+    color: var(--color-principal);
+}
+
+main .hero a{
+    text-decoration: none;
+    font-size: 40px;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main .hero a:hover{
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+/*!----- HERO END -----*/
+
+/*!----- SECTIONS -----*/
+
+.menu{
+    background-color: var(--color-principal);
+}
+
+.menu div{
+    background-color: var(--color-principal);
+}
+
+.menu-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 20px;
+}
+
+.menu-h2 h2{
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    text-align: center;
+    width: fit-content;
+}
+
+#sections{
+    display: flex;
+    background-color: var(--color-principal);
+}
+
+.menu div div{
+    width: 25%;
+    height: 50vh;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px ;
+}
+
+.menu div div h3{
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    background-color: rgba(255, 250, 250, 0.682);
+    color: var(--color-principal);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu div div a img{
+    object-fit:fill;
+    width:  100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.menu div div a img:hover{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+/*!----- SECTIONS END -----*/
+
+/*!----- VALUES -----*/
+
+main .values{
+    display: flex;
+    justify-content: center;
+    color: var(--color-secundario);
+    padding: 20px;
+    background-color: var(--color-principal);
+}
+
+#h2-values{
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--color-principal);
+}
+
+main .value{
+    background-image: url(../img/fondo-value-editado.png);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 170px;
+    text-align: center;
+    background-color: var(--color-principal)
+}
+
+main .value::before{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-principal)
+}
+
+.value div{
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    justify-items: center;
+    border: rgb(0, 0, 0) solid 2px;
+    background-color: #fffffdae;
+    opacity: .7;
+}
+
+.value div:hover{
+    opacity: 0.9;
+    background-color: var(--color-secundario);
+}
+
+main .value div h2{
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--color-principal);
+    width: 25%;
+    text-align: left;
+    border:black solid 3px;
+    background-color: #ffe666cc;
+    width: fit-content;
+    padding: 10px;
+}
+
+main .value div p{
+    font-size: 25px;
+    color: var(--color-principal);
+    margin-right:20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+main .value .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 20px;
+}
+
+main .value .delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 20px;
+}
+
+main .value .reliable{
+    grid-column: span 2;
+    padding: 20px;
+}
+
+main .value .assistance{
+    grid-column: span 2;
+    padding: 20px;
+}
+
+main .value .quality{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-column: span 4;
+}
+
+/*!----- VALUES END -----*/
+
+/*!----- FAQ -----*/
+
+.faq-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-principal);
+    padding: 20px
+}
+
+.faq-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.accordion-button{
+    font-size: 22px !important;
+}
+
+.menu-faq h2 button{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.menu-faq>div{
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+}
+
+
+/*!----- FAQ END -----*/
+
+/*!----- COVERAGE MAP -----*/
+
+.coverage-map{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.coverage-map h2{
+    border: snow 3px solid;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.coverage-map p{
+    color: var(--color-terciario);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.coverage-map a{
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*!----- COVERAGE MAP END -----*/
+
+/*!----- WHATSAPP -----*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+
+.whatsapp a img{
+    width: 8vh;
+}
+
+.whatsapp a img:hover{
+    width: 10vh;
+}
+
+/*!----- FOOTER -----*/
+footer{
+    background:linear-gradient(black, #ffe666);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.contact-us{
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-secundario);
+    font-size: 20px;
+    border-top: solid var(--color-secundario) 6px;
+}
+
+footer section h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer section div input{
+    width: 100%;
+    font-size: 20px;
+}
+
+footer section div textarea{
+    width: 100%;
+    font-size: 20px;
+}
+
+footer section div button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+footer .copyright{
+    width:100% ;
+}
+
+footer div {
+    align-items: center;
+    justify-content: center;
+}
+
+footer div p{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*!----- FOOTER END -----*/
+
+/*!----- PAGE ABOUT US -----*/
+
+.about-us{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.about-us section h2{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.about-us section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.about-us section p{
+    color: var(--color-secundario);
+    text-align: center;
+    margin: 15px;
+}
+
+.about-us section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE ABOUT US END -----*/
+
+/*!----- PAGE TOURISTS -----*/
+
+.main-tourists{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.main-tourists section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.main-tourists section h2{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.main-tourists section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-tourists section p{
+    color: var(--color-secundario);
+    text-align: center;
+    margin: 15px;
+}
+
+.main-tourists section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE TOURISTS END -----*/
+
+/*!----- PAGE SEAMEN -----*/
+
+.main-seamen{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.main-seamen section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.main-seamen section h2{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.main-seamen section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-seamen section p{
+    color: var(--color-secundario);
+    text-align: center;
+    margin: 15px;
+}
+
+.main-seamen section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE SEAMEN END -----*/
+
+/*!----- PAGE AGENTS -----*/
+
+.main-agents{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.main-agents section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.main-agents section h2{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.main-agents section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-agents section p{
+    color: var(--color-secundario);
+    text-align: center;
+    margin: 15px;
+}
+
+.main-agents section ul li{
+    color: var(--color-secundario);
+}
+.main-agents section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE AGENTS END -----*/
+
+/*!----- PAGE RESELLERS -----*/
+
+.main-resellers{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(31, 30, 30);
+}
+
+.main-resellers section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.main-resellers section h2{
+color: var(--color-terciario);
+text-align: center;
+margin-top: 30px;
+text-decoration: underline;
+}
+
+.main-resellers section h3{
+    color: var(--color-terciario);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.main-resellers section p{
+color: var(--color-secundario);
+text-align: center;
+margin: 15px;
+}
+
+.main-resellers section a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+}
+
+/*!----- PAGE RESELLERS END -----*/
+
+/*!----- MEDIA QUERIES -----*/
+
+@media screen and (max-width:1500px){
+
+#sections{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+}
+
+#sections div{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media screen and (max-width:1450px){
+.main-agents section {
+        font-size: 15px;
+    }
+
+.main-agents img{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1400px){
+header div img {
+    width: 41%;
+    height: 80px;
+    margin-left: 20px;
+}
+
+main .hero h2{
+    margin: 20px;    
+}
+
+.navegador-derecha nav ul li {
+    font-size: 18px;  
+}
+
+header div h2{
+    font-size: 35px;
+}
+
+.main-agents section {
+    font-size: 13px;
+}
+
+.main-agents section h2{
+    margin: 0;
+}
+}
+
+@media screen and (max-width:1200px){
+main .value div p{
+    font-size: 23px;
+}
+}
+
+@media screen and (max-width:1120px){
+main .value div p{
+    font-size: 20px;
+}
+
+main .value div h2 {
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width:1020px){
+.main-agents section {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:950px){
+header div {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#burguer-menu-container{
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+#main-nav-bar{
+    display: none;
+}
+    
+.navbar-toggler{
+    display: block;
+}
+
+.container-fluid{
+    background-color: var(--color-principal)!important;
+    padding: 0;
+    height: 100%;
+}
+
+.logo-burguer-nav{
+    height: 8vh;
+    width: 23vh;
+}
+
+#offcanvasDarkNavbar{
+    background-color: var(--color-principal) !important;
+    width: 70%;
+}
+
+#popup-menu{
+    width: 40vh;
+}
+
+#menu-dropdown{
+    width: 70%;
+}
+
+main .value div p{
+    font-size: 18px;
+}
+main .value div h2 {
+    font-size: 25px;
+}
+
+main .value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+header div img {
+    width: 80%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.menu-h2 h2{
+    font-size: 38px;
+}
+
+main .hero h2{
+    font-size: 38px;
+}
+
+main .hero a{
+    font-size: 38px;    
+}
+
+.main-tourists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-tourists img{
+    width: 100%;
+}
+
+.main-tourists section {
+    font-size: 14px;
+}
+
+.main-tourists section h2{
+    margin-top: 20px;
+}
+
+.main-tourists section a{
+    margin-bottom: 20px;
+}
+
+.main-seamen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-seamen img{
+    width: 100%;
+}
+
+.main-seamen section {
+    font-size: 14px;
+}
+
+.main-seamen section h2{
+    margin-top: 20px;
+}
+
+.main-seamen section a{
+    margin-bottom: 20px;
+}
+
+.main-agents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-agents img{
+    width: 100%;
+}
+
+.main-agents section {
+    font-size: 14px;
+}
+
+.main-agents section h2{
+    margin-top: 20px;
+}
+
+.main-agents section a{
+    margin-bottom: 20px;
+}
+
+.main-resellers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.main-resellers img{
+    width: 100%;
+}
+
+.main-resellers section {
+    font-size: 14px;
+}
+
+.main-resellers section h2{
+    margin-top: 20px;
+}
+
+.main-resellers section a{
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width:900px){
+header div h2{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.menu-h2 h2{
+    font-size: 30px;
+}
+
+main .hero h2{
+    font-size: 30px;
+}
+
+main .hero a{
+    font-size: 30px;    
+}
+}
+
+@media screen and (max-width:850){
+header div h2{
+        font-size: 23px;
+}
+.menu-h2 h2{
+        font-size: 28px;
+}
+main .hero h2{
+        font-size: 28px;
+}
+main .hero a{
+        font-size: 28px;    
+}
+}
+
+@media screen and (max-width:800){
+    header div h2{
+        font-size: 20px;
+        margin: 7px;
+}
+.menu-h2 h2{
+    font-size: 25px;
+}
+main .hero h2{
+    font-size: 25px;
+}
+main .hero a{
+    font-size: 25px;    
+}
+}
+
+@media screen and (max-width:750px){
+#sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+
+#sections div{
+        width: 100%;
+        height: auto;
+}
+
+header div h2{
+        font-size: 18px;
+} 
+
+.menu-h2 h2{
+        font-size: 35px;
+}
+
+main .hero h2{
+        font-size: 35px;
+}
+
+main .hero a{
+        font-size: 35px;    
+}
+
+.accordion-button{
+    font-size: 18px !important;
+}
+
+.menu div div a img{
+    -webkit-filter: grayscale(0%);
+}
+}
+
+@media screen and (max-width:500px){
+header div img {
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+}
+.accordion-button{
+    font-size: 15px !important;
+}
+
+.main-agents section h3{
+    font-size: 19px;
+}
+
+}

@@ -1,3 +1,23 @@
+@media screen and (max-width:1550px){
+    .main-tourists{
+        .hero-tourists{
+            div{
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                ul{
+                    li{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1500px){
     main{
         .menu{
@@ -93,16 +113,18 @@
 
 @media screen and (max-width:1350px){
     .main-tourists{
-        section {
-            h2{
-                font-size: nth($sizes, 7 );
-            }
-            p{
-                font-size: nth($sizes, 2 );
-            }
-            ul{
-                li{
+        .hero-tourists {
+            div{
+                h2{
+                    font-size: nth($sizes, 7 );
+                }
+                p{
                     font-size: nth($sizes, 2 );
+                }
+                ul{
+                    li{
+                        font-size: nth($sizes, 2 );
+                    }
                 }
             }
         }
@@ -248,18 +270,20 @@
     }
 }
 
-@media screen and (max-width:1150px){
+@media screen and (max-width:1175px){
     .main-tourists{
-        section {
-            h2{
-                font-size: nth($sizes, 6 );
-            }
-            p{
-                font-size: nth($sizes, 1 );
-            }
-            ul{
-                li{
+        .hero-tourists {
+            div{
+                h2{
+                    font-size: nth($sizes, 6 );
+                }
+                p{
                     font-size: nth($sizes, 1 );
+                }
+                ul{
+                    li{
+                        font-size: nth($sizes, 1 );
+                    }
                 }
             }
         }
@@ -324,20 +348,39 @@
             }
         }
     }
+    .main-tourists{
+        .hero-tourists {
+            div{
+                h2{
+                    font-size: nth($sizes, 5 );
+                }
+                p{
+                    font-size: 13px;
+                }
+                ul{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1060px){
     .main-seamen{
-        section {
-            h2{
-                font-size: nth($sizes, 6 );
-            }
-            p{
-                font-size: 12px;
-            }
-            ul{
-                li{
-                    font-size: 12px;
+        .hero-seamen {
+            div{
+                h2{
+                    font-size: nth($sizes, 10 );
+                }
+                p{
+                    font-size: nth($sizes, 2 );
+                }
+                ul{
+                    li{
+                        font-size: nth($sizes, 2 );
+                    }
                 }
             }
         }
@@ -394,21 +437,6 @@
             p{
                 font-size: nth($sizes , 3 );  
                 margin: 10px;
-            }
-        }
-    }
-    .main-seamen{
-        section {
-            h2{
-                font-size: nth($sizes, 6 );
-            }
-            p{
-                font-size: 11px;
-            }
-            ul{
-                li{
-                    font-size: 11px;
-                }
             }
         }
     }
@@ -486,7 +514,6 @@
                                 opacity: 1;
                             }
                         }
-
                     }
                 }
                 #popup-menu{
@@ -544,59 +571,75 @@
     } 
 
     .main-tourists{
+            img{
+                width: 100%;
+            }
+            .hero-tourists{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                div{
+                    h2{
+                        margin-top: 38px;
+                        font-size: nth($sizes, 10);
+                    }
+                    a{
+                        margin-bottom: 38px;
+                    }
+                    ul{
+                        li{
+                            font-size: nth($sizes, 2);
+                        }
+                    }
+                    p{
+                        font-size: nth($sizes , 1 );
+                        font-size: nth($sizes, 2);
+                    }
+                }
+            }
+            .cards{
+                height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+            }
+        }
+
+    .main-seamen{
+        img{
+            width: 100%;
+        }
+        .hero-seamen {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
-            img{
-                width: 100%;
-            }
-            section {
-                h2{
-                    margin-top: 38px;
-                    font-size: nth($sizes, 10);
-                }
-                a{
-                    margin-bottom: 38px;
-                }
-                ul{
-                    li{
-                        font-size: nth($sizes, 2);
-                    }
-                }
-                p{
-                    font-size: nth($sizes , 1 );
-                    font-size: nth($sizes, 2);
-                }
-            }
-        }
-
-    .main-seamen{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        img{
-            width: 100%;
-        }
-        section {
             h2{
                 margin-top: 20px;
-                font-size: nth($sizes, 10);
+                font-size: nth($sizes, 9);
             }
             p{
-                font-size: nth($sizes, 2);
+                font-size: nth($sizes, 1);
             }
             ul{
                 li{
-                    font-size: nth($sizes, 2);
+                    font-size: nth($sizes, 1);
                 }
             }
             a{
                 margin-bottom: 20px;
             }
+        }
+        .cards{
+            height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
         }
     }
 
