@@ -325,7 +325,7 @@ main{
 .main-tourists{
     .hero-tourists{
         display: flex;
-        height: 60vh;
+        height: auto;
         background-color: rgb(31, 30, 30);;
         img{}
         div{
@@ -364,7 +364,7 @@ main{
         color: $color-secundario;
         padding: 20px;
         background-color: $color-primario;
-        height: 10vh;
+        height: auto;
         h2{
             border: $color-terciario 2px solid;
             padding: 20px;
@@ -376,7 +376,7 @@ main{
         }
     }
     .cards{
-        height: 60vh;
+        height: auto;
         background-color: $color-primario;
         display: flex;
         justify-content: center;

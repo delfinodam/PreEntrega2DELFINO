@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  height: 18vh;
+  height: 150px;
   position: sticky;
   top: 0;
   width: 100%;
@@ -362,7 +362,7 @@ main {
 /*!----- TOURISTS -----*/
 .main-tourists .hero-tourists {
   display: flex;
-  height: 60vh;
+  height: auto;
   background-color: #1f1e1e; }
   .main-tourists .hero-tourists div {
     flex-direction: column; }
@@ -397,7 +397,7 @@ main {
   color: snow;
   padding: 20px;
   background-color: black;
-  height: 10vh; }
+  height: auto; }
   .main-tourists .cards-h2 h2 {
     border: #FFE15D 2px solid;
     padding: 20px;
@@ -408,7 +408,7 @@ main {
     margin: 0; }
 
 .main-tourists .cards {
-  height: 60vh;
+  height: auto;
   background-color: black;
   display: flex;
   justify-content: center;
