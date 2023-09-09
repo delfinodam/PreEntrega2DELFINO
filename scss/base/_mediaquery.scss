@@ -571,15 +571,16 @@
     } 
 
     .main-tourists{
-            img{
-                width: 100%;
-            }
             .hero-tourists{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 height: auto;
+                img{
+                    height: 400px;
+                    width: 400px;
+                }
                 div{
                     h2{
                         margin-top: 38px;
@@ -609,15 +610,16 @@
         }
 
     .main-seamen{
-        img{
-            width: 100%;
-        }
         .hero-seamen {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
+            img{
+                width: 400px;
+                height: 400px;
+            }
             h2{
                 margin-top: 20px;
                 font-size: nth($sizes, 9);

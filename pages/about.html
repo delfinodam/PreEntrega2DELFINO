@@ -11,82 +11,90 @@
     <body>
 
 <!------ HEADER ----->
-        <header>
-            <section id="main-nav-bar">
-                <div>
-                    <img src="../img/sail.png" alt="logo-sail"/>
-                </div>
-                <div class="navegador-derecha">
-                    <h2>We connect People.</h2>
-                    <nav>
-                        <ul>              
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./about.html">About Us</a></li>
-                            <li><a href="#menu">Products</a>
-                                <ul>
-                                    <li><a href="./tourists.html">Tourists</a></li>
-                                    <li><a href="./seamen.html">Seamen</a></li>
-                                    <li><a href="./agents.html">Agents</a></li>   
-                                    <li><a href="./resellers.html">Resellers</a></li>
-                                </ul>
-                            </li>
-                            <li><a id="contact-nav" href="#contact">Contact Us</a></li>
+<header>
+    <section id="main-nav-bar">
+        <div>
+            <img src="../img/sail.png" alt="logo-sail"/>
+        </div>
+        <div class="navegador-derecha">
+            <h2>We connect People.</h2>
+            <nav>
+                <ul>
+                    <!-- BOTONES PARA CAMBIAR DE IDIOMAS - EN CONSTRUCCION -
+                    <li><a class="lang-btn" href="./index.html"><img src="./img/english.png" alt="english"/></a></li>
+                    <li><a class="lang-btn" href="./pages/indexspa.html"><img src="./img/spanish.png" alt="spanish"/></a></li>
+                    <li><a class="lang-btn" href="./pages/indexpor.html"><img src="./img/portuguese.png" alt="portuguese"/></a></li> -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#menu">Products ▼</a>
+                        <ul class="products-nav">
+                            <li><a href="./tourists.html">Tourists</a></li>
+                            <li><a href="./seamen.html">Seamen</a></li>
+                            <li><a href="./agents.html">Agents</a></li>   
+                            <li><a href="./resellers.html">Resellers</a></li>
                         </ul>
-                    </nav>
-                </div>
-            </section>
-            <section class="navbar navbar-dark bg-dark sticky-top" id="burguer-menu-container">
-                <div class="container-fluid">
-                    <img class="logo-burguer-nav" src="../img/sail.png" alt="logo-sail"/>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div  class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                            Menu
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body" id="popup-menu">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li><a id="contact-nav" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="navbar navbar-dark bg-dark sticky-top" id="burguer-menu-container">
+        <div class="container-fluid">
+            <img class="logo-burguer-nav" src="../img/sail.png" alt="logo-sail"/>
+            <!-- BOTONES PARA CAMBIAR DE IDIOMAS - EN CONSTRUCCION -
+                <div class="lang-icons">
+                <a class="lang-btn" href="./index.html"><img src="./img/english.png" alt="english"/></a>
+                <a class="lang-btn" href="./pages/indexspa.html"><img src="./img/spanish.png" alt="spanish"/></a>
+                <a class="lang-btn" href="./pages/indexpor.html"><img src="./img/portuguese.png" alt="portuguese"/></a>
+            </div> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div  class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Menu
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="popup-menu">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light" id="menu-dropdown">
+                            <li>
+                                <a class="dropdown-item" href="./tourists.html">SIM Cards for Tourists</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                            <li>
+                                <a class="dropdown-item" href="./seamen.html">SIM Cards for Seamen</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-light" id="menu-dropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="./tourists.html">SIM Cards for Tourists</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./seamen.html">SIM Cards for Seamen</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./agents.html">Agency Partnership</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="./resellers.html">Resellers Partnership</a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#  contact">Contact Us</a>
+                            <li>
+                                <a class="dropdown-item" href="./agents.html">Agency Partnership</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./resellers.html">Resellers Partnership</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </section>
-        </header>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
 <!----- HEADER END ----->
+
         <main class="about-us">
             <section>
                 <h4>About Us</h4>
@@ -108,14 +116,15 @@
             <section class="contact-us">
                 <h2>Contact Us</h2>
                 <div> 
-                    <form action="submeter-form.php" method="post">       
+                    <form action="https://formspree.io/f/mnqkvwqj"
+                    method="POST">       
                         <div>
                             <label for="form-name"></label>
-                            <input type="text" name="insert-name" id="form-name" placeholder="Full Name">
+                            <input type="text" name="name" id="form-name" placeholder="Full Name">
                         </div>
                         <div>
                             <label for="email" ></label>
-                            <input type="email" name="insert-mail" id="email" placeholder="E-mail adress" autocomplete="on">
+                            <input type="email" name="email" id="email" placeholder="E-mail adress" autocomplete="on">
                         </div>
                         <div>
                             <label for="phone"></label>
@@ -123,9 +132,9 @@
                         </div> 
                         <div>
                             <label for="message"></label>                     
-                            <textarea name="insert-message" class="message-form" id="message" cols=39 rows=7 placeholder="Leave us your message"></textarea> 
+                            <textarea name="message" class="message-form" id="message" cols=39 rows=7 placeholder="Leave us your message"></textarea> 
                         </div>                    
-                        <button type="button" name="send-form" id="send">Send</button>
+                        <button type="submit" name="send-form" id="send">Send</button>
                     </form>
                 </div>
                 <div class="copyright">
