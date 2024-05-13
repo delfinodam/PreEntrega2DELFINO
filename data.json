@@ -1,0 +1,62 @@
+[
+    {
+        "name": "4GB",
+        "data": "4GB",
+        "duration": "30 days",
+        "includes": ["+ 2GB for free", "+ Free 200mb for social media"],
+        "social_media": ["Facebook", "Instagram", "Tiktok", "Youtube", "Twitter"],
+        "cost": "USD 10.00",
+        "image_duration": "../scss/icons/duration.png",
+        "image_whatsapp": "../scss/icons/whatsapp.png",
+        "image_facebook": "../scss/icons/facebook.png",
+        "image_instagram": "../scss/icons/instagram.png",
+        "image_tiktok": "../scss/icons/tik-tok.png",
+        "image_youtube": "../scss/icons/youtube.png",
+        "image_twitter": "../scss/icons/gorjeo.png"
+    },
+    {
+        "name": "10GB",
+        "data": "10GB",
+        "duration": "30 days",
+        "includes": ["+ 2GB for free", "+ Free 500mb for social media"],
+        "social_media": ["Facebook", "Instagram", "Tiktok", "Youtube", "Twitter"],
+        "cost": "USD 20.00",
+        "image_duration": "../scss/icons/duration.png",
+        "image_whatsapp": "../scss/icons/whatsapp.png",
+        "image_facebook": "../scss/icons/facebook.png",
+        "image_instagram": "../scss/icons/instagram.png",
+        "image_tiktok": "../scss/icons/tik-tok.png",
+        "image_youtube": "../scss/icons/youtube.png",
+        "image_twitter": "../scss/icons/gorjeo.png"
+    },
+    {
+        "name": "15GB",
+        "data": "15GB",
+        "duration": "30 days",
+        "includes": ["+ 2GB for free", "+ Free 500mb for social media"],
+        "social_media": ["Facebook", "Instagram", "Tiktok", "Youtube", "Twitter"],
+        "cost": "USD 25.00",
+        "image_duration": "../scss/icons/duration.png",
+        "image_whatsapp": "../scss/icons/whatsapp.png",
+        "image_facebook": "../scss/icons/facebook.png",
+        "image_instagram": "../scss/icons/instagram.png",
+        "image_tiktok": "../scss/icons/tik-tok.png",
+        "image_youtube": "../scss/icons/youtube.png",
+        "image_twitter": "../scss/icons/gorjeo.png"
+    },
+    {
+        "name": "40GB",
+        "data": "40GB",
+        "duration": "60 days",
+        "includes": ["+ 2GB for free", "+ Free 500mb for social media"],
+        "social_media": ["Facebook", "Instagram", "Tiktok", "Youtube", "Twitter"],
+        "cost": "USD 40.00",
+        "image_duration": "../scss/icons/duration.png",
+        "image_whatsapp": "../scss/icons/whatsapp.png",
+        "image_facebook": "../scss/icons/facebook.png",
+        "image_instagram": "../scss/icons/instagram.png",
+        "image_tiktok": "../scss/icons/tik-tok.png",
+        "image_youtube": "../scss/icons/youtube.png",
+        "image_twitter": "../scss/icons/gorjeo.png"
+    }
+]

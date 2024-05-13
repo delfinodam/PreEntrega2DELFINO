@@ -166,70 +166,61 @@
         }
     }
     .main-agents{
-        section {
-            h2{
-                font-size: nth($sizes, 6 );
+        .hero-agents{
+            img{
+                height:70vh;
             }
-            h3{
-                font-size: nth($sizes, 4 );
-            }
-            p{
-                font-size: 13px;
-            }
-            ul{
-                li{
-                    font-size: 13px;
+            div{
+                padding: 10px;
+                h2{
+                    font-size: 25px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                ul {
+                    li {
+                        font-size: 10px;
+                    }   
+                } 
+                .partner{
+                    margin-bottom: 10px;
+                }
+                a{
+                    font-size: 10px;
                 }
             }
         }
     }
     .main-resellers{
-        section {
-            h2{
-                font-size: nth($sizes, 10 );
+        .hero-resellers{
+            img{
+                height:70vh;
             }
-            p{
-                font-size: nth($sizes, 2 );
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 2 );
+            div{
+                padding: 10px;
+                h2{
+                    font-size: 25px;
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:1220px){
-    .main-agents{
-        section {
-            h2{
-                font-size: nth($sizes, 5 );
-            }
-            h3{
-                font-size: nth($sizes, 3 );
-            }
-            p{
-                font-size: 12px;
-            }
-            ul{
-                li{
-                    font-size: 12px;
+                h3{
+                    font-size: 18px;
                 }
-            }
-        }
-    }
-    .main-resellers{
-        section {
-            h2{
-                font-size: nth($sizes, 9 );
-            }
-            p{
-                font-size: nth($sizes, 1 );
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 1 );
+                p{
+                    font-size: 10px;
+                }
+                ul {
+                    li {
+                        font-size: 10px;
+                    }   
+                } 
+                .join{
+                    margin-bottom: 10px;
+                }
+                a{
+                    font-size: 10px;
                 }
             }
         }
@@ -250,21 +241,6 @@
             }
         }
     }
-    .main-seamen{
-        section {
-            h2{
-                font-size: nth($sizes, 8 );
-            }
-            p{
-                font-size: nth($sizes, 2 );
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 2 );
-                }
-            }
-        }
-    }
     main .value div p{
         font-size: 23px;
     }
@@ -272,10 +248,13 @@
 
 @media screen and (max-width:1175px){
     .main-tourists{
-        .hero-tourists {
+        .hero-tourists{
             div{
                 h2{
                     font-size: nth($sizes, 6 );
+                }
+                h3{
+                    font-size: nth($sizes, 4 );
                 }
                 p{
                     font-size: nth($sizes, 1 );
@@ -284,21 +263,6 @@
                     li{
                         font-size: nth($sizes, 1 );
                     }
-                }
-            }
-        }
-    }
-    .main-seamen{
-        section {
-            h2{
-                font-size: nth($sizes, 7 );
-            }
-            p{
-                font-size: nth($sizes, 1 );
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 1 );
                 }
             }
         }
@@ -314,36 +278,6 @@
                 }
                 h2{
                     font-size: nth($sizes , 8 );
-                }
-            }
-        }
-    }
-    .main-seamen{
-        section {
-            h2{
-                font-size: nth($sizes, 6 );
-            }
-            p{
-                font-size: 13px;
-            }
-            ul{
-                li{
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-    .main-resellers{
-        section {
-            h2{
-                font-size: nth($sizes, 8 );
-            }
-            p{
-                font-size: 13px;
-            }
-            ul{
-                li{
-                    font-size: 13px;
                 }
             }
         }
@@ -386,34 +320,53 @@
         }
     }
     .main-agents{
-        section {
-            h2{
-                font-size: nth($sizes, 4 );
-            }
-            h3{
-                font-size: nth($sizes, 2 );
-            }
-            p{
-                font-size: 11px;
-            }
-            ul{
-                li{
-                    font-size: 11px;
+        .hero-agents{
+            div{
+                h2{
+                    margin: 8px;
+                }
+                h3{
+                    margin: 8px;
+                }
+                p{
+                    margin: 8px;
+                }
+                ul {
+                    margin: 8px;
+                    li {
+                        margin: 8px;
+                    }   
+                } 
+                .partner{
+                }
+                a{
+                    margin: 10px;
                 }
             }
         }
     }
     .main-resellers{
-        section {
-            h2{
-                font-size: nth($sizes, 7 );
-            }
-            p{
-                font-size: 12px;
-            }
-            ul{
-                li{
-                    font-size: 12px;
+        .hero-resellers{
+            div{
+                h2{
+                    margin: 8px;
+                }
+                h3{
+                    margin: 8px;
+                }
+                p{
+                    margin: 8px;
+                }
+                ul {
+                    margin: 8px;
+                    li {
+                        margin: 8px;
+                    }   
+                } 
+                .join{
+                }
+                a{
+                    margin: 10px;
                 }
             }
         }
@@ -495,10 +448,6 @@
                 img{
                     margin-left: 20px;
                 }
-                .logo-burguer-nav{
-                    height: 8vh;
-                    width: 23vh;
-                }
                 .navbar-toggler{
                     display: block;
                     margin-right: 20px;
@@ -529,7 +478,6 @@
             }
         }
     }
-
     main{
         .value{
             display: flex;
@@ -552,13 +500,11 @@
             } 
         } 
     } 
-
     .menu-h2{
         h2{
             font-size: nth($sizes , 10 );
         }
     }
-
     main{
         .hero{
             h2{
@@ -569,7 +515,6 @@
             }
         } 
     } 
-
     .main-tourists{
             .hero-tourists{
                 display: flex;
@@ -578,8 +523,8 @@
                 align-items: center;
                 height: auto;
                 img{
-                    height: 400px;
-                    width: 400px;
+                    height: 320px;
+                    width: 320px;
                 }
                 div{
                     h2{
@@ -608,7 +553,6 @@
                     align-items: center;
             }
         }
-
     .main-seamen{
         .hero-seamen {
             display: flex;
@@ -617,8 +561,8 @@
             align-items: center;
             height: auto;
             img{
-                width: 400px;
-                height: 400px;
+                width: 320px;
+                height: 320px;
             }
             h2{
                 margin-top: 20px;
@@ -644,69 +588,64 @@
                 align-items: center;
         }
     }
-
     .main-agents{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        img{
-            width: 100%;
-        }
-        section {
-            font-size: nth($sizes , 1 );
-            h2{
-                margin-top: 20px;
+        .hero-agents{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            img{
+                width: 320px;
+                height: 320px;
             }
-            a{
-                margin-bottom: 20px;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                height: auto;
+                h2{
+                    margin-top: 20px;
+                }
+                h3{
+                    font-size: nth($sizes , 1 )
+                }
+                a{
+                    font-size: nth($sizes , 1 );
+                }
             }
         }
     }
     
     .main-resellers{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        img{
-            width: 100%;
-        }
-        section{
+        .hero-resellers{
             font-size: nth($sizes , 1 );
-            h2{
-                margin-top: 20px;
-                font-size: nth($sizes, 8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            img{
+                width: 320px;
+                height: 320px;
             }
-            a{
-                margin-bottom: 20px;
-            }
-            p{
-                font-size: nth($sizes, 3);
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 3);
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                height: auto;
+                h2{
+                    margin-top: 20px;
                 }
-            }
-        }
-    }
-    .main-agents{
-        section {
-            h2{
-                font-size: nth($sizes, 7 );
-            }
-            h3{
-                font-size: nth($sizes, 5 );
-            }
-            p{
-                font-size: nth($sizes, 2 );
-            }
-            ul{
-                li{
-                    font-size: nth($sizes, 2 );
+                h3{
+                    font-size: nth($sizes , 1 )
+                }
+                a{
+                    font-size: nth($sizes , 1 );
                 }
             }
         }
@@ -720,35 +659,69 @@
         }
     } 
 
-main {
-    .hero{
-        h2{
-            font-size: nth($sizes , 8 );
+    main {
+        .hero{
+            h2{
+                font-size: nth($sizes , 8 );
+            }
+            a{
+                font-size: nth($sizes , 8 );    
+            }
+        } 
+    }
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0;
+        section{
+            h2{
+                font-size: nth($sizes , 3 );
+            }
+            h3{
+                font-size: nth($sizes , 3 );  
+            }
+            p{
+                font-size: nth($sizes , 1 );  
+            }
         }
-        a{
-            font-size: nth($sizes , 8 );    
-        }
-    } 
-}
-.about-us{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:0;
-    section{
-        h2{
-            font-size: nth($sizes , 3 );
-        }
-        h3{
-            font-size: nth($sizes , 3 );  
-        }
-        p{
-            font-size: nth($sizes , 1 );  
+    }
+    footer{
+        .contact-us{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .form{
+                width: 320px;
+                h2{
+                    font-size: 25px;
+                }
+                form{
+                    input{
+                        font-size: 15px;
+                    }
+                    textarea{
+                        font-size: 15px;
+                    }
+                    button{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .map{
+                justify-content: center;
+                p{
+                    font-size: 12px;
+                }
+                iframe{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
         }
     }
 }
-}
-    
+
 @media screen and (max-width:850){
 .menu-h2{
     h2{
@@ -765,19 +738,6 @@ main{
         }
     } 
 } 
-}
-.about-us{
-    section{
-        h2{
-            font-size: nth($sizes , 5 );  
-        }
-        h3{
-            font-size: nth($sizes , 5 );  
-        }
-        p{
-            font-size: nth($sizes , 4 );  
-        }
-    }
 }
 
     
@@ -819,17 +779,38 @@ main{
                 }
             }
             #sections{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 width: 100%;
                 div{
                     width: 100%;
                     height: auto;
                     a{
+                        display: flex;
+                        justify-content: center;
                         img{
                             -webkit-filter: grayscale(0%);
+                            height: 350px;
+                            width: 100%;
+                        }
+                    } 
+                }
+            } 
+        } 
+    }
+}
+@media screen and (max-width:670px){
+    main{
+        .menu{
+            #sections{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div{
+                    width: 320px;
+                    a{
+                        img{
+                            height: 320px;
+                            width: 320px;
                         }
                     } 
                 }

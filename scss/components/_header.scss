@@ -17,9 +17,9 @@ header{
             align-items: center;
             width: 50%;
             img{
-                width: 30%;
-                height: 60%;
-                margin-left: 20px;
+                width: 150px;
+                height: 50px;
+                margin-left: 40px;
             }
         }
         .navegador-derecha{
@@ -30,7 +30,7 @@ header{
             align-items: flex-end;
             h2{
                 color: $color-terciario;
-                font-size: 40px;
+                font-size: 30px;
                 margin: 20px;
                 animation: connect 10s ease-in 0s infinite normal forwards;
                 @keyframes connect {
@@ -54,7 +54,7 @@ header{
                     align-items: center;
                     li{
                         float: left;
-                        font-size: 20px;  
+                        font-size: 15px;  
                         margin-right: 5px;
                         position: relative; 
                         width: fit-content;
@@ -137,5 +137,12 @@ header{
     }
     #burguer-menu-container{
         display: none;
+        .container-fluid{
+            .logo-burguer-nav{
+                width: 150px;
+                height: 50px;
+                margin-left: 40px;
+            }
+        }
     }
 }

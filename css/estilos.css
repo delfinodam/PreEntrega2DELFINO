@@ -1,12 +1,7 @@
-main .hero, main .menu .menu-h2, main .value div, main .value .experience, main .value .quality, main .faq .faq-title-container, main .faq .faq-title-container .faq-title, main .coverage-map, .about-us, .about-us section, .main-tourists .hero-tourists div, .main-tourists .cards .four, .main-tourists .cards .ten, .main-tourists .cards .twenty-five, .main-tourists .cards .fourty, .main-tourists .cards .four .card-title, .main-tourists .cards .ten .card-title, .main-tourists .cards .twenty-five .card-title, .main-tourists .cards .fourty .card-title, .main-tourists .cards .four .duration, .main-tourists .cards .ten .duration, .main-tourists .cards .twenty-five .duration, .main-tourists .cards .fourty .duration, .main-seamen .hero-seamen div, .main-seamen .cards .four, .main-seamen .cards .ten, .main-seamen .cards .twenty-five, .main-seamen .cards .fourty, .main-seamen .cards .four .card-title, .main-seamen .cards .ten .card-title, .main-seamen .cards .twenty-five .card-title, .main-seamen .cards .fourty .card-title, .main-seamen .cards .four .duration, .main-seamen .cards .ten .duration, .main-seamen .cards .twenty-five .duration, .main-seamen .cards .fourty .duration, .main-agents section, .main-resellers section {
+main .hero, main .menu .menu-h2, main .value div, main .value .experience, main .value .quality, main .faq .faq-title-container, main .faq .faq-title-container .faq-title, main .coverage-map, .about-us, .about-us section, .main-tourists .hero-tourists div, .main-tourists .cards-section .cards .four, .main-tourists .cards-section .cards .ten, .main-tourists .cards-section .cards .twenty-five, .main-tourists .cards-section .cards .forty, .main-tourists .cards-section .cards .four .card-title, .main-tourists .cards-section .cards .ten .card-title, .main-tourists .cards-section .cards .twenty-five .card-title, .main-tourists .cards-section .cards .forty .card-title, .main-tourists .cards-section .cards .four .duration, .main-tourists .cards-section .cards .ten .duration, .main-tourists .cards-section .cards .twenty-five .duration, .main-tourists .cards-section .cards .forty .duration, .main-seamen .hero-seamen div, .main-seamen .cards-section .cards .four, .main-seamen .cards-section .cards .ten, .main-seamen .cards-section .cards .twenty-five, .main-seamen .cards-section .cards .forty, .main-seamen .cards-section .cards .four .card-title, .main-seamen .cards-section .cards .ten .card-title, .main-seamen .cards-section .cards .twenty-five .card-title, .main-seamen .cards-section .cards .forty .card-title, .main-seamen .cards-section .cards .four .duration, .main-seamen .cards-section .cards .ten .duration, .main-seamen .cards-section .cards .twenty-five .duration, .main-seamen .cards-section .cards .forty .duration, .main-agents .hero-agents div, .main-resellers .hero-resellers div {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.main-agents, .main-resellers {
-  display: flex;
-  height: 80vh;
-  background-color: #1f1e1e; }
 
 @font-face {
   font-family: "sailcoms";
@@ -41,9 +36,9 @@ header {
       align-items: center;
       width: 50%; }
       header #main-nav-bar div img {
-        width: 30%;
-        height: 60%;
-        margin-left: 20px; }
+        width: 150px;
+        height: 50px;
+        margin-left: 40px; }
     header #main-nav-bar .navegador-derecha {
       width: 75%;
       display: flex;
@@ -52,7 +47,7 @@ header {
       align-items: flex-end; }
       header #main-nav-bar .navegador-derecha h2 {
         color: #FFE15D;
-        font-size: 40px;
+        font-size: 30px;
         margin: 20px;
         animation: connect 10s ease-in 0s infinite normal forwards; }
 
@@ -71,7 +66,7 @@ header {
         align-items: center; }
         header #main-nav-bar .navegador-derecha nav ul li {
           float: left;
-          font-size: 20px;
+          font-size: 15px;
           margin-right: 5px;
           position: relative;
           width: fit-content; }
@@ -136,6 +131,10 @@ header {
             font-weight: bold; }
   header #burguer-menu-container {
     display: none; }
+    header #burguer-menu-container .container-fluid .logo-burguer-nav {
+      width: 150px;
+      height: 50px;
+      margin-left: 40px; }
 
 /*!----- HERO -----*/
 main {
@@ -352,120 +351,209 @@ main {
         main .whatsapp a img:hover {
           width: 10vh; }
 
+/*!----- CART -----*/
+/* Estilo para el icono flotante */
+.cart-icon {
+  position: fixed;
+  bottom: 160px;
+  right: 40px;
+  z-index: 50;
+  background: #FFE15D;
+  border: black 2px solid;
+  border-radius: 10px;
+  width: 8vh;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  transition: 0.5s; }
+  .cart-icon:hover {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 10px; }
+  .cart-icon a img {
+    width: 6vh;
+    transition: 0.5s; }
+  .cart-icon #cart-count {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 30%;
+    padding: 5px;
+    font-size: 12px; }
+
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 280px;
+  right: 40px;
+  background-color: snow;
+  border: black 2px solid;
+  padding: 20px; }
+  #cart-container h3 {
+    text-align: center; }
+  #cart-container #cart-items li input {
+    width: 50px;
+    margin-left: 30px; }
+  #cart-container p {
+    text-align: center;
+    font-weight: bold; }
+  #cart-container button {
+    width: 200px;
+    align-self: center;
+    background-color: #FFE15D;
+    margin: 5px; }
+
+.hidden {
+  display: none !important; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 50; }
+  .whatsapp a {
+    background: transparent; }
+    .whatsapp a img {
+      width: 8vh;
+      transition: 0.5s; }
+      .whatsapp a img:hover {
+        width: 10vh; }
+
 /*!----- INDEX END -----*/
 /*!----- ABOUT -----*/
 .about-us {
-  height: 70vh;
+  height: auto;
   background-color: #1f1e1e;
   flex-direction: column;
   margin: 0;
-  padding: 0; }
+  padding: 40px; }
   .about-us section {
     flex-direction: column; }
     .about-us section h4 {
       color: #FFE15D;
       text-decoration: underline;
-      font-size: 40px; }
+      font-size: 30px; }
     .about-us section h5 {
       color: #FFE15D;
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
-      font-size: 30px; }
+      font-size: 20px; }
     .about-us section p {
       color: snow;
-      text-align: center;
+      text-align: justify;
       margin: 15px;
-      font-size: 20px; }
+      font-size: 16px; }
 
 /*!----- ABOUT END -----*/
 /*!----- TOURISTS -----*/
-.main-tourists {
-  height: auto; }
-  .main-tourists .hero-tourists {
-    display: flex;
-    height: auto;
-    background-color: #1f1e1e; }
-    .main-tourists .hero-tourists img {
-      height: 500px; }
-    .main-tourists .hero-tourists div {
-      flex-direction: column; }
-      .main-tourists .hero-tourists div h2 {
-        color: #FFE15D;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-decoration: underline;
-        font-size: 45px; }
-      .main-tourists .hero-tourists div p {
-        color: snow;
-        text-align: center;
-        margin: 20px;
-        font-size: 17px; }
-      .main-tourists .hero-tourists div ul {
-        list-style: none; }
-        .main-tourists .hero-tourists div ul li {
-          color: snow;
-          font-size: 17px; }
-          .main-tourists .hero-tourists div ul li .bullet {
-            color: #FFE15D; }
-      .main-tourists .hero-tourists div .chance {
-        color: #FFE15D;
-        margin-bottom: 15px; }
-  .main-tourists .cards-h2 {
-    border-bottom: 3px snow solid;
-    border-top: 3px snow solid;
-    display: flex;
-    justify-content: center;
-    color: snow;
-    padding: 20px;
-    background-color: black;
+.main-tourists .hero-tourists {
+  display: flex;
+  height: 60vh;
+  background-color: #1f1e1e; }
+  .main-tourists .hero-tourists img {
     height: auto; }
-    .main-tourists .cards-h2 h2 {
-      border: #FFE15D 2px solid;
-      padding: 20px;
-      font-size: 25px;
-      align-self: center;
-      font-weight: bold;
-      background-color: black;
-      margin: 0; }
-  .main-tourists .cards {
-    height: auto;
+  .main-tourists .hero-tourists div {
+    flex-direction: column;
+    padding: 40px; }
+    .main-tourists .hero-tourists div h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-decoration: underline;
+      font-size: 45px; }
+    .main-tourists .hero-tourists div p {
+      color: snow;
+      text-align: center;
+      margin: 20px;
+      font-size: 17px; }
+    .main-tourists .hero-tourists div ul {
+      list-style: none; }
+      .main-tourists .hero-tourists div ul li {
+        color: snow;
+        font-size: 17px; }
+        .main-tourists .hero-tourists div ul li .bullet {
+          color: #FFE15D; }
+    .main-tourists .hero-tourists div .chance {
+      color: #FFE15D;
+      margin-bottom: 15px; }
+
+.main-tourists .cards-h2 {
+  border-bottom: 3px snow solid;
+  border-top: 3px snow solid;
+  display: flex;
+  justify-content: center;
+  color: snow;
+  padding: 20px;
+  background-color: black;
+  height: auto; }
+  .main-tourists .cards-h2 h2 {
+    border: #FFE15D 2px solid;
+    padding: 20px;
+    font-size: 25px;
+    align-self: center;
+    font-weight: bold;
     background-color: black;
+    margin: 0; }
+
+.main-tourists .cards-section {
+  display: flex;
+  flex-direction: column;
+  background-color: snow; }
+  .main-tourists .cards-section .cards {
+    height: auto;
+    background-color: snow;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .main-tourists .cards .four, .main-tourists .cards .ten, .main-tourists .cards .twenty-five, .main-tourists .cards .fourty {
+    .main-tourists .cards-section .cards .four, .main-tourists .cards-section .cards .ten, .main-tourists .cards-section .cards .twenty-five, .main-tourists .cards-section .cards .forty {
       background-color: #FFE15D;
       opacity: 0.9;
       flex-direction: column;
       width: 240px;
       margin: 20px;
-      transition: 1s; }
-      .main-tourists .cards .four .card-title, .main-tourists .cards .ten .card-title, .main-tourists .cards .twenty-five .card-title, .main-tourists .cards .fourty .card-title {
+      box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      -webkit-box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      -moz-box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      transition: 0.5s; }
+      .main-tourists .cards-section .cards .four .add-to-cart-btn, .main-tourists .cards-section .cards .ten .add-to-cart-btn, .main-tourists .cards-section .cards .twenty-five .add-to-cart-btn, .main-tourists .cards-section .cards .forty .add-to-cart-btn {
+        padding: 5px;
+        background-color: snow;
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 15px; }
+        .main-tourists .cards-section .cards .four .add-to-cart-btn:hover, .main-tourists .cards-section .cards .ten .add-to-cart-btn:hover, .main-tourists .cards-section .cards .twenty-five .add-to-cart-btn:hover, .main-tourists .cards-section .cards .forty .add-to-cart-btn:hover {
+          background-color: lightgreen; }
+      .main-tourists .cards-section .cards .four .card-title, .main-tourists .cards-section .cards .ten .card-title, .main-tourists .cards-section .cards .twenty-five .card-title, .main-tourists .cards-section .cards .forty .card-title {
         width: 100%; }
-        .main-tourists .cards .four .card-title h3, .main-tourists .cards .ten .card-title h3, .main-tourists .cards .twenty-five .card-title h3, .main-tourists .cards .fourty .card-title h3 {
+        .main-tourists .cards-section .cards .four .card-title h3, .main-tourists .cards-section .cards .ten .card-title h3, .main-tourists .cards-section .cards .twenty-five .card-title h3, .main-tourists .cards-section .cards .forty .card-title h3 {
           display: flex;
           align-items: center;
           background-color: #FFE15D;
           font-size: 30px;
           margin: 0px;
           height: 60px; }
-      .main-tourists .cards .four .duration, .main-tourists .cards .ten .duration, .main-tourists .cards .twenty-five .duration, .main-tourists .cards .fourty .duration {
+      .main-tourists .cards-section .cards .four .duration, .main-tourists .cards-section .cards .ten .duration, .main-tourists .cards-section .cards .twenty-five .duration, .main-tourists .cards-section .cards .forty .duration {
         height: 80%;
         width: 100%;
         background-color: snow;
         border-top: black solid 2px;
         border-bottom: black solid 2px;
         padding: 10px; }
-        .main-tourists .cards .four .duration img, .main-tourists .cards .ten .duration img, .main-tourists .cards .twenty-five .duration img, .main-tourists .cards .fourty .duration img {
+        .main-tourists .cards-section .cards .four .duration img, .main-tourists .cards-section .cards .ten .duration img, .main-tourists .cards-section .cards .twenty-five .duration img, .main-tourists .cards-section .cards .forty .duration img {
           width: 15%;
           margin-left: 10px; }
-        .main-tourists .cards .four .duration p, .main-tourists .cards .ten .duration p, .main-tourists .cards .twenty-five .duration p, .main-tourists .cards .fourty .duration p {
+        .main-tourists .cards-section .cards .four .duration p, .main-tourists .cards-section .cards .ten .duration p, .main-tourists .cards-section .cards .twenty-five .duration p, .main-tourists .cards-section .cards .forty .duration p {
           font-size: 17px;
           width: 100%;
           margin: 0px 0px 0px 10px; }
-      .main-tourists .cards .four .includes, .main-tourists .cards .ten .includes, .main-tourists .cards .twenty-five .includes, .main-tourists .cards .fourty .includes {
+      .main-tourists .cards-section .cards .four .includes, .main-tourists .cards-section .cards .ten .includes, .main-tourists .cards-section .cards .twenty-five .includes, .main-tourists .cards-section .cards .forty .includes {
         background-color: snow;
         display: flex;
         flex-direction: column;
@@ -475,64 +563,83 @@ main {
         height: 10%;
         border-bottom: black solid 2px;
         padding-left: 10px; }
-        .main-tourists .cards .four .includes .includes-header, .main-tourists .cards .ten .includes .includes-header, .main-tourists .cards .twenty-five .includes .includes-header, .main-tourists .cards .fourty .includes .includes-header {
+        .main-tourists .cards-section .cards .four .includes .includes-header, .main-tourists .cards-section .cards .ten .includes .includes-header, .main-tourists .cards-section .cards .twenty-five .includes .includes-header, .main-tourists .cards-section .cards .forty .includes .includes-header {
           display: flex;
           justify-content: space-evenly;
           align-items: center; }
-          .main-tourists .cards .four .includes .includes-header img, .main-tourists .cards .ten .includes .includes-header img, .main-tourists .cards .twenty-five .includes .includes-header img, .main-tourists .cards .fourty .includes .includes-header img {
+          .main-tourists .cards-section .cards .four .includes .includes-header img, .main-tourists .cards-section .cards .ten .includes .includes-header img, .main-tourists .cards-section .cards .twenty-five .includes .includes-header img, .main-tourists .cards-section .cards .forty .includes .includes-header img {
             width: 15%;
             margin-left: 10px;
             align-self: flex-start; }
-          .main-tourists .cards .four .includes .includes-header h4, .main-tourists .cards .ten .includes .includes-header h4, .main-tourists .cards .twenty-five .includes .includes-header h4, .main-tourists .cards .fourty .includes .includes-header h4 {
+          .main-tourists .cards-section .cards .four .includes .includes-header h4, .main-tourists .cards-section .cards .ten .includes .includes-header h4, .main-tourists .cards-section .cards .twenty-five .includes .includes-header h4, .main-tourists .cards-section .cards .forty .includes .includes-header h4 {
             margin-top: 10px;
             font-size: 17px; }
-        .main-tourists .cards .four .includes .includes-list, .main-tourists .cards .ten .includes .includes-list, .main-tourists .cards .twenty-five .includes .includes-list, .main-tourists .cards .fourty .includes .includes-list {
+        .main-tourists .cards-section .cards .four .includes .includes-list, .main-tourists .cards-section .cards .ten .includes .includes-list, .main-tourists .cards-section .cards .twenty-five .includes .includes-list, .main-tourists .cards-section .cards .forty .includes .includes-list {
           width: 100%; }
-          .main-tourists .cards .four .includes .includes-list ul, .main-tourists .cards .ten .includes .includes-list ul, .main-tourists .cards .twenty-five .includes .includes-list ul, .main-tourists .cards .fourty .includes .includes-list ul {
+          .main-tourists .cards-section .cards .four .includes .includes-list ul, .main-tourists .cards-section .cards .ten .includes .includes-list ul, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul, .main-tourists .cards-section .cards .forty .includes .includes-list ul {
             width: 90%;
             list-style: none;
             padding: 0; }
-            .main-tourists .cards .four .includes .includes-list ul p, .main-tourists .cards .ten .includes .includes-list ul p, .main-tourists .cards .twenty-five .includes .includes-list ul p, .main-tourists .cards .fourty .includes .includes-list ul p {
+            .main-tourists .cards-section .cards .four .includes .includes-list ul p, .main-tourists .cards-section .cards .ten .includes .includes-list ul p, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul p, .main-tourists .cards-section .cards .forty .includes .includes-list ul p {
               width: 110%;
               font-size: 14px;
               text-align: center;
               margin-top: 10px;
               margin-bottom: 10px;
               align-self: center; }
-            .main-tourists .cards .four .includes .includes-list ul li, .main-tourists .cards .ten .includes .includes-list ul li, .main-tourists .cards .twenty-five .includes .includes-list ul li, .main-tourists .cards .fourty .includes .includes-list ul li {
+            .main-tourists .cards-section .cards .four .includes .includes-list ul li, .main-tourists .cards-section .cards .ten .includes .includes-list ul li, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul li, .main-tourists .cards-section .cards .forty .includes .includes-list ul li {
               width: 100%;
               font-size: 14px; }
-              .main-tourists .cards .four .includes .includes-list ul li img, .main-tourists .cards .ten .includes .includes-list ul li img, .main-tourists .cards .twenty-five .includes .includes-list ul li img, .main-tourists .cards .fourty .includes .includes-list ul li img {
+              .main-tourists .cards-section .cards .four .includes .includes-list ul li img, .main-tourists .cards-section .cards .ten .includes .includes-list ul li img, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul li img, .main-tourists .cards-section .cards .forty .includes .includes-list ul li img {
                 width: 40px;
                 margin-right: 20px;
-                margin-left: 5px; }
-              .main-tourists .cards .four .includes .includes-list ul li ul, .main-tourists .cards .ten .includes .includes-list ul li ul, .main-tourists .cards .twenty-five .includes .includes-list ul li ul, .main-tourists .cards .fourty .includes .includes-list ul li ul {
+                margin-left: 5px;
+                margin-top: 10px; }
+              .main-tourists .cards-section .cards .four .includes .includes-list ul li ul, .main-tourists .cards-section .cards .ten .includes .includes-list ul li ul, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul li ul, .main-tourists .cards-section .cards .forty .includes .includes-list ul li ul {
                 display: flex;
                 flex-direction: row;
                 padding: 0;
                 margin-top: 10px; }
-                .main-tourists .cards .four .includes .includes-list ul li ul li, .main-tourists .cards .ten .includes .includes-list ul li ul li, .main-tourists .cards .twenty-five .includes .includes-list ul li ul li, .main-tourists .cards .fourty .includes .includes-list ul li ul li {
+                .main-tourists .cards-section .cards .four .includes .includes-list ul li ul li, .main-tourists .cards-section .cards .ten .includes .includes-list ul li ul li, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul li ul li, .main-tourists .cards-section .cards .forty .includes .includes-list ul li ul li {
                   width: 100%;
                   color: black; }
-                  .main-tourists .cards .four .includes .includes-list ul li ul li img, .main-tourists .cards .ten .includes .includes-list ul li ul li img, .main-tourists .cards .twenty-five .includes .includes-list ul li ul li img, .main-tourists .cards .fourty .includes .includes-list ul li ul li img {
+                  .main-tourists .cards-section .cards .four .includes .includes-list ul li ul li img, .main-tourists .cards-section .cards .ten .includes .includes-list ul li ul li img, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul li ul li img, .main-tourists .cards-section .cards .forty .includes .includes-list ul li ul li img {
                     width: 32px;
                     margin: 5px; }
-      .main-tourists .cards .four .cost, .main-tourists .cards .ten .cost, .main-tourists .cards .twenty-five .cost, .main-tourists .cards .fourty .cost {
+            .main-tourists .cards-section .cards .four .includes .includes-list ul .social-media-icons, .main-tourists .cards-section .cards .ten .includes .includes-list ul .social-media-icons, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul .social-media-icons, .main-tourists .cards-section .cards .forty .includes .includes-list ul .social-media-icons {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 10px; }
+              .main-tourists .cards-section .cards .four .includes .includes-list ul .social-media-icons img, .main-tourists .cards-section .cards .ten .includes .includes-list ul .social-media-icons img, .main-tourists .cards-section .cards .twenty-five .includes .includes-list ul .social-media-icons img, .main-tourists .cards-section .cards .forty .includes .includes-list ul .social-media-icons img {
+                width: 40px;
+                height: 40px;
+                margin: 2px; }
+      .main-tourists .cards-section .cards .four .cost, .main-tourists .cards-section .cards .ten .cost, .main-tourists .cards-section .cards .twenty-five .cost, .main-tourists .cards-section .cards .forty .cost {
         width: 100%;
         height: 40px; }
-        .main-tourists .cards .four .cost h5, .main-tourists .cards .ten .cost h5, .main-tourists .cards .twenty-five .cost h5, .main-tourists .cards .fourty .cost h5 {
+        .main-tourists .cards-section .cards .four .cost h5, .main-tourists .cards-section .cards .ten .cost h5, .main-tourists .cards-section .cards .twenty-five .cost h5, .main-tourists .cards-section .cards .forty .cost h5 {
           display: flex;
           justify-content: center;
           align-items: center;
           margin: 0;
           height: 100%;
           font-size: 25px; }
-      .main-tourists .cards .four:hover, .main-tourists .cards .ten:hover, .main-tourists .cards .twenty-five:hover, .main-tourists .cards .fourty:hover {
+      .main-tourists .cards-section .cards .four:hover, .main-tourists .cards-section .cards .ten:hover, .main-tourists .cards-section .cards .twenty-five:hover, .main-tourists .cards-section .cards .forty:hover {
         border-radius: 40px; }
-  .main-tourists .whatsapp {
-    height: auto; }
-    .main-tourists .whatsapp a {
-      background-color: transparent; }
+  .main-tourists .cards-section .inquiries {
+    height: auto;
+    padding: 20px; }
+    .main-tourists .cards-section .inquiries p {
+      color: black;
+      text-align: center;
+      background-color: snow;
+      font-size: 20px; }
+
+.main-tourists .whatsapp {
+  height: auto; }
+  .main-tourists .whatsapp a {
+    background-color: transparent; }
 
 /*!----- TOURISTS END -----*/
 /*!----- SEAMEN -----*/
@@ -541,9 +648,10 @@ main {
   height: auto;
   background-color: #1f1e1e; }
   .main-seamen .hero-seamen img {
-    height: 500px; }
+    height: 60vh; }
   .main-seamen .hero-seamen div {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 20px; }
     .main-seamen .hero-seamen div h2 {
       color: #FFE15D;
       text-align: center;
@@ -585,106 +693,139 @@ main {
     background-color: black;
     margin: 0; }
 
-.main-seamen .cards {
-  height: auto;
-  background-color: black;
+.main-seamen .cards-section {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-seamen .cards .four, .main-seamen .cards .ten, .main-seamen .cards .twenty-five, .main-seamen .cards .fourty {
-    background-color: #FFE15D;
-    opacity: 0.9;
-    flex-direction: column;
-    width: 25vh;
-    margin: 20px;
-    transition: 1s; }
-    .main-seamen .cards .four .card-title, .main-seamen .cards .ten .card-title, .main-seamen .cards .twenty-five .card-title, .main-seamen .cards .fourty .card-title {
-      width: 100%; }
-      .main-seamen .cards .four .card-title h3, .main-seamen .cards .ten .card-title h3, .main-seamen .cards .twenty-five .card-title h3, .main-seamen .cards .fourty .card-title h3 {
-        display: flex;
-        align-items: center;
-        background-color: #FFE15D;
-        font-size: 30px;
-        margin: 0px;
-        height: 60px; }
-    .main-seamen .cards .four .duration, .main-seamen .cards .ten .duration, .main-seamen .cards .twenty-five .duration, .main-seamen .cards .fourty .duration {
-      height: 80%;
-      width: 100%;
-      background-color: snow;
-      border-top: black solid 2px;
-      border-bottom: black solid 2px;
-      padding: 10px; }
-      .main-seamen .cards .four .duration img, .main-seamen .cards .ten .duration img, .main-seamen .cards .twenty-five .duration img, .main-seamen .cards .fourty .duration img {
-        width: 15%;
-        margin-left: 10px; }
-      .main-seamen .cards .four .duration p, .main-seamen .cards .ten .duration p, .main-seamen .cards .twenty-five .duration p, .main-seamen .cards .fourty .duration p {
-        font-size: 17px;
-        width: 100%;
-        margin: 0px 0px 0px 10px; }
-    .main-seamen .cards .four .includes, .main-seamen .cards .ten .includes, .main-seamen .cards .twenty-five .includes, .main-seamen .cards .fourty .includes {
-      background-color: snow;
-      display: flex;
+  flex-direction: column;
+  background-color: snow; }
+  .main-seamen .cards-section .cards {
+    height: auto;
+    background-color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-seamen .cards-section .cards .four, .main-seamen .cards-section .cards .ten, .main-seamen .cards-section .cards .twenty-five, .main-seamen .cards-section .cards .forty {
+      background-color: #FFE15D;
+      opacity: 0.9;
       flex-direction: column;
-      justify-content: space-between;
-      justify-content: center;
-      width: 100%;
-      height: 10%;
-      border-bottom: black solid 2px;
-      padding-left: 10px; }
-      .main-seamen .cards .four .includes .includes-header, .main-seamen .cards .ten .includes .includes-header, .main-seamen .cards .twenty-five .includes .includes-header, .main-seamen .cards .fourty .includes .includes-header {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center; }
-        .main-seamen .cards .four .includes .includes-header img, .main-seamen .cards .ten .includes .includes-header img, .main-seamen .cards .twenty-five .includes .includes-header img, .main-seamen .cards .fourty .includes .includes-header img {
-          width: 15%;
-          margin-left: 10px;
-          align-self: flex-start; }
-        .main-seamen .cards .four .includes .includes-header h4, .main-seamen .cards .ten .includes .includes-header h4, .main-seamen .cards .twenty-five .includes .includes-header h4, .main-seamen .cards .fourty .includes .includes-header h4 {
-          margin-top: 10px;
-          font-size: 17px; }
-      .main-seamen .cards .four .includes .includes-list, .main-seamen .cards .ten .includes .includes-list, .main-seamen .cards .twenty-five .includes .includes-list, .main-seamen .cards .fourty .includes .includes-list {
+      width: 240px;
+      margin: 20px;
+      box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      -webkit-box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      -moz-box-shadow: 13px 13px 22px -1px rgba(0, 0, 0, 0.63);
+      transition: 0.5s; }
+      .main-seamen .cards-section .cards .four .add-to-cart-btn, .main-seamen .cards-section .cards .ten .add-to-cart-btn, .main-seamen .cards-section .cards .twenty-five .add-to-cart-btn, .main-seamen .cards-section .cards .forty .add-to-cart-btn {
+        padding: 5px;
+        background-color: snow;
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 15px; }
+        .main-seamen .cards-section .cards .four .add-to-cart-btn:hover, .main-seamen .cards-section .cards .ten .add-to-cart-btn:hover, .main-seamen .cards-section .cards .twenty-five .add-to-cart-btn:hover, .main-seamen .cards-section .cards .forty .add-to-cart-btn:hover {
+          background-color: lightgreen; }
+      .main-seamen .cards-section .cards .four .card-title, .main-seamen .cards-section .cards .ten .card-title, .main-seamen .cards-section .cards .twenty-five .card-title, .main-seamen .cards-section .cards .forty .card-title {
         width: 100%; }
-        .main-seamen .cards .four .includes .includes-list ul, .main-seamen .cards .ten .includes .includes-list ul, .main-seamen .cards .twenty-five .includes .includes-list ul, .main-seamen .cards .fourty .includes .includes-list ul {
-          width: 90%;
-          list-style: none;
-          padding: 0; }
-          .main-seamen .cards .four .includes .includes-list ul p, .main-seamen .cards .ten .includes .includes-list ul p, .main-seamen .cards .twenty-five .includes .includes-list ul p, .main-seamen .cards .fourty .includes .includes-list ul p {
-            width: 110%;
-            font-size: 14px;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            align-self: center; }
-          .main-seamen .cards .four .includes .includes-list ul li, .main-seamen .cards .ten .includes .includes-list ul li, .main-seamen .cards .twenty-five .includes .includes-list ul li, .main-seamen .cards .fourty .includes .includes-list ul li {
-            width: 100%;
-            font-size: 14px; }
-            .main-seamen .cards .four .includes .includes-list ul li img, .main-seamen .cards .ten .includes .includes-list ul li img, .main-seamen .cards .twenty-five .includes .includes-list ul li img, .main-seamen .cards .fourty .includes .includes-list ul li img {
-              width: 40px;
-              margin-right: 20px;
-              margin-left: 5px; }
-            .main-seamen .cards .four .includes .includes-list ul li ul, .main-seamen .cards .ten .includes .includes-list ul li ul, .main-seamen .cards .twenty-five .includes .includes-list ul li ul, .main-seamen .cards .fourty .includes .includes-list ul li ul {
-              display: flex;
-              flex-direction: row;
-              padding: 0;
-              margin-top: 10px; }
-              .main-seamen .cards .four .includes .includes-list ul li ul li, .main-seamen .cards .ten .includes .includes-list ul li ul li, .main-seamen .cards .twenty-five .includes .includes-list ul li ul li, .main-seamen .cards .fourty .includes .includes-list ul li ul li {
-                width: 100%;
-                color: black; }
-                .main-seamen .cards .four .includes .includes-list ul li ul li img, .main-seamen .cards .ten .includes .includes-list ul li ul li img, .main-seamen .cards .twenty-five .includes .includes-list ul li ul li img, .main-seamen .cards .fourty .includes .includes-list ul li ul li img {
-                  width: 32px;
-                  margin: 5px; }
-    .main-seamen .cards .four .cost, .main-seamen .cards .ten .cost, .main-seamen .cards .twenty-five .cost, .main-seamen .cards .fourty .cost {
-      width: 100%;
-      height: 40px; }
-      .main-seamen .cards .four .cost h5, .main-seamen .cards .ten .cost h5, .main-seamen .cards .twenty-five .cost h5, .main-seamen .cards .fourty .cost h5 {
+        .main-seamen .cards-section .cards .four .card-title h3, .main-seamen .cards-section .cards .ten .card-title h3, .main-seamen .cards-section .cards .twenty-five .card-title h3, .main-seamen .cards-section .cards .forty .card-title h3 {
+          display: flex;
+          align-items: center;
+          background-color: #FFE15D;
+          font-size: 30px;
+          margin: 0px;
+          height: 60px; }
+      .main-seamen .cards-section .cards .four .duration, .main-seamen .cards-section .cards .ten .duration, .main-seamen .cards-section .cards .twenty-five .duration, .main-seamen .cards-section .cards .forty .duration {
+        height: 80%;
+        width: 100%;
+        background-color: snow;
+        border-top: black solid 2px;
+        border-bottom: black solid 2px;
+        padding: 10px; }
+        .main-seamen .cards-section .cards .four .duration img, .main-seamen .cards-section .cards .ten .duration img, .main-seamen .cards-section .cards .twenty-five .duration img, .main-seamen .cards-section .cards .forty .duration img {
+          width: 15%;
+          margin-left: 10px; }
+        .main-seamen .cards-section .cards .four .duration p, .main-seamen .cards-section .cards .ten .duration p, .main-seamen .cards-section .cards .twenty-five .duration p, .main-seamen .cards-section .cards .forty .duration p {
+          font-size: 17px;
+          width: 100%;
+          margin: 0px 0px 0px 10px; }
+      .main-seamen .cards-section .cards .four .includes, .main-seamen .cards-section .cards .ten .includes, .main-seamen .cards-section .cards .twenty-five .includes, .main-seamen .cards-section .cards .forty .includes {
+        background-color: snow;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         justify-content: center;
-        align-items: center;
-        margin: 0;
-        height: 100%;
-        font-size: 25px; }
-    .main-seamen .cards .four:hover, .main-seamen .cards .ten:hover, .main-seamen .cards .twenty-five:hover, .main-seamen .cards .fourty:hover {
-      border-radius: 40px; }
+        width: 100%;
+        height: 10%;
+        border-bottom: black solid 2px;
+        padding-left: 10px; }
+        .main-seamen .cards-section .cards .four .includes .includes-header, .main-seamen .cards-section .cards .ten .includes .includes-header, .main-seamen .cards-section .cards .twenty-five .includes .includes-header, .main-seamen .cards-section .cards .forty .includes .includes-header {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center; }
+          .main-seamen .cards-section .cards .four .includes .includes-header img, .main-seamen .cards-section .cards .ten .includes .includes-header img, .main-seamen .cards-section .cards .twenty-five .includes .includes-header img, .main-seamen .cards-section .cards .forty .includes .includes-header img {
+            width: 15%;
+            margin-left: 10px;
+            align-self: flex-start; }
+          .main-seamen .cards-section .cards .four .includes .includes-header h4, .main-seamen .cards-section .cards .ten .includes .includes-header h4, .main-seamen .cards-section .cards .twenty-five .includes .includes-header h4, .main-seamen .cards-section .cards .forty .includes .includes-header h4 {
+            margin-top: 10px;
+            font-size: 17px; }
+        .main-seamen .cards-section .cards .four .includes .includes-list, .main-seamen .cards-section .cards .ten .includes .includes-list, .main-seamen .cards-section .cards .twenty-five .includes .includes-list, .main-seamen .cards-section .cards .forty .includes .includes-list {
+          width: 100%; }
+          .main-seamen .cards-section .cards .four .includes .includes-list ul, .main-seamen .cards-section .cards .ten .includes .includes-list ul, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul, .main-seamen .cards-section .cards .forty .includes .includes-list ul {
+            width: 90%;
+            list-style: none;
+            padding: 0; }
+            .main-seamen .cards-section .cards .four .includes .includes-list ul p, .main-seamen .cards-section .cards .ten .includes .includes-list ul p, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul p, .main-seamen .cards-section .cards .forty .includes .includes-list ul p {
+              width: 110%;
+              font-size: 14px;
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              align-self: center; }
+            .main-seamen .cards-section .cards .four .includes .includes-list ul li, .main-seamen .cards-section .cards .ten .includes .includes-list ul li, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul li, .main-seamen .cards-section .cards .forty .includes .includes-list ul li {
+              width: 100%;
+              font-size: 14px; }
+              .main-seamen .cards-section .cards .four .includes .includes-list ul li img, .main-seamen .cards-section .cards .ten .includes .includes-list ul li img, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul li img, .main-seamen .cards-section .cards .forty .includes .includes-list ul li img {
+                width: 40px;
+                margin-right: 20px;
+                margin-left: 5px;
+                margin-top: 10px; }
+              .main-seamen .cards-section .cards .four .includes .includes-list ul li ul, .main-seamen .cards-section .cards .ten .includes .includes-list ul li ul, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul li ul, .main-seamen .cards-section .cards .forty .includes .includes-list ul li ul {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                margin-top: 10px; }
+                .main-seamen .cards-section .cards .four .includes .includes-list ul li ul li, .main-seamen .cards-section .cards .ten .includes .includes-list ul li ul li, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul li ul li, .main-seamen .cards-section .cards .forty .includes .includes-list ul li ul li {
+                  width: 100%;
+                  color: black; }
+                  .main-seamen .cards-section .cards .four .includes .includes-list ul li ul li img, .main-seamen .cards-section .cards .ten .includes .includes-list ul li ul li img, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul li ul li img, .main-seamen .cards-section .cards .forty .includes .includes-list ul li ul li img {
+                    width: 32px;
+                    margin: 5px; }
+            .main-seamen .cards-section .cards .four .includes .includes-list ul .social-media-icons, .main-seamen .cards-section .cards .ten .includes .includes-list ul .social-media-icons, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul .social-media-icons, .main-seamen .cards-section .cards .forty .includes .includes-list ul .social-media-icons {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 10px; }
+              .main-seamen .cards-section .cards .four .includes .includes-list ul .social-media-icons img, .main-seamen .cards-section .cards .ten .includes .includes-list ul .social-media-icons img, .main-seamen .cards-section .cards .twenty-five .includes .includes-list ul .social-media-icons img, .main-seamen .cards-section .cards .forty .includes .includes-list ul .social-media-icons img {
+                width: 40px;
+                height: 40px;
+                margin: 2px; }
+      .main-seamen .cards-section .cards .four .cost, .main-seamen .cards-section .cards .ten .cost, .main-seamen .cards-section .cards .twenty-five .cost, .main-seamen .cards-section .cards .forty .cost {
+        width: 100%;
+        height: 40px; }
+        .main-seamen .cards-section .cards .four .cost h5, .main-seamen .cards-section .cards .ten .cost h5, .main-seamen .cards-section .cards .twenty-five .cost h5, .main-seamen .cards-section .cards .forty .cost h5 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          height: 100%;
+          font-size: 25px; }
+      .main-seamen .cards-section .cards .four:hover, .main-seamen .cards-section .cards .ten:hover, .main-seamen .cards-section .cards .twenty-five:hover, .main-seamen .cards-section .cards .forty:hover {
+        border-radius: 40px; }
+  .main-seamen .cards-section .inquiries {
+    height: auto;
+    padding: 20px; }
+    .main-seamen .cards-section .inquiries p {
+      color: black;
+      text-align: center;
+      background-color: snow;
+      font-size: 20px; }
 
 .main-seamen .whatsapp {
   height: auto; }
@@ -693,126 +834,155 @@ main {
 
 /*!----- SEAMEN END -----*/
 /*!----- AGENTS -----*/
-.main-agents section {
-  flex-direction: column; }
-  .main-agents section h2 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    text-decoration: underline;
-    font-size: 45px; }
-  .main-agents section h3 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 25px; }
-  .main-agents section p {
-    color: snow;
-    text-align: center;
-    margin: 15px;
-    font-size: 16px; }
-  .main-agents section ul {
-    list-style: none; }
-    .main-agents section ul li {
+.main-agents .hero-agents {
+  display: flex;
+  height: 70vh;
+  background-color: #1f1e1e; }
+  .main-agents .hero-agents img {
+    height: auto; }
+  .main-agents .hero-agents div {
+    flex-direction: column;
+    height: auto;
+    padding: 40px; }
+    .main-agents .hero-agents div h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-decoration: underline;
+      font-size: 30px; }
+    .main-agents .hero-agents div h3 {
+      font-size: 20px;
+      color: #FFE15D;
+      margin: 10px; }
+    .main-agents .hero-agents div p {
       color: snow;
-      font-size: 16px; }
-      .main-agents section ul li span {
-        color: #FFE15D; }
-  .main-agents section .partner {
-    color: #FFE15D;
-    margin: 10px; }
-  .main-agents section a {
-    text-decoration: none;
-    background-color: snow;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px; }
+      text-align: center;
+      margin: 20px;
+      font-size: 13px; }
+    .main-agents .hero-agents div ul {
+      list-style: none; }
+      .main-agents .hero-agents div ul li {
+        color: snow;
+        font-size: 13px; }
+        .main-agents .hero-agents div ul li .bullet {
+          color: #FFE15D; }
+    .main-agents .hero-agents div .partner {
+      color: #FFE15D;
+      margin-bottom: 13px; }
+    .main-agents .hero-agents div a {
+      text-decoration: none;
+      background-color: snow;
+      color: black;
+      padding: 10px;
+      font-size: 18px;
+      margin-top: 20px;
+      font-size: 13px; }
 
 .main-agents .whatsapp a {
   background-color: transparent; }
 
 /*!----- AGENTS END -----*/
 /*!----- RESELLERS -----*/
-.main-resellers section {
-  flex-direction: column; }
-  .main-resellers section h2 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    text-decoration: underline;
-    font-size: 45px; }
-  .main-resellers section h3 {
-    color: #FFE15D;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 25px; }
-  .main-resellers section p {
-    color: snow;
-    text-align: center;
-    margin: 15px;
-    font-size: 16px; }
-  .main-resellers section ul {
-    list-style: none; }
-    .main-resellers section ul li {
+.main-resellers .hero-resellers {
+  display: flex;
+  height: 70vh;
+  background-color: #1f1e1e; }
+  .main-resellers .hero-resellers img {
+    height: auto; }
+  .main-resellers .hero-resellers div {
+    flex-direction: column;
+    height: auto;
+    padding: 40px; }
+    .main-resellers .hero-resellers div h2 {
+      color: #FFE15D;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-decoration: underline;
+      font-size: 30px; }
+    .main-resellers .hero-resellers div h3 {
+      font-size: 20px;
+      color: #FFE15D;
+      margin: 10px; }
+    .main-resellers .hero-resellers div p {
       color: snow;
-      font-size: 16px; }
-      .main-resellers section ul li span {
-        color: #FFE15D; }
-  .main-resellers section .join {
-    color: #FFE15D;
-    margin: 10px; }
-  .main-resellers section a {
-    text-decoration: none;
-    background-color: snow;
-    color: black;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px; }
+      text-align: center;
+      margin: 20px;
+      font-size: 13px; }
+    .main-resellers .hero-resellers div ul {
+      list-style: none; }
+      .main-resellers .hero-resellers div ul li {
+        color: snow;
+        font-size: 13px; }
+        .main-resellers .hero-resellers div ul li .bullet {
+          color: #FFE15D; }
+    .main-resellers .hero-resellers div .partner {
+      color: #FFE15D;
+      margin-bottom: 13px; }
+    .main-resellers .hero-resellers div a {
+      text-decoration: none;
+      background-color: snow;
+      color: black;
+      padding: 10px;
+      font-size: 18px;
+      margin-top: 20px;
+      font-size: 13px; }
 
 .main-resellers .whatsapp a {
   background-color: transparent; }
 
 footer {
   background: linear-gradient(black, #ffe666); }
-  footer section {
+  footer .contact-us {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     color: snow;
     font-size: 20px;
     border-top: solid snow 6px; }
-    footer section h2 {
-      font-size: 40px;
+  footer .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; }
+    footer .form h2 {
+      font-size: 30px;
       font-weight: bold;
       margin-top: 60px;
       text-align: center; }
-    footer section div form {
+    footer .form form div label {
+      font-size: 15px; }
+    footer .form form div input {
+      width: 100%;
+      font-size: 15px; }
+    footer .form form div textarea {
+      width: 100%;
+      font-size: 15px; }
+    footer .form form button {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: stretch; }
-      footer section div form div input {
-        width: 100%;
-        font-size: 20px; }
-      footer section div form div textarea {
-        width: 100%;
-        font-size: 20px; }
-      footer section div form button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 30px;
-        font-size: 20px;
-        text-align: center;
-        background-color: black;
-        color: snow; }
+      width: 100%;
+      height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background-color: black;
+      color: snow; }
+  footer .map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    margin-top: 40px; }
+    footer .map p {
+      text-align: center;
+      font-size: 15px; }
+    footer .map iframe {
+      width: 400px;
+      height: 400px; }
   footer .copyright {
     width: 100%;
     align-items: center;
@@ -901,36 +1071,38 @@ footer {
     font-size: 16px; }
   .main-seamen section ul li {
     font-size: 16px; }
-  .main-agents section h2 {
-    font-size: 25px; }
-  .main-agents section h3 {
-    font-size: 18px; }
-  .main-agents section p {
-    font-size: 13px; }
-  .main-agents section ul li {
-    font-size: 13px; }
-  .main-resellers section h2 {
-    font-size: 38px; }
-  .main-resellers section p {
-    font-size: 15px; }
-  .main-resellers section ul li {
-    font-size: 15px; } }
-
-@media screen and (max-width: 1220px) {
-  .main-agents section h2 {
-    font-size: 20px; }
-  .main-agents section h3 {
-    font-size: 16px; }
-  .main-agents section p {
-    font-size: 12px; }
-  .main-agents section ul li {
-    font-size: 12px; }
-  .main-resellers section h2 {
-    font-size: 35px; }
-  .main-resellers section p {
-    font-size: 14px; }
-  .main-resellers section ul li {
-    font-size: 14px; } }
+  .main-agents .hero-agents img {
+    height: 70vh; }
+  .main-agents .hero-agents div {
+    padding: 10px; }
+    .main-agents .hero-agents div h2 {
+      font-size: 25px; }
+    .main-agents .hero-agents div h3 {
+      font-size: 18px; }
+    .main-agents .hero-agents div p {
+      font-size: 10px; }
+    .main-agents .hero-agents div ul li {
+      font-size: 10px; }
+    .main-agents .hero-agents div .partner {
+      margin-bottom: 10px; }
+    .main-agents .hero-agents div a {
+      font-size: 10px; }
+  .main-resellers .hero-resellers img {
+    height: 70vh; }
+  .main-resellers .hero-resellers div {
+    padding: 10px; }
+    .main-resellers .hero-resellers div h2 {
+      font-size: 25px; }
+    .main-resellers .hero-resellers div h3 {
+      font-size: 18px; }
+    .main-resellers .hero-resellers div p {
+      font-size: 10px; }
+    .main-resellers .hero-resellers div ul li {
+      font-size: 10px; }
+    .main-resellers .hero-resellers div .join {
+      margin-bottom: 10px; }
+    .main-resellers .hero-resellers div a {
+      font-size: 10px; } }
 
 @media screen and (max-width: 1200px) {
   header section div {
@@ -938,27 +1110,17 @@ footer {
     height: 150px; }
   header section .navegador-derecha nav {
     margin-bottom: 10px; }
-  .main-seamen section h2 {
-    font-size: 30px; }
-  .main-seamen section p {
-    font-size: 15px; }
-  .main-seamen section ul li {
-    font-size: 15px; }
   main .value div p {
     font-size: 23px; } }
 
 @media screen and (max-width: 1175px) {
   .main-tourists .hero-tourists div h2 {
     font-size: 25px; }
+  .main-tourists .hero-tourists div h3 {
+    font-size: 18px; }
   .main-tourists .hero-tourists div p {
     font-size: 14px; }
   .main-tourists .hero-tourists div ul li {
-    font-size: 14px; }
-  .main-seamen section h2 {
-    font-size: 28px; }
-  .main-seamen section p {
-    font-size: 14px; }
-  .main-seamen section ul li {
     font-size: 14px; } }
 
 @media screen and (max-width: 1120px) {
@@ -966,18 +1128,6 @@ footer {
     font-size: 20px; }
   main .value div h2 {
     font-size: 30px; }
-  .main-seamen section h2 {
-    font-size: 25px; }
-  .main-seamen section p {
-    font-size: 13px; }
-  .main-seamen section ul li {
-    font-size: 13px; }
-  .main-resellers section h2 {
-    font-size: 30px; }
-  .main-resellers section p {
-    font-size: 13px; }
-  .main-resellers section ul li {
-    font-size: 13px; }
   .main-tourists .hero-tourists div h2 {
     font-size: 20px; }
   .main-tourists .hero-tourists div p {
@@ -992,20 +1142,30 @@ footer {
     font-size: 15px; }
   .main-seamen .hero-seamen div ul li {
     font-size: 15px; }
-  .main-agents section h2 {
-    font-size: 18px; }
-  .main-agents section h3 {
-    font-size: 15px; }
-  .main-agents section p {
-    font-size: 11px; }
-  .main-agents section ul li {
-    font-size: 11px; }
-  .main-resellers section h2 {
-    font-size: 28px; }
-  .main-resellers section p {
-    font-size: 12px; }
-  .main-resellers section ul li {
-    font-size: 12px; } }
+  .main-agents .hero-agents div h2 {
+    margin: 8px; }
+  .main-agents .hero-agents div h3 {
+    margin: 8px; }
+  .main-agents .hero-agents div p {
+    margin: 8px; }
+  .main-agents .hero-agents div ul {
+    margin: 8px; }
+    .main-agents .hero-agents div ul li {
+      margin: 8px; }
+  .main-agents .hero-agents div a {
+    margin: 10px; }
+  .main-resellers .hero-resellers div h2 {
+    margin: 8px; }
+  .main-resellers .hero-resellers div h3 {
+    margin: 8px; }
+  .main-resellers .hero-resellers div p {
+    margin: 8px; }
+  .main-resellers .hero-resellers div ul {
+    margin: 8px; }
+    .main-resellers .hero-resellers div ul li {
+      margin: 8px; }
+  .main-resellers .hero-resellers div a {
+    margin: 10px; } }
 
 @media screen and (max-width: 1000px) {
   .about-us {
@@ -1053,9 +1213,6 @@ footer {
       height: 100%; }
       header #burguer-menu-container .container-fluid img {
         margin-left: 20px; }
-      header #burguer-menu-container .container-fluid .logo-burguer-nav {
-        height: 8vh;
-        width: 23vh; }
       header #burguer-menu-container .container-fluid .navbar-toggler {
         display: block;
         margin-right: 20px; }
@@ -1099,8 +1256,8 @@ footer {
     align-items: center;
     height: auto; }
     .main-tourists .hero-tourists img {
-      height: 400px;
-      width: 400px; }
+      height: 320px;
+      width: 320px; }
     .main-tourists .hero-tourists div h2 {
       margin-top: 38px;
       font-size: 38px; }
@@ -1124,8 +1281,8 @@ footer {
     align-items: center;
     height: auto; }
     .main-seamen .hero-seamen img {
-      width: 400px;
-      height: 400px; }
+      width: 320px;
+      height: 320px; }
     .main-seamen .hero-seamen h2 {
       margin-top: 20px;
       font-size: 35px; }
@@ -1141,47 +1298,51 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .main-agents {
+  .main-agents .hero-agents {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto; }
-    .main-agents img {
-      width: 100%; }
-    .main-agents section {
-      font-size: 14px; }
-      .main-agents section h2 {
+    .main-agents .hero-agents img {
+      width: 320px;
+      height: 320px; }
+    .main-agents .hero-agents div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height: auto; }
+      .main-agents .hero-agents div h2 {
         margin-top: 20px; }
-      .main-agents section a {
-        margin-bottom: 20px; }
-  .main-resellers {
+      .main-agents .hero-agents div h3 {
+        font-size: 14px; }
+      .main-agents .hero-agents div a {
+        font-size: 14px; }
+  .main-resellers .hero-resellers {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto; }
-    .main-resellers img {
-      width: 100%; }
-    .main-resellers section {
-      font-size: 14px; }
-      .main-resellers section h2 {
-        margin-top: 20px;
-        font-size: 30px; }
-      .main-resellers section a {
-        margin-bottom: 20px; }
-      .main-resellers section p {
-        font-size: 16px; }
-      .main-resellers section ul li {
-        font-size: 16px; }
-  .main-agents section h2 {
-    font-size: 28px; }
-  .main-agents section h3 {
-    font-size: 20px; }
-  .main-agents section p {
-    font-size: 15px; }
-  .main-agents section ul li {
-    font-size: 15px; } }
+    .main-resellers .hero-resellers img {
+      width: 320px;
+      height: 320px; }
+    .main-resellers .hero-resellers div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height: auto; }
+      .main-resellers .hero-resellers div h2 {
+        margin-top: 20px; }
+      .main-resellers .hero-resellers div h3 {
+        font-size: 14px; }
+      .main-resellers .hero-resellers div a {
+        font-size: 14px; } }
 
 @media screen and (max-width: 900px) {
   .menu-h2 h2 {
@@ -1200,7 +1361,28 @@ footer {
     .about-us section h3 {
       font-size: 16px; }
     .about-us section p {
-      font-size: 14px; } }
+      font-size: 14px; }
+  footer .contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .contact-us .form {
+      width: 320px; }
+      footer .contact-us .form h2 {
+        font-size: 25px; }
+      footer .contact-us .form form input {
+        font-size: 15px; }
+      footer .contact-us .form form textarea {
+        font-size: 15px; }
+      footer .contact-us .form form button {
+        font-size: 15px; }
+    footer .contact-us .map {
+      justify-content: center; }
+      footer .contact-us .map p {
+        font-size: 12px; }
+      footer .contact-us .map iframe {
+        width: 300px;
+        height: 300px; } }
 
 @media screen and (max-width: 850) {
   .menu-h2 h2 {
@@ -1209,15 +1391,6 @@ footer {
     font-size: 28px; }
   main .hero a {
     font-size: 28px; } }
-
-.about-us section h2 {
-  font-size: 20px; }
-
-.about-us section h3 {
-  font-size: 20px; }
-
-.about-us section p {
-  font-size: 18px; }
 
 @media screen and (max-width: 800) {
   .menu-h2 h2 {
@@ -1237,16 +1410,29 @@ footer {
   main .menu .menu-h2 h2 {
     font-size: 35px; }
   main .menu #sections {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%; }
     main .menu #sections div {
       width: 100%;
       height: auto; }
+      main .menu #sections div a {
+        display: flex;
+        justify-content: center; }
+        main .menu #sections div a img {
+          -webkit-filter: grayscale(0%);
+          height: 350px;
+          width: 100%; } }
+
+@media screen and (max-width: 670px) {
+  main .menu #sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .menu #sections div {
+      width: 320px; }
       main .menu #sections div a img {
-        -webkit-filter: grayscale(0%); } }
+        height: 320px;
+        width: 320px; } }
 
 @media screen and (max-width: 550px) {
   .about-us section h2 {
