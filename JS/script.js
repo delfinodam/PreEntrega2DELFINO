@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Variables globales
     const cartToggle = document.getElementById('cart-toggle');
     const cartContainer = document.getElementById('cart-container');
     const cartCount = document.getElementById('cart-count');
     let itemCount = 0;
     let cart = [];
 
-    // Lógica de eventos
     cartToggle.addEventListener('click', function(event) {
         console.log('Clic en el icono del carrito');
         event.preventDefault();
@@ -42,22 +40,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const clearCartBtn = document.getElementById('clear-cart-btn');
     clearCartBtn.addEventListener('click', clearCart);
-
     const checkoutBtn = document.getElementById('checkout-btn');
     checkoutBtn.addEventListener('click', function(event) {
         // Desplazar suavemente hasta la parte de mensajes
         const messagesSection = document.getElementById('contact');
         messagesSection.scrollIntoView({ behavior: 'smooth' });
-
-        // Generar detalle del carrito
-        const cartDetails = generateCartDetails();
-        
-        // Imprimir detalle del carrito en el campo "message"
+        const cartDetails = generateCartDetails(); 
         const messageField = document.getElementById('message');
         messageField.value = cartDetails;
     });
 
-    // Funciones
     function clearCart() {
         cart = []; 
         updateCartUI(cart); 
@@ -137,13 +129,10 @@ document.addEventListener("DOMContentLoaded", function() {
             card.querySelector('.card-title h3').innerText = plan.name;
             card.querySelector('.duration p').innerText = 'Valid for: ' + plan.duration;
             card.querySelector('.cost h5').innerText = plan.cost;
-
-            // Asignar la imagen de la duración
             card.querySelector('.duration img').src = plan.image_duration;
 
-            // Limpiar y agregar el contenido de la lista de servicios incluidos
             let includesList = card.querySelector('.includes-list ul');
-            includesList.innerHTML = ''; // Limpiar la lista de servicios incluidos
+            includesList.innerHTML = ''; 
             plan.includes.forEach(function (include) {
                 let li = document.createElement('li');
                 li.innerHTML = include;
@@ -181,7 +170,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return cartDetails;
     }
 
-    // Inicialización
     if (localStorage.getItem('cart')) {
         cart = JSON.parse(localStorage.getItem('cart'));
     }
