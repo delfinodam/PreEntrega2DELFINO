@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function() {
             updateCartUI(cart); 
             updateCartNotification(); 
             saveCartToLocalStorage(); 
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Your item has been added to the cart",
-                showConfirmButton: false,
-                timer: 1000
-            });
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Your item has been added to the cart",
+                    showConfirmButton: false,
+                    timer: 1000
+                });
         });
     });
 
@@ -42,12 +42,23 @@ document.addEventListener("DOMContentLoaded", function() {
     clearCartBtn.addEventListener('click', clearCart);
     const checkoutBtn = document.getElementById('checkout-btn');
     checkoutBtn.addEventListener('click', function(event) {
-        // Desplazar suavemente hasta la parte de mensajes
-        const messagesSection = document.getElementById('contact');
-        messagesSection.scrollIntoView({ behavior: 'smooth' });
-        const cartDetails = generateCartDetails(); 
-        const messageField = document.getElementById('message');
-        messageField.value = cartDetails;
+        event.preventDefault(); // Prevent default behavior of the button click
+        const totalPrice = cart.reduce((total, item) => total + (item.price * (item.quantity || 1)), 0);
+        if (totalPrice === 0) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Your cart is empty",
+                allowOutsideClick: false,
+                confirmButtonText: "OK"
+            });
+        } else {
+            const messagesSection = document.getElementById('contact');
+            messagesSection.scrollIntoView({ behavior: 'smooth' });
+            const cartDetails = generateCartDetails(); 
+            const messageField = document.getElementById('message');
+            messageField.value = cartDetails;
+        }
     });
 
     function clearCart() {
