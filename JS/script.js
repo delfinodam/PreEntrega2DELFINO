@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
     const cartToggle = document.getElementById('cart-toggle');
     const cartContainer = document.getElementById('cart-container');
     const cartCount = document.getElementById('cart-count');
@@ -7,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let cart = [];
 
     cartToggle.addEventListener('click', function(event) {
-        console.log('Clic en el icono del carrito');
         event.preventDefault();
         cartContainer.classList.toggle('hidden');
     });
@@ -28,29 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
             updateCartUI(cart); 
             updateCartNotification(); 
             saveCartToLocalStorage(); 
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Your item has been added to the cart",
-                    showConfirmButton: false,
-                    timer: 1000
-                });
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Your item has been added to the cart",
+                showConfirmButton: false,
+                timer: 1000
+            });
         });
     });
 
     const clearCartBtn = document.getElementById('clear-cart-btn');
     clearCartBtn.addEventListener('click', clearCart);
+    
     const checkoutBtn = document.getElementById('checkout-btn');
     checkoutBtn.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default behavior of the button click
+        event.preventDefault();
         const totalPrice = cart.reduce((total, item) => total + (item.price * (item.quantity || 1)), 0);
         if (totalPrice === 0) {
             Swal.fire({
                 position: "center",
                 icon: "error",
                 title: "Your cart is empty",
-                allowOutsideClick: false,
-                confirmButtonText: "OK"
+                showConfirmButton: true
             });
         } else {
             const messagesSection = document.getElementById('contact');
@@ -129,13 +127,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 return response.json();
             })
-            .then(data => callback(data))
+            .then(data => {
+                callback(data);
+            })
             .catch(error => console.error('Error loading JSON:', error));
     }
 
-    function updateCards(plans) {
+    function updateCards(data) {
+        const plans = data;
+        if (!plans || !Array.isArray(plans) || plans.length === 0) {
+            console.error('No plans available or plans is not an array');
+            return;
+        }
+
         let cards = document.querySelectorAll('.four, .ten, .twenty-five, .forty');
         cards.forEach(function (card, index) {
+            if (index >= plans.length) {
+                console.error('Plan index out of bounds');
+                return;
+            }
+
             let plan = plans[index];
             card.querySelector('.card-title h3').innerText = plan.name;
             card.querySelector('.duration p').innerText = 'Valid for: ' + plan.duration;
@@ -161,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function() {
             let socialMediaDiv = document.createElement('div');
             socialMediaDiv.className = 'social-media-icons';
 
-            
             plan.social_media.forEach(function (socialMedia) {
                 let socialMediaImg = document.createElement('img');
                 socialMediaImg.src = plan["image_" + socialMedia.toLowerCase()];
@@ -186,10 +196,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     loadJSON(function (data) {
-        updateCards(data.plans);
+        if (data && Array.isArray(data)) {
+            updateCards(data);
+        } else {
+            console.error('Data does not contain plans or is not an array');
+        }
     });
 
     updateCartUI(cart); 
     updateCartNotification(); 
 });
-
