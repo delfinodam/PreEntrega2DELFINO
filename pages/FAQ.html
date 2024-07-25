@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Sail Communications | Argentine SIM Cards</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        .banner-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .section-buttons {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+        }
+        .section-buttons button {
+            width: 150px;
+            margin: 10px;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .container.my-5{
+            background-color: aliceblue;
+        }
+        #faqButton{
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GLE68YV5EV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GLE68YV5EV');
+</script>
+
+<!-- HEADER -->
+<header>
+    <section id="main-nav-bar">
+        <div>
+            <img src="../img/sail.png" alt="logo-sail"/>
+        </div>
+        <div class="navegador-derecha">
+            <h2>We connect People.</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Products ▼</a>
+                        <ul class="products-nav">
+                            <li>
+                                <a href="../pages/tourists.html">Tourists</a>
+                            </li>
+                            <li>
+                                <a href="../pages/seamen.html">Seamen</a>
+                            </li>
+                            <li>
+                                <a href="../pages/agents.html">Agents</a>
+                            </li>
+                            <li>
+                                <a href="../pages/resellers.html">Resellers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages/FAQ.html">FAQ & Top ups</a>
+                    </li>
+                    <li>
+                        <a id="contact-nav" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="navbar navbar-dark bg-dark sticky-top" id="burguer-menu-container">
+        <div class="container-fluid">
+            <img class="logo-burguer-nav" src="../img/sail.png" alt="logo-sail"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="popup-menu">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/FAQ.html">FAQ & Top Ups</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu dropdown-menu-light" id="menu-dropdown">
+                                <li>
+                                    <a class="dropdown-item" href="../pages/tourists.html">Tourists</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/seamen.html">Seamen</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/agents.html">Agency</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../pages/resellers.html">Resellers</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<!-- MAIN -->
+<main class="main-seamen">
+    <div class="hero-faq">
+        <img src="../img/FAQ.png" alt="faq-img" class="banner-image"/>
+    </div>
+
+    <!-- Section Buttons -->
+    <div class="section-buttons">
+        <button id="faqButton" class="btn btn-primary">FAQ</button>
+        <button id="topUpsButton" class="btn btn-secondary">TOP UPS</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faqSection" class="content-section active">
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Preguntas Frecuentes</h1>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                ¿How can I acquire a SIM?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseOne" class="collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can order your SIM in our website, by mail to sims@sailcoms.com, at your hotel's front desk(if available), or in our counter at Cruises Terminal (works only from december to march of every year).
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                How do I activate my SIM?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            At Sail Communications, we do de registration for you in advance, using the "Help the next tourist" method.  When you acquire our SIM, we just need to know which data package you wish and you will have it ready within minutes.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                What's the "Help the next tourst" method for SIM registration?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            You give us permission to activate a SIM with your passport.  And that SIM will be handed to the "next" tourist.
+                            Since registering the SIM can take several hours, this way everyone can have it ready right away.
+                            This means no user of our SIMs will be able to do any kind of transactions with CLARO (like changing plans). It also secures no user of our SIMs will ever have any extra cost required by us nor CLARO.  We'll provide suppor fot the SIMs instead.  
+                            This also 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                ¿Cómo realizo una recarga?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseFour" class="collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            Puedes recargar tu SIM a través de nuestra página web en la sección de recargas, utilizando una tarjeta de crédito o débito. También puedes visitar nuestros puntos de venta asociados o contactarnos por WhatsApp para asistencia.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                                ¿Qué hacer si tengo problemas con mi SIM?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseFive" class="collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            Si experimentas problemas con tu SIM, intenta reiniciar tu dispositivo y verificar que los datos móviles estén activados. Si el problema persiste, contáctanos a través de nuestro servicio de atención al cliente por WhatsApp o envíanos un correo electrónico.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeadingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                                ¿Cómo puedo verificar mi saldo y consumo de datos?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapseSix" class="collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#faqAccordion">
+                        <div class="card-body">
+                            Puedes verificar tu saldo y consumo de datos ingresando a nuestra página web y accediendo a tu cuenta. También puedes enviar un mensaje
+                        </div>
+                    </div>
+                </div>
+                <!-- Agregar más preguntas según sea necesario -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Ups Section -->
+    <div id="topUpsSection" class="content-section">
+        <div class="container my-5">
+            <section class="cards-section">
+                <div class="cards">
+                    <div class="four">
+                        <div class="card-title">
+                            <h3>3GB</h3>
+                        </div>
+                        <div class="duration">
+                            <img src="../scss/icons/duration.png"/>
+                            <p>Valid for: 7 days</p>
+                        </div>
+                        <div class="includes">
+                            <div class="includes-header">
+                                <h4>Includes:</h4>
+                            </div>
+                            <div class="includes-list">
+                                <ul>
+                                    <li><img src="../scss/icons/whatsapp.png" alt="Whatsapp">Free messages</li>
+                                    <li>  
+                                        <ul>
+                                            <li><img src="../scss/icons/facebook.png" alt="Facebook"> </li>
+                                            <li><img src="../scss/icons/instagram.png" alt="Instagram"></li>
+                                            <li><img src="../scss/icons/tik-tok.png" alt="Tiktok"></li>
+                                            <li><img src="../scss/icons/youtube.png" alt="Youtube"></li>
+                                            <li><img src="../scss/icons/gorjeo.png" alt="Twitter"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <h5>USD 10.00</h5>
+                        </div>
+                        <div>
+                            <button class="add-to-cart-btn" data-product="four">Add to the cart</button>
+                        </div>
+                    </div>
+                <div class="cards">
+                    <div class="four">
+                        <div class="card-title">
+                            <h3>4GB</h3>
+                        </div>
+                        <div class="duration">
+                            <img src="../scss/icons/duration.png"/>
+                            <p>Valid for: 30 days</p>
+                        </div>
+                        <div class="includes">
+                            <div class="includes-header">
+                                <h4>Includes:</h4>
+                            </div>
+                            <div class="includes-list">
+                                <ul>
+                                    <li><img src="../scss/icons/whatsapp.png" alt="Whatsapp">Free messages</li>
+                                    <p>+ 2GB for free<br><br> + Free 500mb for social media</p>
+                                    <li>  
+                                        <ul>
+                                            <li><img src="../scss/icons/facebook.png" alt="Facebook"> </li>
+                                            <li><img src="../scss/icons/instagram.png" alt="Instagram"></li>
+                                            <li><img src="../scss/icons/tik-tok.png" alt="Tiktok"></li>
+                                            <li><img src="../scss/icons/youtube.png" alt="Youtube"></li>
+                                            <li><img src="../scss/icons/gorjeo.png" alt="Twitter"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <h5>USD 10.00</h5>
+                        </div>
+                        <div>
+                            <button class="add-to-cart-btn" data-product="four">Add to the cart</button>
+                        </div>
+                    </div>
+                    <div class="ten">
+                        <div class="card-title">
+                            <h3>10GB</h3>
+                        </div>
+                        <div class="duration">
+                            <img src="../scss/icons/duration.png"/>
+                            <p>Valid for: 30 days</p>
+                        </div>
+                        <div class="includes">
+                            <div class="includes-header">
+                                <h4>Includes:</h4>
+                            </div>
+                            <div class="includes-list">
+                                <ul>
+                                    <li><img src="../scss/icons/whatsapp.png" alt="Whatsapp">Free messages</li>
+                                    <p>+ 2GB for free<br><br> + Free 500mb for social media</p>
+                                    <li>  
+                                        <ul>
+                                            <li><img src="../scss/icons/facebook.png" alt="Facebook"> </li>
+                                            <li><img src="../scss/icons/instagram.png" alt="Instagram"></li>
+                                            <li><img src="../scss/icons/tik-tok.png" alt="Tiktok"></li>
+                                            <li><img src="../scss/icons/youtube.png" alt="Youtube"></li>
+                                            <li><img src="../scss/icons/gorjeo.png" alt="Twitter"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cost">
+                            <h5>USD 20.00</h5>
+                        </div>
+                        <div>
+                            <button class="add-to-cart-btn" data-product="ten">Add to the cart</button>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <section class="contact-us">
+        <div class="form">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mnqkvwqj" method="POST">
+                <div>
+                    <label for="form-name"></label>
+                    <input type="text" name="name" id="form-name" placeholder="Full Name & Vessel´s Name (If applicable)">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail address" autocomplete="on">
+                </div>
+                <div>
+                    <label for="phone"></label>
+                    <input type="tel" name="insert-phone" id="phone" placeholder="Country Code + Phone #" autocomplete="on">
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" class="message-form" id="message" cols="39" rows="7" placeholder="Leave us your message"></textarea>
+                </div>
+                <button type="submit" name="send-form" id="send">Send</button>
+            </form>
+        </div>
+        <div class="map">
+            <p>You can pick up your SIM at our counter <br>soon as you arrive to Buenos Aires Cruise Terminal <br>(valid only from December until March of every year)</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8306712217795!2d-58.37196998756392!3d-34.58315085630146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3355293a63ce7%3A0x309f4bbc33b5cc64!2sTerminal%20de%20Cruceros%20Quinquela%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1695175168249!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="copyright">
+        <p>Designed and Developed by Delfino</p>
+    </section>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GLE68YV5EV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GLE68YV5EV');
+
+    document.getElementById('faqButton').addEventListener('click', function() {
+        document.getElementById('faqSection').classList.add('active');
+        document.getElementById('topUpsSection').classList.remove('active');
+        this.classList.add('btn-primary');
+        this.classList.remove('btn-secondary');
+        document.getElementById('topUpsButton').classList.add('btn-secondary');
+        document.getElementById('topUpsButton').classList.remove('btn-primary');
+    });
+
+    document.getElementById('topUpsButton').addEventListener('click', function() {
+        document.getElementById('topUpsSection').classList.add('active');
+        document.getElementById('faqSection').classList.remove('active');
+        this.classList.add('btn-primary');
+        this.classList.remove('btn-secondary');
+        document.getElementById('faqButton').classList.add('btn-secondary');
+        document.getElementById('faqButton').classList.remove('btn-primary');
+    });
+</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

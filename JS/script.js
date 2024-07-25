@@ -120,7 +120,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function loadJSON(callback) {
-        fetch("../data.json")
+        const path = window.location.pathname;
+        let jsonPath;
+        
+        if (path.endsWith('index.html')) {
+            jsonPath = './data.json';  
+        } else {
+            jsonPath = '../data.json';  
+        }
+        
+        fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -206,3 +215,4 @@ document.addEventListener("DOMContentLoaded", function() {
     updateCartUI(cart); 
     updateCartNotification(); 
 });
+
